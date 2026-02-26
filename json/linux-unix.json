@@ -1,0 +1,336 @@
+{
+  "tag": "Linux & Unix",
+  "slug": "linux-unix",
+  "source_tags": [
+    "POSIX shell",
+    "bsd",
+    "cups",
+    "filesystems",
+    "iio",
+    "kernel",
+    "kernel scripting",
+    "linux",
+    "linux kernel",
+    "mobian",
+    "nix",
+    "posix",
+    "printing",
+    "shell",
+    "shell script",
+    "unix",
+    "userland",
+    "windows"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 22,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-netbsd-foundation",
+      "tags": [
+        "bsd",
+        "kernel",
+        "make",
+        "packaging",
+        "shell script",
+        "unix",
+        "userland"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-linux-foundation",
+      "tags": [
+        "ai",
+        "automotive",
+        "cups",
+        "fuzz-testing",
+        "iio",
+        "kernel",
+        "linux",
+        "printing",
+        "zephyr"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/erofs-filesystem",
+      "tags": [
+        "Containerd",
+        "agent sandbox",
+        "android",
+        "containers",
+        "filesystems",
+        "gVisor",
+        "linux kernel",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openafs",
+      "tags": [
+        "filesystems",
+        "git",
+        "javascript",
+        "kernel",
+        "network",
+        "python",
+        "storage",
+        "tcp/udp",
+        "testing"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/lablua",
+      "tags": [
+        "compilers",
+        "kernel",
+        "kernel scripting",
+        "lua",
+        "luarocks",
+        "lunatik",
+        "pallene",
+        "scripting languages",
+        "statically-typed languages"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/haiku",
+      "tags": [
+        "c++",
+        "desktop",
+        "gui",
+        "kernel",
+        "media",
+        "network",
+        "posix",
+        "unix"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-libreswan-project",
+      "tags": [
+        "nss",
+        "ipsec",
+        "libevent",
+        "kernel",
+        "vpn",
+        "ikev2",
+        "RFCs"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qemu",
+      "tags": [
+        "compiler",
+        "emulator",
+        "hypervisor",
+        "kernel",
+        "linux",
+        "python",
+        "rust",
+        "systems programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rtems-project",
+      "tags": [
+        "assembly",
+        "c/c++",
+        "embedded",
+        "kernel",
+        "multicore",
+        "posix",
+        "python",
+        "real-time",
+        "rtos"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kolibrios-project-team",
+      "tags": [
+        "OS",
+        "low-level",
+        "asm",
+        "kernel",
+        "pci",
+        "drivers",
+        "assembly",
+        "operating system",
+        "fasm"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-p4-language-consortium",
+      "tags": [
+        "ebpf",
+        "linux kernel",
+        "AI/ML Networking",
+        "programming language",
+        "llvm",
+        "networking",
+        "c++",
+        "networking security",
+        "mlir",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/liquid-galaxy-project",
+      "tags": [
+        "flutter",
+        "visualization",
+        "ux",
+        "Google Earth",
+        "android",
+        "networking",
+        "artificial intelligence",
+        "nodejs",
+        "linux",
+        "maps"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/criu",
+      "tags": [
+        "go",
+        "python",
+        "containers",
+        "Checkpoint/Restore",
+        "cloud",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/d-language-foundation",
+      "tags": [
+        "C\\C++",
+        "algorithms",
+        "data structures",
+        "linux",
+        "make",
+        "operating systems",
+        "optimizations",
+        "programming languages",
+        "windows"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/typelevel",
+      "tags": [
+        "web",
+        "node.js",
+        "functional programming",
+        "scala",
+        "AI/ML",
+        "cats",
+        "cloud",
+        "jvm",
+        "wasm",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ccextractor-development",
+      "tags": [
+        "subtitles",
+        "flutter",
+        "video",
+        "rust",
+        "vr",
+        "mobile",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/debian",
+      "tags": [
+        "java",
+        "CI/CD",
+        "raspberrypi_builds",
+        "rust",
+        "python",
+        "ai",
+        "mobian",
+        "c++",
+        "autopkgtest",
+        "perl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/nixos-foundation",
+      "tags": [
+        "git",
+        "nix",
+        "InfrastrucutreAsCode",
+        "declarative",
+        "reproducible"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-freebsd-project",
+      "tags": [
+        "virtualization",
+        "llvm",
+        "POSIX shell",
+        "Embedded System",
+        "assembly",
+        "make",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/git",
+      "tags": [
+        "git",
+        "shell script",
+        "dvcs",
+        "version control",
+        "c language"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/precice",
+      "tags": [
+        "shell",
+        "scientific computing",
+        "python",
+        "simulation",
+        "c++"
+      ]
+    }
+  ]
+}

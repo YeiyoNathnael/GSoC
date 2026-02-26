@@ -1,0 +1,257 @@
+{
+  "tag": "Physical & Earth Sciences",
+  "slug": "physical-earth-sciences",
+  "source_tags": [
+    "Adjoint Design Optimization",
+    "Computational Fluid Dynamics",
+    "Ecological Forecasting",
+    "Fluid Dynamics",
+    "Marine Biodiversity",
+    "Oceanography",
+    "Polar Science",
+    "Weather Forecasting",
+    "aerodynamics",
+    "astronomy",
+    "astrophysics",
+    "chemistry",
+    "climate science",
+    "computational-chemistry",
+    "earth science",
+    "ecosystem models",
+    "electromagnetics",
+    "geophysics",
+    "ground penetrating radar",
+    "high energy astrophysics",
+    "materials science",
+    "molecular-simulation",
+    "particle physics",
+    "physics",
+    "quantum chemistry",
+    "solar physics",
+    "space"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 15,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/stichting-su2",
+      "tags": [
+        "Adjoint Design Optimization",
+        "Computational Fluid Dynamics",
+        "Fluid Dynamics",
+        "Multi-Disciplinary Optimization",
+        "aerodynamics",
+        "c++",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openastronomy",
+      "tags": [
+        "astronomy",
+        "c++",
+        "data analysis",
+        "high energy astrophysics",
+        "image processing",
+        "julia",
+        "python",
+        "solar physics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/machine-learning-for-science-ml4sci",
+      "tags": [
+        "algorithms",
+        "artificial intelligence",
+        "astronomy",
+        "c++",
+        "data analysis",
+        "machine learning",
+        "physics",
+        "python",
+        "science and medicine"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/tardis-rt-collaboration",
+      "tags": [
+        "big data",
+        "pandas",
+        "visualization",
+        "astrophysics",
+        "python",
+        "simulation",
+        "jupyter",
+        "numba",
+        "numpy"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/deepchem",
+      "tags": [
+        "Drug Discovery",
+        "HuggingFace",
+        "artificial intelligence",
+        "biology",
+        "chemistry",
+        "materials science",
+        "numpy",
+        "python",
+        "pytorch"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/pecan-project",
+      "tags": [
+        "Ecological Forecasting",
+        "api",
+        "climate science",
+        "data science",
+        "docker",
+        "ecosystem models",
+        "geospatial",
+        "scientific visualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mdanalysis",
+      "tags": [
+        "c/c++",
+        "computational-chemistry",
+        "cython",
+        "high-performance-computing",
+        "machine-learning",
+        "molecular-simulation",
+        "python",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mllam",
+      "tags": [
+        "Weather Forecasting",
+        "Zarr",
+        "ai",
+        "deep learning",
+        "earth science",
+        "machine learning",
+        "numpy",
+        "python",
+        "pytorch",
+        "xarray"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gprmax",
+      "tags": [
+        "cuda",
+        "electromagnetics",
+        "engineering",
+        "geophysics",
+        "ground penetrating radar",
+        "mpi",
+        "opencl",
+        "openmp",
+        "python",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ioos",
+      "tags": [
+        "Marine Biodiversity",
+        "NetCDF",
+        "Oceanography",
+        "Zarr",
+        "data management",
+        "java",
+        "open data",
+        "open science",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cern-hsf",
+      "tags": [
+        "algorithmics",
+        "big data",
+        "Performance Optimisation",
+        "machine learning",
+        "container orchestration",
+        "python",
+        "particle physics",
+        "artificial intelligence",
+        "c/c++",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sympy",
+      "tags": [
+        "physics",
+        "python",
+        "symbolic mathematics",
+        "mathematics",
+        "jupyter",
+        "numpy"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/alaska",
+      "tags": [
+        "neuroscience",
+        "deep learning",
+        "radiology",
+        "dicom",
+        "java",
+        "matlab",
+        "mysql",
+        "heathcare",
+        "python",
+        "Polar Science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qc-devs",
+      "tags": [
+        "data science",
+        "Computational Science",
+        "numerical algorithms",
+        "github",
+        "julia",
+        "quantum chemistry",
+        "python",
+        "jupyter",
+        "c++",
+        "scientific visualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librecube-initiative",
+      "tags": [
+        "automation",
+        "space",
+        "docker",
+        "raspberry pi",
+        "python",
+        "robotics",
+        "micropython"
+      ]
+    }
+  ]
+}

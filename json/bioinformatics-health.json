@@ -1,0 +1,359 @@
+{
+  "tag": "Bioinformatics & Health",
+  "slug": "bioinformatics-health",
+  "source_tags": [
+    "AI in Health",
+    "Drug Discovery",
+    "Electronic Medical Record System",
+    "HMIS",
+    "Health Care",
+    "Laboratory Information System",
+    "Neuronavigation",
+    "Telemedicine and Remote Care",
+    "bioinformatics",
+    "biology",
+    "brain modelling",
+    "cancer",
+    "computational biology",
+    "dicom",
+    "ehealth",
+    "electronic medical records",
+    "fhir",
+    "genetics",
+    "genomics",
+    "health",
+    "heathcare",
+    "mass spectrometry",
+    "medical imaging",
+    "neuroanatomy",
+    "neuroimage processing",
+    "neuroscience",
+    "precision medicine",
+    "radiology"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 21,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-healthcare-network",
+      "tags": [
+        "AI in Health",
+        "Digital Public Goods",
+        "HMIS",
+        "NextJs",
+        "Telemedicine and Remote Care",
+        "django",
+        "electronic medical records",
+        "python",
+        "react",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cbioportal-for-cancer-genomics",
+      "tags": [
+        "big data",
+        "bioinformatics",
+        "cancer",
+        "genomics",
+        "java",
+        "javascript",
+        "mysql",
+        "precision medicine",
+        "react",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/global-alliance-for-genomics-and-health",
+      "tags": [
+        "bioinformatics",
+        "genetics",
+        "genomics",
+        "java",
+        "postgresql",
+        "python",
+        "react",
+        "rust",
+        "security",
+        "standards"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-genome-informatics",
+      "tags": [
+        "angular",
+        "bioinformatics",
+        "biology",
+        "data discovery",
+        "genomics",
+        "graph",
+        "python",
+        "r-project",
+        "react"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/uc-ospo",
+      "tags": [
+        "data science",
+        "pytorch",
+        "python",
+        "AI/ML",
+        "research software",
+        "bioinformatics",
+        "education",
+        "javascript",
+        "c/c++",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/deepchem",
+      "tags": [
+        "Drug Discovery",
+        "HuggingFace",
+        "artificial intelligence",
+        "biology",
+        "chemistry",
+        "materials science",
+        "numpy",
+        "python",
+        "pytorch"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/incf",
+      "tags": [
+        "brain modelling",
+        "c++",
+        "data visualization",
+        "gpu",
+        "java",
+        "javascript",
+        "machine learning",
+        "neuroimage processing",
+        "neuroscience",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/geomscale",
+      "tags": [
+        "statistics",
+        "data science",
+        "computational biology",
+        "python",
+        "mathematics",
+        "github-actions",
+        "jupyter",
+        "c++",
+        "computational geometry"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/alaska",
+      "tags": [
+        "Polar Science",
+        "deep learning",
+        "dicom",
+        "heathcare",
+        "java",
+        "matlab",
+        "mysql",
+        "neuroscience",
+        "python",
+        "radiology"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/invesalius",
+      "tags": [
+        "3D Reconstruction",
+        "3d printing",
+        "Neuronavigation",
+        "Vtk",
+        "cython",
+        "dicom",
+        "ehealth",
+        "medical imaging",
+        "numpy",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openmrs",
+      "tags": [
+        "Electronic Medical Record System",
+        "QA automation",
+        "fhir",
+        "frontend",
+        "java",
+        "javascript",
+        "mysql",
+        "platform",
+        "reactjs"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/st-jude-childrens-research-hospital-ai",
+      "tags": [
+        "WDL",
+        "genomics",
+        "rust",
+        "python",
+        "simd",
+        "programming languages",
+        "developer tools",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/genome-assembly-and-annotation",
+      "tags": [
+        "hpc",
+        "genomics",
+        "big data",
+        "mysql",
+        "docker",
+        "pytorch",
+        "python",
+        "cloud",
+        "nextflow",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/malariagen",
+      "tags": [
+        "GCS",
+        "genomics",
+        "big data",
+        "python",
+        "cloud",
+        "analytics",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openelis-global",
+      "tags": [
+        "Health Care",
+        "Laboratory Information System",
+        "java",
+        "javascript",
+        "postgresql",
+        "react",
+        "spring"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/data-for-the-common-good",
+      "tags": [
+        "web",
+        "health",
+        "infrastructure",
+        "data",
+        "terraform",
+        "reactjs",
+        "python",
+        "software",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-food-facts",
+      "tags": [
+        "health",
+        "environment",
+        "flutter",
+        "open data",
+        "food",
+        "python",
+        "perl",
+        "javascript",
+        "mobile",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openms-inc",
+      "tags": [
+        "deep learning",
+        "cython",
+        "mass spectrometry",
+        "pytorch",
+        "webdev",
+        "python",
+        "algorithms",
+        "c++",
+        "Streamlit",
+        "open science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-science-initiative-for-perfusion-imaging",
+      "tags": [
+        "reproducible science",
+        "data visualization",
+        "github",
+        "medical imaging",
+        "python",
+        "artificial intelligence",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/neuroinformatics-unit",
+      "tags": [
+        "Computer-Vision",
+        "Scipy",
+        "data-science",
+        "napari",
+        "neuroanatomy",
+        "neuroscience",
+        "numpy",
+        "python",
+        "pytorch",
+        "visualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librehealth",
+      "tags": [
+        "web",
+        "radiology",
+        "deep learning",
+        "mobile apps",
+        "java",
+        "hfoss",
+        "android",
+        "python",
+        "dart/flutter",
+        "javascript"
+      ]
+    }
+  ]
+}

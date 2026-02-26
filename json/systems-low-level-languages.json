@@ -1,0 +1,219 @@
+{
+  "tag": "Systems & Low-level Languages",
+  "slug": "systems-low-level-languages",
+  "source_tags": [
+    "Fortran",
+    "Zig",
+    "arm",
+    "asm",
+    "assembly",
+    "assembly language",
+    "disassembly",
+    "fasm",
+    "risc-v",
+    "verilog",
+    "vhdl",
+    "x86"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 14,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openvino-toolkit",
+      "tags": [
+        "Agentic AI",
+        "Model Serving",
+        "ai",
+        "arm",
+        "c++",
+        "gen ai",
+        "inference",
+        "python",
+        "x86"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ffmpeg",
+      "tags": [
+        "subtitles",
+        "git",
+        "asm",
+        "video",
+        "audio",
+        "multimedia"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kolibrios-project-team",
+      "tags": [
+        "OS",
+        "asm",
+        "assembly",
+        "drivers",
+        "fasm",
+        "kernel",
+        "low-level",
+        "operating system",
+        "pci"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/unikraft",
+      "tags": [
+        "kvm",
+        "software configurability",
+        "virtualization",
+        "software reuse",
+        "xen",
+        "golang",
+        "assembly language",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/videolan",
+      "tags": [
+        "qt",
+        "codecs",
+        "video",
+        "media database",
+        "assembly",
+        "c++",
+        "streaming",
+        "audio"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-freebsd-project",
+      "tags": [
+        "virtualization",
+        "llvm",
+        "POSIX shell",
+        "Embedded System",
+        "assembly",
+        "make",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/scummvm",
+      "tags": [
+        "sdl",
+        "game engines",
+        "software preservation",
+        "software archeology",
+        "python",
+        "assembly",
+        "c++",
+        "games",
+        "opengl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rtems-project",
+      "tags": [
+        "real-time",
+        "embedded",
+        "rtos",
+        "python",
+        "kernel",
+        "assembly",
+        "posix",
+        "multicore",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/flare",
+      "tags": [
+        "decompilation",
+        "reverse-engineering",
+        "malware-analysis",
+        "disassembly",
+        "Sandbox",
+        "python",
+        "emulation",
+        "ida-pro"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rizin",
+      "tags": [
+        "qt",
+        "go",
+        "disassembly",
+        "debugging",
+        "python",
+        "computer security",
+        "emulation",
+        "c++",
+        "reverse engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fortran-lang",
+      "tags": [
+        "compilers",
+        "fortran",
+        "programming languages",
+        "python",
+        "libraries",
+        "c++",
+        "build systems",
+        "Fortran"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/free-and-open-source-silicon-foundation",
+      "tags": [
+        "compiler",
+        "debug",
+        "electronic design tools",
+        "hardware",
+        "risc-v",
+        "simulation",
+        "verilog",
+        "vhdl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-openroad-initiative",
+      "tags": [
+        "verilog",
+        "OpenRoad",
+        "ASIC design",
+        "Open-source Design",
+        "python",
+        "Open EDA",
+        "LLM chip design",
+        "c++",
+        "tcl",
+        "OpenROAD chip design"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/neovim",
+      "tags": [
+        "text-editor",
+        "editor",
+        "lua",
+        "ai",
+        "Zig"
+      ]
+    }
+  ]
+}

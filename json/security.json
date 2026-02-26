@@ -1,0 +1,297 @@
+{
+  "tag": "Security",
+  "slug": "security",
+  "source_tags": [
+    "Juice Shop",
+    "Sandbox",
+    "Security Cryptography",
+    "Threat Intelligence",
+    "ZAP",
+    "agent sandbox",
+    "application security",
+    "computer security",
+    "cryptography",
+    "cybersecurity",
+    "decompilation",
+    "gVisor",
+    "honeypots",
+    "ida-pro",
+    "malware analysis",
+    "networking security",
+    "privacy",
+    "privacy/security",
+    "reverse engineering",
+    "security",
+    "vulnerabilities",
+    "vulnerabilities management"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 18,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/erofs-filesystem",
+      "tags": [
+        "Containerd",
+        "agent sandbox",
+        "android",
+        "containers",
+        "filesystems",
+        "gVisor",
+        "linux kernel",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/owasp-foundation",
+      "tags": [
+        "DevSecOps",
+        "Juice Shop",
+        "ZAP",
+        "application security",
+        "cloud",
+        "cybersecurity",
+        "java",
+        "javascript",
+        "python",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rizin",
+      "tags": [
+        "c++",
+        "computer security",
+        "debugging",
+        "disassembly",
+        "emulation",
+        "go",
+        "python",
+        "qt",
+        "reverse engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/libssh",
+      "tags": [
+        "ci",
+        "cryptography",
+        "git",
+        "security",
+        "sftp",
+        "ssh"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-radio",
+      "tags": [
+        "qt",
+        "real-time",
+        "Software-Defined Radio",
+        "python",
+        "simd",
+        "dsp",
+        "cybersecurity",
+        "c++",
+        "communications engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/flare",
+      "tags": [
+        "Sandbox",
+        "decompilation",
+        "disassembly",
+        "emulation",
+        "ida-pro",
+        "malware-analysis",
+        "python",
+        "reverse-engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-honeynet-project",
+      "tags": [
+        "Threat Intelligence",
+        "django",
+        "docker",
+        "go",
+        "honeypots",
+        "javascript",
+        "malware analysis",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-p4-language-consortium",
+      "tags": [
+        "ebpf",
+        "linux kernel",
+        "AI/ML Networking",
+        "programming language",
+        "llvm",
+        "networking",
+        "c++",
+        "networking security",
+        "mlir",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/submitty",
+      "tags": [
+        "web",
+        "communication",
+        "privacy/security",
+        "visualization",
+        "python",
+        "c++",
+        "education",
+        "javascript",
+        "php",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qubes-os-f3",
+      "tags": [
+        "OS",
+        "privacy",
+        "python",
+        "security",
+        "xen"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/opensuse-project",
+      "tags": [
+        "reactjs javascript",
+        "AIML",
+        "go",
+        "Security Cryptography",
+        "ruby",
+        "containers kubernetes",
+        "python",
+        "systems management",
+        "operating system developer tools",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/python-software-foundation",
+      "tags": [
+        "modeling",
+        "visualization",
+        "Backup",
+        "python",
+        "security",
+        "javascript",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/joplin",
+      "tags": [
+        "typescript",
+        "synchronisation",
+        "React-Native",
+        "search",
+        "AI/ML",
+        "electron",
+        "security",
+        "note-taking",
+        "react",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/global-alliance-for-genomics-and-health",
+      "tags": [
+        "genomics",
+        "genetics",
+        "standards",
+        "java",
+        "bioinformatics",
+        "rust",
+        "python",
+        "security",
+        "react",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/c2si",
+      "tags": [
+        "tensorflow",
+        "java",
+        "go",
+        "python",
+        "ai",
+        "software",
+        "security",
+        "nodejs",
+        "cloud",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ruby",
+      "tags": [
+        "web",
+        "application",
+        "java",
+        "ruby",
+        "server",
+        "ruby on rails",
+        "security",
+        "rubygems",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sw360",
+      "tags": [
+        "vulnerabilities management",
+        "license compliance",
+        "component repository",
+        "SBOM",
+        "java",
+        "compliance automation",
+        "SpringBoot",
+        "react",
+        "couchdb"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aboutcode",
+      "tags": [
+        "SoftwareCompositionAnalysis",
+        "SBOM",
+        "dependencies",
+        "C/Rust/Go",
+        "python",
+        "Django+PostgreSQL",
+        "vulnerabilities",
+        "javascript",
+        "License"
+      ]
+    }
+  ]
+}

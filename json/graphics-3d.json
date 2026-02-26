@@ -1,0 +1,275 @@
+{
+  "tag": "Graphics & 3D",
+  "slug": "graphics-3d",
+  "source_tags": [
+    "2d/3d graphics",
+    "3D Geometry",
+    "3d",
+    "3d printing",
+    "BIM",
+    "CAM",
+    "GEGL",
+    "OpenCASCADE",
+    "OpenInventor",
+    "Vtk",
+    "animation",
+    "architecture",
+    "cad",
+    "glTF",
+    "graphics",
+    "illustration",
+    "opengl",
+    "photography",
+    "ray tracing",
+    "rendering",
+    "vector graphics",
+    "visual design",
+    "vulkan"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 16,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/brl-cad",
+      "tags": [
+        "2d/3d graphics",
+        "c/c++",
+        "deep neural net rendering",
+        "geometry",
+        "high-performance computing",
+        "opencl",
+        "opengl",
+        "python",
+        "ray tracing",
+        "scripting"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/synfig",
+      "tags": [
+        "2d/3d graphics",
+        "animation",
+        "c++",
+        "gtk",
+        "gtkmm",
+        "python",
+        "vector graphics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kornia",
+      "tags": [
+        "deep learning",
+        "data science",
+        "3D Geometry",
+        "robotics",
+        "rust",
+        "computer vision",
+        "Spatial AI",
+        "cuda",
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/invesalius",
+      "tags": [
+        "3D Reconstruction",
+        "3d printing",
+        "Neuronavigation",
+        "Vtk",
+        "cython",
+        "dicom",
+        "ehealth",
+        "medical imaging",
+        "numpy",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/blender-foundation",
+      "tags": [
+        "3d",
+        "animation",
+        "c++",
+        "games",
+        "graphics",
+        "opengl",
+        "python",
+        "rendering",
+        "vulkan"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/freecad",
+      "tags": [
+        "3d",
+        "BIM",
+        "CAM",
+        "OpenCASCADE",
+        "OpenInventor",
+        "architecture",
+        "c++",
+        "cad",
+        "engineering",
+        "graphics",
+        "python",
+        "qt"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-image-manipulation-program",
+      "tags": [
+        "GEGL",
+        "design",
+        "graphics",
+        "illustration",
+        "photography"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openstreetmap",
+      "tags": [
+        "web",
+        "glTF",
+        "ui",
+        "docker",
+        "routing",
+        "python",
+        "databases",
+        "c++",
+        "javascript",
+        "geodata"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/numfocus",
+      "tags": [
+        "data science",
+        "julia",
+        "graphics",
+        "scientific computing",
+        "python",
+        "ai",
+        "c++",
+        "numerical computation"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/r-project-for-statistical-computing",
+      "tags": [
+        "statistics",
+        "data science",
+        "r-project",
+        "graphics",
+        "visualization",
+        "fortran",
+        "c++",
+        "javascript",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/graphite",
+      "tags": [
+        "compilers",
+        "computational geometry",
+        "fonts",
+        "graphics",
+        "programming languages",
+        "rust",
+        "vulkan",
+        "webgpu"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/processing-foundation",
+      "tags": [
+        "web",
+        "typescript",
+        "creative coding",
+        "java",
+        "graphics",
+        "design",
+        "webgl",
+        "education",
+        "javascript",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/scummvm",
+      "tags": [
+        "sdl",
+        "game engines",
+        "software preservation",
+        "software archeology",
+        "python",
+        "assembly",
+        "c++",
+        "games",
+        "opengl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/zulip",
+      "tags": [
+        "integrations",
+        "typescript",
+        "teaching quality codebase",
+        "flutter",
+        "visual design",
+        "python",
+        "css",
+        "great developer tooling",
+        "team chat",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/meshery",
+      "tags": [
+        "devops",
+        "cloud native infrastructure",
+        "visual design",
+        "infrastructure as design",
+        "Platform Engineering",
+        "ai",
+        "golang",
+        "collaboration",
+        "kubernetes",
+        "javascript"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "tag": "Fintech & Blockchain",
+  "slug": "fintech-blockchain",
+  "source_tags": [
+    "Solidity",
+    "blockchain",
+    "contract management",
+    "document assembly",
+    "financial inclusion",
+    "fintech",
+    "legal technology"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 3,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aossie",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "artificial intelligence",
+        "blockchain",
+        "communication",
+        "flutter",
+        "javascript",
+        "mobile",
+        "python",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/accord-project",
+      "tags": [
+        "artificial intelligence",
+        "contract management",
+        "data modeling",
+        "document assembly",
+        "javascript",
+        "json",
+        "legal technology",
+        "natural language processing",
+        "python",
+        "react"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-mifos-initiative",
+      "tags": [
+        "android",
+        "angular",
+        "artificial intelligence",
+        "cloud",
+        "financial inclusion",
+        "fintech",
+        "java",
+        "kotlin",
+        "mobile banking",
+        "spring"
+      ]
+    }
+  ]
+}

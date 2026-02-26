@@ -1,0 +1,176 @@
+{
+  "tag": "Mobile Languages",
+  "slug": "mobile-languages",
+  "source_tags": [
+    "dart",
+    "dart/flutter",
+    "flutter",
+    "swift"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 11,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librehealth",
+      "tags": [
+        "web",
+        "radiology",
+        "deep learning",
+        "mobile apps",
+        "java",
+        "hfoss",
+        "android",
+        "python",
+        "dart/flutter",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/dart",
+      "tags": [
+        "dart",
+        "flutter",
+        "mobile apps",
+        "programming languages"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/international-catrobat-association",
+      "tags": [
+        "creativity tools",
+        "education",
+        "flutter",
+        "game engines",
+        "javascript",
+        "kotlin",
+        "mobile programming",
+        "python",
+        "swift",
+        "visual programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/liquid-galaxy-project",
+      "tags": [
+        "flutter",
+        "visualization",
+        "ux",
+        "Google Earth",
+        "android",
+        "networking",
+        "artificial intelligence",
+        "nodejs",
+        "linux",
+        "maps"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/zulip",
+      "tags": [
+        "integrations",
+        "typescript",
+        "teaching quality codebase",
+        "flutter",
+        "visual design",
+        "python",
+        "css",
+        "great developer tooling",
+        "team chat",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ccextractor-development",
+      "tags": [
+        "subtitles",
+        "flutter",
+        "video",
+        "rust",
+        "vr",
+        "mobile",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/api-dash",
+      "tags": [
+        "typescript",
+        "api",
+        "MCP",
+        "flutter",
+        "python",
+        "ai",
+        "developer tools",
+        "react",
+        "Agents"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-food-facts",
+      "tags": [
+        "health",
+        "environment",
+        "flutter",
+        "open data",
+        "food",
+        "python",
+        "perl",
+        "javascript",
+        "mobile",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aossie",
+      "tags": [
+        "web",
+        "communication",
+        "flutter",
+        "Blockchain",
+        "Solidity",
+        "python",
+        "blockchain",
+        "artificial intelligence",
+        "javascript",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mit-app-inventor",
+      "tags": [
+        "ios",
+        "java",
+        "gwt",
+        "android",
+        "development tools",
+        "education",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/swift",
+      "tags": [
+        "cross-platform",
+        "Server development",
+        "compilers",
+        "Standard Libraries",
+        "c++",
+        "Packages",
+        "swift",
+        "cmake"
+      ]
+    }
+  ]
+}

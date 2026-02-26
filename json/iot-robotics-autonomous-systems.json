@@ -1,0 +1,243 @@
+{
+  "tag": "IoT, Robotics & Autonomous Systems",
+  "slug": "iot-robotics-autonomous-systems",
+  "source_tags": [
+    "Autonomous Drive",
+    "Drone",
+    "Hardware Control",
+    "MCP",
+    "Python Robotics",
+    "Robot Dataflow",
+    "Transit",
+    "automotive",
+    "autonomous vehicle",
+    "bus",
+    "fleet management",
+    "gazebo",
+    "iot",
+    "iot & edge",
+    "pixhawk",
+    "raspberry pi",
+    "raspberrypi_builds",
+    "robotics",
+    "ros",
+    "softwaredefinedvehicles",
+    "travel",
+    "unmanned vehicle",
+    "zephyr"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 14,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-linux-foundation",
+      "tags": [
+        "ai",
+        "automotive",
+        "cups",
+        "fuzz-testing",
+        "iio",
+        "kernel",
+        "linux",
+        "printing",
+        "zephyr"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/eclipse-foundation",
+      "tags": [
+        "automotive",
+        "cloud native java",
+        "eclipsejavaide",
+        "iot & edge",
+        "jakartaee",
+        "java",
+        "robotics",
+        "rtos",
+        "softwaredefinedvehicles",
+        "tools"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/dora-rs-tb",
+      "tags": [
+        "Autonomous Drive",
+        "Embodied AI",
+        "Python Robotics",
+        "Robot Dataflow",
+        "c++",
+        "middleware",
+        "python",
+        "ros",
+        "rust"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ardupilot",
+      "tags": [
+        "Drone",
+        "ai",
+        "autonomous vehicle",
+        "c++",
+        "lua",
+        "pixhawk",
+        "python",
+        "robotics",
+        "unmanned vehicle"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-transit-software-foundation",
+      "tags": [
+        "Transit",
+        "android",
+        "apps",
+        "bus",
+        "docker",
+        "golang",
+        "ios",
+        "java",
+        "travel"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-robotics",
+      "tags": [
+        "Bevy",
+        "Hardware Control",
+        "buildfarms",
+        "c++",
+        "fleet management",
+        "gazebo",
+        "python",
+        "robotics",
+        "ros",
+        "simulation"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jderobot",
+      "tags": [
+        "artificial intelligence",
+        "computer vision",
+        "developer tools",
+        "education",
+        "gazebo",
+        "opencv",
+        "python",
+        "robotics",
+        "ros",
+        "tensorflow"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jboss-community",
+      "tags": [
+        "artificial intelligence",
+        "java",
+        "golang",
+        "iot",
+        "react",
+        "kubernetes",
+        "cloud",
+        "microservices"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gemini-cli",
+      "tags": [
+        "typescript",
+        "MCP",
+        "GenAI",
+        "developer tools",
+        "Software Agent",
+        "A2A"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/api-dash",
+      "tags": [
+        "typescript",
+        "api",
+        "MCP",
+        "flutter",
+        "python",
+        "ai",
+        "developer tools",
+        "react",
+        "Agents"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librecube-initiative",
+      "tags": [
+        "automation",
+        "docker",
+        "micropython",
+        "python",
+        "raspberry pi",
+        "robotics",
+        "space"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/debian",
+      "tags": [
+        "java",
+        "CI/CD",
+        "raspberrypi_builds",
+        "rust",
+        "python",
+        "ai",
+        "mobian",
+        "c++",
+        "autopkgtest",
+        "perl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kornia",
+      "tags": [
+        "deep learning",
+        "data science",
+        "3D Geometry",
+        "robotics",
+        "rust",
+        "computer vision",
+        "Spatial AI",
+        "cuda",
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-technologies-alliance-gfoss",
+      "tags": [
+        "web",
+        "c++",
+        "Artificial Inteligence",
+        "Machine Learning (ML)",
+        "python 3",
+        "robotics",
+        "open hardware",
+        "nodejs",
+        "javascript",
+        "c/c++"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "tag": "Java & JVM",
+  "slug": "java-jvm",
+  "source_tags": [
+    ".net",
+    "Multiplatform",
+    "SpringBoot",
+    "cloud native java",
+    "cross-platform",
+    "eclipsejavaide",
+    "gradle",
+    "gwt",
+    "jakartaee",
+    "java",
+    "javafx",
+    "jvm",
+    "kotlin",
+    "scala",
+    "spring"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 37,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/eclipse-foundation",
+      "tags": [
+        "automotive",
+        "cloud native java",
+        "eclipsejavaide",
+        "iot & edge",
+        "jakartaee",
+        "java",
+        "robotics",
+        "rtos",
+        "softwaredefinedvehicles",
+        "tools"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/neutralinojs",
+      "tags": [
+        "typescript",
+        "cross-platform",
+        "node.js",
+        "app development",
+        "framework",
+        "Desktop App Development",
+        "lightweight framework",
+        "c++",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/swift",
+      "tags": [
+        "cross-platform",
+        "Server development",
+        "compilers",
+        "Standard Libraries",
+        "c++",
+        "Packages",
+        "swift",
+        "cmake"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation",
+      "tags": [
+        "Multiplatform",
+        "Parsers & Compilers",
+        "Programming & Build Tools",
+        "compilers",
+        "gradle",
+        "jvm",
+        "kotlin",
+        "libraries",
+        "programming languages",
+        "software development"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mit-app-inventor",
+      "tags": [
+        "android",
+        "development tools",
+        "education",
+        "gwt",
+        "ios",
+        "java",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/alaska",
+      "tags": [
+        "neuroscience",
+        "deep learning",
+        "radiology",
+        "dicom",
+        "java",
+        "matlab",
+        "mysql",
+        "heathcare",
+        "python",
+        "Polar Science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cbioportal-for-cancer-genomics",
+      "tags": [
+        "typescript",
+        "genomics",
+        "big data",
+        "precision medicine",
+        "java",
+        "mysql",
+        "cancer",
+        "bioinformatics",
+        "react",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sw360",
+      "tags": [
+        "SBOM",
+        "SpringBoot",
+        "compliance automation",
+        "component repository",
+        "couchdb",
+        "java",
+        "license compliance",
+        "react",
+        "vulnerabilities management"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/dbpedia",
+      "tags": [
+        "java",
+        "javascript",
+        "knowledge graph",
+        "largelanguagemodel",
+        "linked data",
+        "machine learning",
+        "python",
+        "rdf",
+        "scala",
+        "semantic web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/incf",
+      "tags": [
+        "neuroscience",
+        "data visualization",
+        "gpu",
+        "java",
+        "python",
+        "neuroimage processing",
+        "brain modelling",
+        "c++",
+        "javascript",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openmrs",
+      "tags": [
+        "Electronic Medical Record System",
+        "platform",
+        "QA automation",
+        "java",
+        "mysql",
+        "reactjs",
+        "fhir",
+        "frontend",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jabref-ev",
+      "tags": [
+        "ai",
+        "bibliography",
+        "bibtex",
+        "java",
+        "javafx",
+        "latex",
+        "library",
+        "literature",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/global-alliance-for-genomics-and-health",
+      "tags": [
+        "genomics",
+        "genetics",
+        "standards",
+        "java",
+        "bioinformatics",
+        "rust",
+        "python",
+        "security",
+        "react",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/apache-software-foundation",
+      "tags": [
+        "big data",
+        "other",
+        "java",
+        "libraries",
+        "c++",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jboss-community",
+      "tags": [
+        "artificial intelligence",
+        "java",
+        "golang",
+        "iot",
+        "react",
+        "kubernetes",
+        "cloud",
+        "microservices"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/52north-spatial-information-research-gmbh",
+      "tags": [
+        "open standards",
+        "Geoinformation",
+        "citizen science",
+        "spatial information infrastructures",
+        "java",
+        "ogc standards",
+        "web services",
+        "android",
+        "data analytics",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-mifos-initiative",
+      "tags": [
+        "android",
+        "angular",
+        "artificial intelligence",
+        "cloud",
+        "financial inclusion",
+        "fintech",
+        "java",
+        "kotlin",
+        "mobile banking",
+        "spring"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jenkins-wp",
+      "tags": [
+        "automation",
+        "continuous delivery",
+        "devops",
+        "java",
+        "docker",
+        "go",
+        "continuous integration",
+        "developer tools",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/c2si",
+      "tags": [
+        "tensorflow",
+        "java",
+        "go",
+        "python",
+        "ai",
+        "software",
+        "security",
+        "nodejs",
+        "cloud",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librehealth",
+      "tags": [
+        "web",
+        "radiology",
+        "deep learning",
+        "mobile apps",
+        "java",
+        "hfoss",
+        "android",
+        "python",
+        "dart/flutter",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jitsi",
+      "tags": [
+        "WebRTC",
+        "java",
+        "javascript",
+        "kotlin",
+        "multimedia",
+        "react",
+        "video",
+        "video conferencing",
+        "webrtc"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/checkstyle",
+      "tags": [
+        "code review tool",
+        "coding conventions",
+        "java",
+        "static code analysis‎",
+        "coding standards",
+        "artificial-intelligence",
+        "antlr"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ruby",
+      "tags": [
+        "web",
+        "application",
+        "java",
+        "ruby",
+        "server",
+        "ruby on rails",
+        "security",
+        "rubygems",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/debian",
+      "tags": [
+        "java",
+        "CI/CD",
+        "raspberrypi_builds",
+        "rust",
+        "python",
+        "ai",
+        "mobian",
+        "c++",
+        "autopkgtest",
+        "perl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openelis-global",
+      "tags": [
+        "Health Care",
+        "Laboratory Information System",
+        "java",
+        "javascript",
+        "postgresql",
+        "react",
+        "spring"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/osgeo-open-source-geospatial-foundation",
+      "tags": [
+        "gis",
+        "citizen science",
+        "java",
+        "geolocation",
+        "python",
+        "mapping",
+        "c++",
+        "javascript",
+        "open science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/processing-foundation",
+      "tags": [
+        "web",
+        "typescript",
+        "creative coding",
+        "java",
+        "graphics",
+        "design",
+        "webgl",
+        "education",
+        "javascript",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ioos",
+      "tags": [
+        "NetCDF",
+        "Marine Biodiversity",
+        "java",
+        "open data",
+        "Zarr",
+        "data management",
+        "python",
+        "Oceanography",
+        "open science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/owasp-foundation",
+      "tags": [
+        "web",
+        "DevSecOps",
+        "java",
+        "application security",
+        "Juice Shop",
+        "python",
+        "ZAP",
+        "cybersecurity",
+        "cloud",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/libreoffice",
+      "tags": [
+        "office suite",
+        "java",
+        "desktop application",
+        "python",
+        "end user application",
+        "c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-transit-software-foundation",
+      "tags": [
+        "ios",
+        "travel",
+        "java",
+        "docker",
+        "bus",
+        "android",
+        "golang",
+        "Transit",
+        "apps"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg",
+      "tags": [
+        "android",
+        "distributed systems",
+        "java",
+        "jvm",
+        "model checking",
+        "program analysis",
+        "symbolic execution",
+        "test input generation",
+        "verification of concurrent systems"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/typelevel",
+      "tags": [
+        "AI/ML",
+        "cats",
+        "cloud",
+        "functional programming",
+        "jvm",
+        "linux",
+        "node.js",
+        "scala",
+        "wasm",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/international-catrobat-association",
+      "tags": [
+        "visual programming",
+        "mobile programming",
+        "game engines",
+        "kotlin",
+        "flutter",
+        "creativity tools",
+        "python",
+        "education",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ankidroid",
+      "tags": [
+        "user generated content",
+        "kotlin",
+        "Flashcards",
+        "android",
+        "rust",
+        "education",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kiwix",
+      "tags": [
+        "offline",
+        "vue.js",
+        "python",
+        "c++",
+        "nodejs",
+        "kotlin",
+        "browser",
+        "compression"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/json-schema",
+      "tags": [
+        "web",
+        "typescript",
+        "developer tooling",
+        "standards",
+        "JSON Schema",
+        "python",
+        "data validation",
+        "apis",
+        ".net",
+        "javascript"
+      ]
+    }
+  ]
+}

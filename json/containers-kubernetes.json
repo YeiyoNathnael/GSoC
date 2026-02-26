@@ -1,0 +1,355 @@
+{
+  "tag": "Containers & Kubernetes",
+  "slug": "containers-kubernetes",
+  "source_tags": [
+    "Containerd",
+    "Flatpak",
+    "container orchestration",
+    "containers",
+    "containers kubernetes",
+    "docker",
+    "kubernetes"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 23,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cern-hsf",
+      "tags": [
+        "algorithmics",
+        "big data",
+        "Performance Optimisation",
+        "machine learning",
+        "container orchestration",
+        "python",
+        "particle physics",
+        "artificial intelligence",
+        "c/c++",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/erofs-filesystem",
+      "tags": [
+        "Containerd",
+        "agent sandbox",
+        "android",
+        "containers",
+        "filesystems",
+        "gVisor",
+        "linux kernel",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/opensuse-project",
+      "tags": [
+        "reactjs javascript",
+        "AIML",
+        "go",
+        "Security Cryptography",
+        "ruby",
+        "containers kubernetes",
+        "python",
+        "systems management",
+        "operating system developer tools",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kubevirt",
+      "tags": [
+        "containers",
+        "golang",
+        "grpc",
+        "kubernetes",
+        "virtualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/criu",
+      "tags": [
+        "go",
+        "python",
+        "containers",
+        "Checkpoint/Restore",
+        "cloud",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-science-labs",
+      "tags": [
+        "web",
+        "devops",
+        "devtools",
+        "docker",
+        "llvm",
+        "open-science",
+        "python",
+        "ai",
+        "c++",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-honeynet-project",
+      "tags": [
+        "go",
+        "docker",
+        "python",
+        "malware analysis",
+        "Threat Intelligence",
+        "honeypots",
+        "javascript",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cuneiform-digital-library-initiative-cdli",
+      "tags": [
+        "culture",
+        "assyriology",
+        "data",
+        "linguistics",
+        "mysql",
+        "docker",
+        "SCSS",
+        "History",
+        "javascript",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librecube-initiative",
+      "tags": [
+        "automation",
+        "space",
+        "docker",
+        "raspberry pi",
+        "python",
+        "robotics",
+        "micropython"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/pecan-project",
+      "tags": [
+        "api",
+        "data science",
+        "Ecological Forecasting",
+        "geospatial",
+        "docker",
+        "climate science",
+        "ecosystem models",
+        "scientific visualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jenkins-wp",
+      "tags": [
+        "automation",
+        "continuous delivery",
+        "continuous integration",
+        "developer tools",
+        "devops",
+        "docker",
+        "go",
+        "java",
+        "javascript",
+        "kubernetes"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/genome-assembly-and-annotation",
+      "tags": [
+        "hpc",
+        "genomics",
+        "big data",
+        "mysql",
+        "docker",
+        "pytorch",
+        "python",
+        "cloud",
+        "nextflow",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/konflux",
+      "tags": [
+        "CI/CD",
+        "SLSA",
+        "Tekton",
+        "cloud-native",
+        "docker",
+        "go",
+        "kubernetes",
+        "python",
+        "supplychain",
+        "tekton"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metacall",
+      "tags": [
+        "faas",
+        "docker",
+        "rust",
+        "python",
+        "c++",
+        "languages",
+        "nodejs",
+        "cloud",
+        "ffi",
+        "polyglot"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openstreetmap",
+      "tags": [
+        "web",
+        "glTF",
+        "ui",
+        "docker",
+        "routing",
+        "python",
+        "databases",
+        "c++",
+        "javascript",
+        "geodata"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-transit-software-foundation",
+      "tags": [
+        "ios",
+        "travel",
+        "java",
+        "docker",
+        "bus",
+        "android",
+        "golang",
+        "Transit",
+        "apps"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/data-for-the-common-good",
+      "tags": [
+        "web",
+        "health",
+        "infrastructure",
+        "data",
+        "terraform",
+        "reactjs",
+        "python",
+        "software",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metaflow",
+      "tags": [
+        "data science",
+        "ML Ops",
+        "python",
+        "Orchestrator",
+        "kubernetes",
+        "javascript",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jboss-community",
+      "tags": [
+        "artificial intelligence",
+        "java",
+        "golang",
+        "iot",
+        "react",
+        "kubernetes",
+        "cloud",
+        "microservices"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cncf",
+      "tags": [
+        "envoy",
+        "observability",
+        "OpenTelemetry",
+        "prometheus",
+        "kubernetes",
+        "cloud",
+        "cloud native"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/meshery",
+      "tags": [
+        "devops",
+        "cloud native infrastructure",
+        "visual design",
+        "infrastructure as design",
+        "Platform Engineering",
+        "ai",
+        "golang",
+        "collaboration",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kubeflow",
+      "tags": [
+        "typescript",
+        "generative AI",
+        "go",
+        "python",
+        "AI/ML",
+        "YAML",
+        "kubernetes",
+        "machine learning"
+      ]
+    }
+  ]
+}

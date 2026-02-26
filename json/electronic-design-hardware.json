@@ -1,0 +1,46 @@
+{
+  "tag": "Electronic Design & Hardware",
+  "slug": "electronic-design-hardware",
+  "source_tags": [
+    "ASIC design",
+    "Open EDA",
+    "Open-source Design",
+    "OpenROAD chip design",
+    "OpenRoad",
+    "electronic design tools"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 2,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-openroad-initiative",
+      "tags": [
+        "ASIC design",
+        "LLM chip design",
+        "Open EDA",
+        "Open-source Design",
+        "OpenROAD chip design",
+        "OpenRoad",
+        "c++",
+        "python",
+        "tcl",
+        "verilog"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/free-and-open-source-silicon-foundation",
+      "tags": [
+        "hardware",
+        "verilog",
+        "debug",
+        "risc-v",
+        "vhdl",
+        "electronic design tools",
+        "simulation",
+        "compiler"
+      ]
+    }
+  ]
+}

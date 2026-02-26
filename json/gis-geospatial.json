@@ -1,0 +1,111 @@
+{
+  "tag": "GIS & Geospatial",
+  "slug": "gis-geospatial",
+  "source_tags": [
+    "Geoinformation",
+    "Google Earth",
+    "geodata",
+    "geolocation",
+    "geospatial",
+    "gis",
+    "mapping",
+    "maps",
+    "ogc standards",
+    "spatial information infrastructures"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 6,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openstreetmap",
+      "tags": [
+        "web",
+        "glTF",
+        "ui",
+        "docker",
+        "routing",
+        "python",
+        "databases",
+        "c++",
+        "javascript",
+        "geodata"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/52north-spatial-information-research-gmbh",
+      "tags": [
+        "Geoinformation",
+        "android",
+        "citizen science",
+        "data analytics",
+        "java",
+        "javascript",
+        "ogc standards",
+        "open standards",
+        "spatial information infrastructures",
+        "web services"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/osgeo-open-source-geospatial-foundation",
+      "tags": [
+        "c++",
+        "citizen science",
+        "geolocation",
+        "gis",
+        "java",
+        "javascript",
+        "mapping",
+        "open science",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/pecan-project",
+      "tags": [
+        "api",
+        "data science",
+        "Ecological Forecasting",
+        "geospatial",
+        "docker",
+        "climate science",
+        "ecosystem models",
+        "scientific visualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/project-mesa",
+      "tags": [
+        "gis",
+        "LLMs",
+        "network topology",
+        "Generative Science",
+        "Agent Based Models",
+        "python",
+        "simulation",
+        "object oriented programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/liquid-galaxy-project",
+      "tags": [
+        "Google Earth",
+        "android",
+        "artificial intelligence",
+        "flutter",
+        "linux",
+        "maps",
+        "networking",
+        "nodejs",
+        "ux",
+        "visualization"
+      ]
+    }
+  ]
+}

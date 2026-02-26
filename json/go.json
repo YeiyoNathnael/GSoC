@@ -1,0 +1,262 @@
+{
+  "tag": "Go",
+  "slug": "go",
+  "source_tags": [
+    "C/Rust/Go",
+    "go",
+    "golang"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 17,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aboutcode",
+      "tags": [
+        "SoftwareCompositionAnalysis",
+        "SBOM",
+        "dependencies",
+        "C/Rust/Go",
+        "python",
+        "Django+PostgreSQL",
+        "vulnerabilities",
+        "javascript",
+        "License"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/postgresql",
+      "tags": [
+        "web",
+        "Benchmark",
+        "ui",
+        "database",
+        "go",
+        "sql",
+        "python",
+        "javascript",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/opensuse-project",
+      "tags": [
+        "reactjs javascript",
+        "AIML",
+        "go",
+        "Security Cryptography",
+        "ruby",
+        "containers kubernetes",
+        "python",
+        "systems management",
+        "operating system developer tools",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-honeynet-project",
+      "tags": [
+        "go",
+        "docker",
+        "python",
+        "malware analysis",
+        "Threat Intelligence",
+        "honeypots",
+        "javascript",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/criu",
+      "tags": [
+        "go",
+        "python",
+        "containers",
+        "Checkpoint/Restore",
+        "cloud",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossology",
+      "tags": [
+        "nlp",
+        "license compliance",
+        "automation",
+        "go",
+        "compliance automation",
+        "spdx",
+        "python",
+        "php",
+        "c/c++",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rizin",
+      "tags": [
+        "qt",
+        "go",
+        "disassembly",
+        "debugging",
+        "python",
+        "computer security",
+        "emulation",
+        "c++",
+        "reverse engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jenkins-wp",
+      "tags": [
+        "automation",
+        "continuous delivery",
+        "devops",
+        "java",
+        "docker",
+        "go",
+        "continuous integration",
+        "developer tools",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/c2si",
+      "tags": [
+        "tensorflow",
+        "java",
+        "go",
+        "python",
+        "ai",
+        "software",
+        "security",
+        "nodejs",
+        "cloud",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/konflux",
+      "tags": [
+        "CI/CD",
+        "docker",
+        "go",
+        "supplychain",
+        "python",
+        "SLSA",
+        "cloud-native",
+        "Tekton",
+        "tekton",
+        "kubernetes"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kubeflow",
+      "tags": [
+        "typescript",
+        "generative AI",
+        "go",
+        "python",
+        "AI/ML",
+        "YAML",
+        "kubernetes",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/internet-archive",
+      "tags": [
+        "hadoop",
+        "library",
+        "go",
+        "python",
+        "media",
+        "archiving",
+        "elasticsearch",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kubevirt",
+      "tags": [
+        "virtualization",
+        "containers",
+        "golang",
+        "grpc",
+        "kubernetes"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jboss-community",
+      "tags": [
+        "artificial intelligence",
+        "java",
+        "golang",
+        "iot",
+        "react",
+        "kubernetes",
+        "cloud",
+        "microservices"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/meshery",
+      "tags": [
+        "devops",
+        "cloud native infrastructure",
+        "visual design",
+        "infrastructure as design",
+        "Platform Engineering",
+        "ai",
+        "golang",
+        "collaboration",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/unikraft",
+      "tags": [
+        "kvm",
+        "software configurability",
+        "virtualization",
+        "software reuse",
+        "xen",
+        "golang",
+        "assembly language",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-transit-software-foundation",
+      "tags": [
+        "ios",
+        "travel",
+        "java",
+        "docker",
+        "bus",
+        "android",
+        "golang",
+        "Transit",
+        "apps"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+{
+  "tag": "Developer Tools & QA",
+  "slug": "developer-tools-qa",
+  "source_tags": [
+    "Packages",
+    "QA automation",
+    "SUnit",
+    "Standard Libraries",
+    "autopkgtest",
+    "buildfarms",
+    "code review tool",
+    "coding conventions",
+    "coding standards",
+    "command line",
+    "debug",
+    "debugging",
+    "developer tooling",
+    "developer tools",
+    "development framework",
+    "development tools",
+    "devtools",
+    "engineering",
+    "fuzz-testing",
+    "fuzzing",
+    "libraries",
+    "library",
+    "model checking",
+    "object oriented programming",
+    "packaging",
+    "performance",
+    "platform",
+    "program analysis",
+    "programming tools",
+    "software",
+    "software archeology",
+    "software configurability",
+    "software development",
+    "software preservation",
+    "software reuse",
+    "spec",
+    "standards",
+    "static code analysis‎",
+    "symbolic execution",
+    "systems management",
+    "test input generation",
+    "testing",
+    "tools",
+    "verification of concurrent systems"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 43,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/debian",
+      "tags": [
+        "java",
+        "CI/CD",
+        "raspberrypi_builds",
+        "rust",
+        "python",
+        "ai",
+        "mobian",
+        "c++",
+        "autopkgtest",
+        "perl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-robotics",
+      "tags": [
+        "Bevy",
+        "Hardware Control",
+        "gazebo",
+        "robotics",
+        "python",
+        "simulation",
+        "buildfarms",
+        "c++",
+        "fleet management",
+        "ros"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/checkstyle",
+      "tags": [
+        "antlr",
+        "artificial-intelligence",
+        "code review tool",
+        "coding conventions",
+        "coding standards",
+        "java",
+        "static code analysis‎"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-project-av",
+      "tags": [
+        "OS",
+        "command line",
+        "GNU",
+        "compilers",
+        "autotools",
+        "gcc",
+        "c++",
+        "toolchain",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/free-and-open-source-silicon-foundation",
+      "tags": [
+        "hardware",
+        "verilog",
+        "debug",
+        "risc-v",
+        "vhdl",
+        "electronic design tools",
+        "simulation",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rizin",
+      "tags": [
+        "qt",
+        "go",
+        "disassembly",
+        "debugging",
+        "python",
+        "computer security",
+        "emulation",
+        "c++",
+        "reverse engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/json-schema",
+      "tags": [
+        ".net",
+        "JSON Schema",
+        "apis",
+        "data validation",
+        "developer tooling",
+        "javascript",
+        "python",
+        "standards",
+        "typescript",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/st-jude-childrens-research-hospital-ai",
+      "tags": [
+        "WDL",
+        "genomics",
+        "rust",
+        "python",
+        "simd",
+        "programming languages",
+        "developer tools",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gemini-cli",
+      "tags": [
+        "typescript",
+        "MCP",
+        "GenAI",
+        "developer tools",
+        "Software Agent",
+        "A2A"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jenkins-wp",
+      "tags": [
+        "automation",
+        "continuous delivery",
+        "devops",
+        "java",
+        "docker",
+        "go",
+        "continuous integration",
+        "developer tools",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-compiler-collection-gcc",
+      "tags": [
+        "compilers",
+        "openmp",
+        "link time optimization",
+        "gnu autotools",
+        "developer tools",
+        "gnu make",
+        "toolchain",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/api-dash",
+      "tags": [
+        "typescript",
+        "api",
+        "MCP",
+        "flutter",
+        "python",
+        "ai",
+        "developer tools",
+        "react",
+        "Agents"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jderobot",
+      "tags": [
+        "opencv",
+        "tensorflow",
+        "artificial intelligence",
+        "gazebo",
+        "python",
+        "computer vision",
+        "developer tools",
+        "robotics",
+        "education",
+        "ros"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mofa-org",
+      "tags": [
+        "AI Agent",
+        "rust",
+        "python",
+        "Compostion AI",
+        "development framework"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mit-app-inventor",
+      "tags": [
+        "ios",
+        "java",
+        "gwt",
+        "android",
+        "development tools",
+        "education",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/llvm-compiler-infrastructure",
+      "tags": [
+        "c++",
+        "clang",
+        "compilers",
+        "development tools",
+        "libraries",
+        "llvm",
+        "mlir"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-science-labs",
+      "tags": [
+        "web",
+        "devops",
+        "devtools",
+        "docker",
+        "llvm",
+        "open-science",
+        "python",
+        "ai",
+        "c++",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/freecad",
+      "tags": [
+        "OpenInventor",
+        "cad",
+        "qt",
+        "3d",
+        "engineering",
+        "graphics",
+        "architecture",
+        "python",
+        "CAM",
+        "OpenCASCADE",
+        "BIM",
+        "c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gprmax",
+      "tags": [
+        "mpi",
+        "openmp",
+        "science",
+        "ground penetrating radar",
+        "python",
+        "geophysics",
+        "engineering",
+        "cuda",
+        "opencl",
+        "electromagnetics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-linux-foundation",
+      "tags": [
+        "fuzz-testing",
+        "automotive",
+        "cups",
+        "iio",
+        "kernel",
+        "zephyr",
+        "ai",
+        "linux",
+        "printing"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aflplusplus",
+      "tags": [
+        "ci",
+        "fuzzing",
+        "rust",
+        "qemu",
+        "llvm"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/apache-software-foundation",
+      "tags": [
+        "big data",
+        "other",
+        "java",
+        "libraries",
+        "c++",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation",
+      "tags": [
+        "Multiplatform",
+        "Parsers & Compilers",
+        "Programming & Build Tools",
+        "compilers",
+        "gradle",
+        "jvm",
+        "kotlin",
+        "libraries",
+        "programming languages",
+        "software development"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fortran-lang",
+      "tags": [
+        "compilers",
+        "fortran",
+        "programming languages",
+        "python",
+        "libraries",
+        "c++",
+        "build systems",
+        "Fortran"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jabref-ev",
+      "tags": [
+        "javafx",
+        "library",
+        "bibliography",
+        "java",
+        "science",
+        "ai",
+        "bibtex",
+        "latex",
+        "literature"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/stear-group",
+      "tags": [
+        "hpc",
+        "hpx",
+        "library",
+        "application",
+        "parallel algorithms",
+        "optimization",
+        "c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/internet-archive",
+      "tags": [
+        "hadoop",
+        "library",
+        "go",
+        "python",
+        "media",
+        "archiving",
+        "elasticsearch",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg",
+      "tags": [
+        "android",
+        "distributed systems",
+        "java",
+        "jvm",
+        "model checking",
+        "program analysis",
+        "symbolic execution",
+        "test input generation",
+        "verification of concurrent systems"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/project-mesa",
+      "tags": [
+        "gis",
+        "LLMs",
+        "network topology",
+        "Generative Science",
+        "Agent Based Models",
+        "python",
+        "simulation",
+        "object oriented programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/swift",
+      "tags": [
+        "Packages",
+        "Server development",
+        "Standard Libraries",
+        "c++",
+        "cmake",
+        "compilers",
+        "cross-platform",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-netbsd-foundation",
+      "tags": [
+        "packaging",
+        "unix",
+        "shell script",
+        "bsd",
+        "userland",
+        "kernel",
+        "make"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/boa",
+      "tags": [
+        "web",
+        "compilers",
+        "rust",
+        "performance",
+        "interpreters",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openmrs",
+      "tags": [
+        "Electronic Medical Record System",
+        "QA automation",
+        "fhir",
+        "frontend",
+        "java",
+        "javascript",
+        "mysql",
+        "platform",
+        "reactjs"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/haskellorg",
+      "tags": [
+        "programming tools",
+        "compilers",
+        "functional programming",
+        "programming languages",
+        "haskell",
+        "ghc"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/scummvm",
+      "tags": [
+        "assembly",
+        "c++",
+        "game engines",
+        "games",
+        "opengl",
+        "python",
+        "sdl",
+        "software archeology",
+        "software preservation"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/unikraft",
+      "tags": [
+        "assembly language",
+        "cloud",
+        "golang",
+        "kvm",
+        "software configurability",
+        "software reuse",
+        "virtualization",
+        "xen"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/data-for-the-common-good",
+      "tags": [
+        "web",
+        "health",
+        "infrastructure",
+        "data",
+        "terraform",
+        "reactjs",
+        "python",
+        "software",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/c2si",
+      "tags": [
+        "tensorflow",
+        "java",
+        "go",
+        "python",
+        "ai",
+        "software",
+        "security",
+        "nodejs",
+        "cloud",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/pharo-consortium",
+      "tags": [
+        "Live music",
+        "Modelling",
+        "SUnit",
+        "git",
+        "machine learning",
+        "pharo",
+        "programming languages",
+        "smalltalk",
+        "spec",
+        "virtual machines"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/global-alliance-for-genomics-and-health",
+      "tags": [
+        "genomics",
+        "genetics",
+        "standards",
+        "java",
+        "bioinformatics",
+        "rust",
+        "python",
+        "security",
+        "react",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/opensuse-project",
+      "tags": [
+        "reactjs javascript",
+        "AIML",
+        "go",
+        "Security Cryptography",
+        "ruby",
+        "containers kubernetes",
+        "python",
+        "systems management",
+        "operating system developer tools",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openafs",
+      "tags": [
+        "network",
+        "filesystems",
+        "git",
+        "storage",
+        "testing",
+        "tcp/udp",
+        "python",
+        "kernel",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/eclipse-foundation",
+      "tags": [
+        "cloud native java",
+        "automotive",
+        "iot & edge",
+        "java",
+        "softwaredefinedvehicles",
+        "rtos",
+        "eclipsejavaide",
+        "robotics",
+        "jakartaee",
+        "tools"
+      ]
+    }
+  ]
+}

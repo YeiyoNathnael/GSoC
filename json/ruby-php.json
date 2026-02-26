@@ -1,0 +1,175 @@
+{
+  "tag": "Ruby & PHP",
+  "slug": "ruby-php",
+  "source_tags": [
+    "php",
+    "rails",
+    "ruby",
+    "ruby on rails",
+    "rubygems",
+    "symfony"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 10,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/drupal-association",
+      "tags": [
+        "DXP",
+        "Inclusive",
+        "Massive community",
+        "cloud",
+        "html",
+        "javascript",
+        "mysql",
+        "php",
+        "symfony",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/omegaup",
+      "tags": [
+        "web",
+        "typescript",
+        "UX/UI",
+        "mysql",
+        "vue.js",
+        "edtech",
+        "python",
+        "education",
+        "cloud",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/wikimedia-foundation-nd",
+      "tags": [
+        "semantic web",
+        "i18n",
+        "wikimedia",
+        "wikipedia",
+        "Phyton",
+        "css",
+        "mediawiki",
+        "javascript",
+        "html",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cuneiform-digital-library-initiative-cdli",
+      "tags": [
+        "culture",
+        "assyriology",
+        "data",
+        "linguistics",
+        "mysql",
+        "docker",
+        "SCSS",
+        "History",
+        "javascript",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossology",
+      "tags": [
+        "nlp",
+        "license compliance",
+        "automation",
+        "go",
+        "compliance automation",
+        "spdx",
+        "python",
+        "php",
+        "c/c++",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/joomla",
+      "tags": [
+        "web",
+        "mysql",
+        "web development",
+        "programming languages",
+        "cms",
+        "ai",
+        "web applications",
+        "javascript",
+        "html",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/submitty",
+      "tags": [
+        "web",
+        "communication",
+        "privacy/security",
+        "visualization",
+        "python",
+        "c++",
+        "education",
+        "javascript",
+        "php",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/circuitverseorg",
+      "tags": [
+        "canvas",
+        "digital logic design",
+        "education",
+        "javascript",
+        "pedagogy",
+        "rails",
+        "ruby",
+        "simulation",
+        "vue",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ruby",
+      "tags": [
+        "application",
+        "cloud",
+        "java",
+        "ruby",
+        "ruby on rails",
+        "rubygems",
+        "security",
+        "server",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/opensuse-project",
+      "tags": [
+        "reactjs javascript",
+        "AIML",
+        "go",
+        "Security Cryptography",
+        "ruby",
+        "containers kubernetes",
+        "python",
+        "systems management",
+        "operating system developer tools",
+        "c/c++"
+      ]
+    }
+  ]
+}

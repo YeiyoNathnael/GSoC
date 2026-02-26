@@ -1,0 +1,168 @@
+{
+  "tag": "Accessibility & UX",
+  "slug": "accessibility-ux",
+  "source_tags": [
+    "Inclusive",
+    "UX/UI",
+    "Usability",
+    "accessibility",
+    "design",
+    "i18n",
+    "ui",
+    "user experience",
+    "ux"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 10,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/wagtail",
+      "tags": [
+        "web",
+        "accessibility",
+        "python",
+        "cms",
+        "javascript",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-image-manipulation-program",
+      "tags": [
+        "GEGL",
+        "graphics",
+        "design",
+        "photography",
+        "illustration"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/processing-foundation",
+      "tags": [
+        "web",
+        "typescript",
+        "creative coding",
+        "java",
+        "graphics",
+        "design",
+        "webgl",
+        "education",
+        "javascript",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/wikimedia-foundation-nd",
+      "tags": [
+        "semantic web",
+        "i18n",
+        "wikimedia",
+        "wikipedia",
+        "Phyton",
+        "css",
+        "mediawiki",
+        "javascript",
+        "html",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/drupal-association",
+      "tags": [
+        "web",
+        "mysql",
+        "DXP",
+        "Inclusive",
+        "Massive community",
+        "javascript",
+        "cloud",
+        "html",
+        "php",
+        "symfony"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/postgresql",
+      "tags": [
+        "web",
+        "Benchmark",
+        "ui",
+        "database",
+        "go",
+        "sql",
+        "python",
+        "javascript",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openstreetmap",
+      "tags": [
+        "web",
+        "glTF",
+        "ui",
+        "docker",
+        "routing",
+        "python",
+        "databases",
+        "c++",
+        "javascript",
+        "geodata"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/uramaki-lab",
+      "tags": [
+        "Eye Tracking",
+        "Firebase",
+        "Usability",
+        "artificial intelligence",
+        "css",
+        "html",
+        "javascript",
+        "python",
+        "user experience"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/omegaup",
+      "tags": [
+        "web",
+        "typescript",
+        "UX/UI",
+        "mysql",
+        "vue.js",
+        "edtech",
+        "python",
+        "education",
+        "cloud",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/liquid-galaxy-project",
+      "tags": [
+        "flutter",
+        "visualization",
+        "ux",
+        "Google Earth",
+        "android",
+        "networking",
+        "artificial intelligence",
+        "nodejs",
+        "linux",
+        "maps"
+      ]
+    }
+  ]
+}

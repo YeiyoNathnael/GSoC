@@ -1,0 +1,231 @@
+{
+  "tag": "Rust",
+  "slug": "rust",
+  "source_tags": [
+    "rust"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 16,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mofa-org",
+      "tags": [
+        "AI Agent",
+        "rust",
+        "python",
+        "Compostion AI",
+        "development framework"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/st-jude-childrens-research-hospital-ai",
+      "tags": [
+        "WDL",
+        "genomics",
+        "rust",
+        "python",
+        "simd",
+        "programming languages",
+        "developer tools",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-rust-foundation",
+      "tags": [
+        "compilers",
+        "rust",
+        "python",
+        "programming languages"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aflplusplus",
+      "tags": [
+        "ci",
+        "fuzzing",
+        "rust",
+        "qemu",
+        "llvm"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/dora-rs-tb",
+      "tags": [
+        "Autonomous Drive",
+        "Python Robotics",
+        "middleware",
+        "Embodied AI",
+        "rust",
+        "python",
+        "Robot Dataflow",
+        "c++",
+        "ros"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/global-alliance-for-genomics-and-health",
+      "tags": [
+        "genomics",
+        "genetics",
+        "standards",
+        "java",
+        "bioinformatics",
+        "rust",
+        "python",
+        "security",
+        "react",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ankidroid",
+      "tags": [
+        "user generated content",
+        "kotlin",
+        "Flashcards",
+        "android",
+        "rust",
+        "education",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/boa",
+      "tags": [
+        "web",
+        "compilers",
+        "rust",
+        "performance",
+        "interpreters",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qemu",
+      "tags": [
+        "compiler",
+        "hypervisor",
+        "rust",
+        "python",
+        "kernel",
+        "systems programming",
+        "emulator",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/graphite",
+      "tags": [
+        "webgpu",
+        "compilers",
+        "fonts",
+        "graphics",
+        "vulkan",
+        "rust",
+        "programming languages",
+        "computational geometry"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ccextractor-development",
+      "tags": [
+        "subtitles",
+        "flutter",
+        "video",
+        "rust",
+        "vr",
+        "mobile",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/debian",
+      "tags": [
+        "java",
+        "CI/CD",
+        "raspberrypi_builds",
+        "rust",
+        "python",
+        "ai",
+        "mobian",
+        "c++",
+        "autopkgtest",
+        "perl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/grame",
+      "tags": [
+        "typescript",
+        "compiler",
+        "digital signal processing",
+        "rust",
+        "function programming language",
+        "c++",
+        "javascript",
+        "audio"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metacall",
+      "tags": [
+        "faas",
+        "docker",
+        "rust",
+        "python",
+        "c++",
+        "languages",
+        "nodejs",
+        "cloud",
+        "ffi",
+        "polyglot"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kornia",
+      "tags": [
+        "deep learning",
+        "data science",
+        "3D Geometry",
+        "robotics",
+        "rust",
+        "computer vision",
+        "Spatial AI",
+        "cuda",
+        "artificial intelligence",
+        "machine learning"
+      ]
+    }
+  ]
+}

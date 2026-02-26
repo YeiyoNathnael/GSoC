@@ -1,0 +1,246 @@
+{
+  "tag": "Operating Systems & Virtualization",
+  "slug": "operating-systems-virtualization",
+  "source_tags": [
+    "OS",
+    "emulation",
+    "emulator",
+    "hypervisor",
+    "kvm",
+    "operating system",
+    "operating system developer tools",
+    "operating systems",
+    "qemu",
+    "rtos",
+    "virtualization",
+    "xen"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 16,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/flare",
+      "tags": [
+        "decompilation",
+        "reverse-engineering",
+        "malware-analysis",
+        "disassembly",
+        "Sandbox",
+        "python",
+        "emulation",
+        "ida-pro"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rizin",
+      "tags": [
+        "qt",
+        "go",
+        "disassembly",
+        "debugging",
+        "python",
+        "computer security",
+        "emulation",
+        "c++",
+        "reverse engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qemu",
+      "tags": [
+        "compiler",
+        "emulator",
+        "hypervisor",
+        "kernel",
+        "linux",
+        "python",
+        "rust",
+        "systems programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/unikraft",
+      "tags": [
+        "assembly language",
+        "cloud",
+        "golang",
+        "kvm",
+        "software configurability",
+        "software reuse",
+        "virtualization",
+        "xen"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/opensuse-project",
+      "tags": [
+        "reactjs javascript",
+        "AIML",
+        "go",
+        "Security Cryptography",
+        "ruby",
+        "containers kubernetes",
+        "python",
+        "systems management",
+        "operating system developer tools",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/erofs-filesystem",
+      "tags": [
+        "filesystems",
+        "agent sandbox",
+        "linux kernel",
+        "android",
+        "containers",
+        "gVisor",
+        "operating system",
+        "Containerd"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-freebsd-project",
+      "tags": [
+        "Embedded System",
+        "POSIX shell",
+        "assembly",
+        "llvm",
+        "make",
+        "operating system",
+        "virtualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-project-av",
+      "tags": [
+        "GNU",
+        "OS",
+        "autotools",
+        "c++",
+        "command line",
+        "compilers",
+        "gcc",
+        "operating system",
+        "toolchain"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kolibrios-project-team",
+      "tags": [
+        "OS",
+        "asm",
+        "assembly",
+        "drivers",
+        "fasm",
+        "kernel",
+        "low-level",
+        "operating system",
+        "pci"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/d-language-foundation",
+      "tags": [
+        "windows",
+        "C\\C++",
+        "data structures",
+        "optimizations",
+        "programming languages",
+        "operating systems",
+        "algorithms",
+        "make",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qubes-os-f3",
+      "tags": [
+        "OS",
+        "privacy",
+        "python",
+        "security",
+        "xen"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aflplusplus",
+      "tags": [
+        "ci",
+        "fuzzing",
+        "rust",
+        "qemu",
+        "llvm"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rtems-project",
+      "tags": [
+        "real-time",
+        "embedded",
+        "rtos",
+        "python",
+        "kernel",
+        "assembly",
+        "posix",
+        "multicore",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/eclipse-foundation",
+      "tags": [
+        "cloud native java",
+        "automotive",
+        "iot & edge",
+        "java",
+        "softwaredefinedvehicles",
+        "rtos",
+        "eclipsejavaide",
+        "robotics",
+        "jakartaee",
+        "tools"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kubevirt",
+      "tags": [
+        "virtualization",
+        "containers",
+        "golang",
+        "grpc",
+        "kubernetes"
+      ]
+    }
+  ]
+}

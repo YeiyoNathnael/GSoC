@@ -1,0 +1,132 @@
+{
+  "tag": "Games & Simulation",
+  "slug": "games-simulation",
+  "source_tags": [
+    "Bevy",
+    "Level Editor",
+    "creativity tools",
+    "game engines",
+    "game theory",
+    "games",
+    "sdl",
+    "vr"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 8,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-robotics",
+      "tags": [
+        "Bevy",
+        "Hardware Control",
+        "gazebo",
+        "robotics",
+        "python",
+        "simulation",
+        "buildfarms",
+        "c++",
+        "fleet management",
+        "ros"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/international-catrobat-association",
+      "tags": [
+        "creativity tools",
+        "education",
+        "flutter",
+        "game engines",
+        "javascript",
+        "kotlin",
+        "mobile programming",
+        "python",
+        "swift",
+        "visual programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/scummvm",
+      "tags": [
+        "assembly",
+        "c++",
+        "game engines",
+        "games",
+        "opengl",
+        "python",
+        "sdl",
+        "software archeology",
+        "software preservation"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gambit-the-package-for-computation-in-game-theory",
+      "tags": [
+        "game theory",
+        "visualization",
+        "python",
+        "wxwidgets",
+        "c++",
+        "algorithms",
+        "mathematical optimizaton"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/blender-foundation",
+      "tags": [
+        "3d",
+        "rendering",
+        "graphics",
+        "vulkan",
+        "python",
+        "animation",
+        "c++",
+        "games",
+        "opengl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sugar-labs",
+      "tags": [
+        "typescript",
+        "generative AI",
+        "desktop",
+        "LLM",
+        "javascipt",
+        "python",
+        "programming languages",
+        "gtk",
+        "education",
+        "games"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/tiled",
+      "tags": [
+        "Level Editor",
+        "c++",
+        "games",
+        "qt"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ccextractor-development",
+      "tags": [
+        "subtitles",
+        "flutter",
+        "video",
+        "rust",
+        "vr",
+        "mobile",
+        "linux"
+      ]
+    }
+  ]
+}

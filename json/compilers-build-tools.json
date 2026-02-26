@@ -1,0 +1,378 @@
+{
+  "tag": "Compilers & Build Tools",
+  "slug": "compilers-build-tools",
+  "source_tags": [
+    "GNU",
+    "Parsers & Compilers",
+    "Programming & Build Tools",
+    "WDL",
+    "antlr",
+    "autotools",
+    "build systems",
+    "clang",
+    "cmake",
+    "compiler",
+    "compilers",
+    "garbage-collection",
+    "gcc",
+    "gnu autotools",
+    "gnu make",
+    "link time optimization",
+    "llvm",
+    "make",
+    "mlir",
+    "nextflow",
+    "optimizations",
+    "toolchain"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 25,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/checkstyle",
+      "tags": [
+        "code review tool",
+        "coding conventions",
+        "java",
+        "static code analysis‎",
+        "coding standards",
+        "artificial-intelligence",
+        "antlr"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-project-av",
+      "tags": [
+        "GNU",
+        "OS",
+        "autotools",
+        "c++",
+        "command line",
+        "compilers",
+        "gcc",
+        "operating system",
+        "toolchain"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fortran-lang",
+      "tags": [
+        "Fortran",
+        "build systems",
+        "c++",
+        "compilers",
+        "fortran",
+        "libraries",
+        "programming languages",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/llvm-compiler-infrastructure",
+      "tags": [
+        "c++",
+        "clang",
+        "compilers",
+        "development tools",
+        "libraries",
+        "llvm",
+        "mlir"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/swift",
+      "tags": [
+        "Packages",
+        "Server development",
+        "Standard Libraries",
+        "c++",
+        "cmake",
+        "compilers",
+        "cross-platform",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/python-software-foundation",
+      "tags": [
+        "modeling",
+        "visualization",
+        "Backup",
+        "python",
+        "security",
+        "javascript",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-p4-language-consortium",
+      "tags": [
+        "AI/ML Networking",
+        "c++",
+        "compiler",
+        "ebpf",
+        "linux kernel",
+        "llvm",
+        "mlir",
+        "networking",
+        "networking security",
+        "programming language"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/free-and-open-source-silicon-foundation",
+      "tags": [
+        "hardware",
+        "verilog",
+        "debug",
+        "risc-v",
+        "vhdl",
+        "electronic design tools",
+        "simulation",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qemu",
+      "tags": [
+        "compiler",
+        "hypervisor",
+        "rust",
+        "python",
+        "kernel",
+        "systems programming",
+        "emulator",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/grame",
+      "tags": [
+        "typescript",
+        "compiler",
+        "digital signal processing",
+        "rust",
+        "function programming language",
+        "c++",
+        "javascript",
+        "audio"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/lablua",
+      "tags": [
+        "compilers",
+        "lunatik",
+        "lua",
+        "kernel",
+        "luarocks",
+        "kernel scripting",
+        "statically-typed languages",
+        "pallene",
+        "scripting languages"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-julia-language",
+      "tags": [
+        "artificial intelligence",
+        "compilers",
+        "data science",
+        "garbage-collection",
+        "graphs",
+        "julia",
+        "machine learning",
+        "math",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-rust-foundation",
+      "tags": [
+        "compilers",
+        "rust",
+        "python",
+        "programming languages"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/haskellorg",
+      "tags": [
+        "programming tools",
+        "compilers",
+        "functional programming",
+        "programming languages",
+        "haskell",
+        "ghc"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/boa",
+      "tags": [
+        "web",
+        "compilers",
+        "rust",
+        "performance",
+        "interpreters",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-compiler-collection-gcc",
+      "tags": [
+        "c/c++",
+        "compilers",
+        "developer tools",
+        "gnu autotools",
+        "gnu make",
+        "link time optimization",
+        "openmp",
+        "toolchain"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/graphite",
+      "tags": [
+        "webgpu",
+        "compilers",
+        "fonts",
+        "graphics",
+        "vulkan",
+        "rust",
+        "programming languages",
+        "computational geometry"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kotlin-foundation",
+      "tags": [
+        "Multiplatform",
+        "Parsers & Compilers",
+        "Programming & Build Tools",
+        "compilers",
+        "gradle",
+        "jvm",
+        "kotlin",
+        "libraries",
+        "programming languages",
+        "software development"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-freebsd-project",
+      "tags": [
+        "Embedded System",
+        "POSIX shell",
+        "assembly",
+        "llvm",
+        "make",
+        "operating system",
+        "virtualization"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aflplusplus",
+      "tags": [
+        "ci",
+        "fuzzing",
+        "rust",
+        "qemu",
+        "llvm"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-science-labs",
+      "tags": [
+        "web",
+        "devops",
+        "devtools",
+        "docker",
+        "llvm",
+        "open-science",
+        "python",
+        "ai",
+        "c++",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-netbsd-foundation",
+      "tags": [
+        "packaging",
+        "unix",
+        "shell script",
+        "bsd",
+        "userland",
+        "kernel",
+        "make"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/d-language-foundation",
+      "tags": [
+        "C\\C++",
+        "algorithms",
+        "data structures",
+        "linux",
+        "make",
+        "operating systems",
+        "optimizations",
+        "programming languages",
+        "windows"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/genome-assembly-and-annotation",
+      "tags": [
+        "hpc",
+        "genomics",
+        "big data",
+        "mysql",
+        "docker",
+        "pytorch",
+        "python",
+        "cloud",
+        "nextflow",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/st-jude-childrens-research-hospital-ai",
+      "tags": [
+        "WDL",
+        "genomics",
+        "rust",
+        "python",
+        "simd",
+        "programming languages",
+        "developer tools",
+        "cloud"
+      ]
+    }
+  ]
+}

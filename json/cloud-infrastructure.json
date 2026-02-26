@@ -1,0 +1,360 @@
+{
+  "tag": "Cloud & Infrastructure",
+  "slug": "cloud-infrastructure",
+  "source_tags": [
+    "Backup",
+    "Checkpoint/Restore",
+    "DXP",
+    "GCS",
+    "InfrastrucutreAsCode",
+    "OpenTelemetry",
+    "Platform Engineering",
+    "Software-Defined-Storage",
+    "archiving",
+    "cloud",
+    "cloud native",
+    "cloud native infrastructure",
+    "envoy",
+    "infrastructure",
+    "infrastructure as design",
+    "observability",
+    "prometheus",
+    "storage",
+    "terraform"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 23,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/internet-archive",
+      "tags": [
+        "hadoop",
+        "library",
+        "go",
+        "python",
+        "media",
+        "archiving",
+        "elasticsearch",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/python-software-foundation",
+      "tags": [
+        "modeling",
+        "visualization",
+        "Backup",
+        "python",
+        "security",
+        "javascript",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/criu",
+      "tags": [
+        "Checkpoint/Restore",
+        "cloud",
+        "containers",
+        "go",
+        "linux",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/meshery",
+      "tags": [
+        "Platform Engineering",
+        "ai",
+        "cloud native infrastructure",
+        "collaboration",
+        "devops",
+        "golang",
+        "infrastructure as design",
+        "javascript",
+        "kubernetes",
+        "visual design"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cncf",
+      "tags": [
+        "OpenTelemetry",
+        "cloud",
+        "cloud native",
+        "envoy",
+        "kubernetes",
+        "observability",
+        "prometheus"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/drupal-association",
+      "tags": [
+        "DXP",
+        "Inclusive",
+        "Massive community",
+        "cloud",
+        "html",
+        "javascript",
+        "mysql",
+        "php",
+        "symfony",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/omegaup",
+      "tags": [
+        "web",
+        "typescript",
+        "UX/UI",
+        "mysql",
+        "vue.js",
+        "edtech",
+        "python",
+        "education",
+        "cloud",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/st-jude-childrens-research-hospital-ai",
+      "tags": [
+        "WDL",
+        "genomics",
+        "rust",
+        "python",
+        "simd",
+        "programming languages",
+        "developer tools",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/apache-software-foundation",
+      "tags": [
+        "big data",
+        "other",
+        "java",
+        "libraries",
+        "c++",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jboss-community",
+      "tags": [
+        "artificial intelligence",
+        "java",
+        "golang",
+        "iot",
+        "react",
+        "kubernetes",
+        "cloud",
+        "microservices"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-mifos-initiative",
+      "tags": [
+        "cloud",
+        "java",
+        "android",
+        "mobile banking",
+        "financial inclusion",
+        "artificial intelligence",
+        "spring",
+        "kotlin",
+        "fintech",
+        "angular"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/c2si",
+      "tags": [
+        "tensorflow",
+        "java",
+        "go",
+        "python",
+        "ai",
+        "software",
+        "security",
+        "nodejs",
+        "cloud",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/genome-assembly-and-annotation",
+      "tags": [
+        "hpc",
+        "genomics",
+        "big data",
+        "mysql",
+        "docker",
+        "pytorch",
+        "python",
+        "cloud",
+        "nextflow",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/typelevel",
+      "tags": [
+        "web",
+        "node.js",
+        "functional programming",
+        "scala",
+        "AI/ML",
+        "cats",
+        "cloud",
+        "jvm",
+        "wasm",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ruby",
+      "tags": [
+        "web",
+        "application",
+        "java",
+        "ruby",
+        "server",
+        "ruby on rails",
+        "security",
+        "rubygems",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/malariagen",
+      "tags": [
+        "GCS",
+        "analytics",
+        "big data",
+        "cloud",
+        "genomics",
+        "machine learning",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metacall",
+      "tags": [
+        "faas",
+        "docker",
+        "rust",
+        "python",
+        "c++",
+        "languages",
+        "nodejs",
+        "cloud",
+        "ffi",
+        "polyglot"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/unikraft",
+      "tags": [
+        "kvm",
+        "software configurability",
+        "virtualization",
+        "software reuse",
+        "xen",
+        "golang",
+        "assembly language",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/owasp-foundation",
+      "tags": [
+        "web",
+        "DevSecOps",
+        "java",
+        "application security",
+        "Juice Shop",
+        "python",
+        "ZAP",
+        "cybersecurity",
+        "cloud",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/data-for-the-common-good",
+      "tags": [
+        "data",
+        "health",
+        "infrastructure",
+        "javascript",
+        "kubernetes",
+        "python",
+        "reactjs",
+        "software",
+        "terraform",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/nixos-foundation",
+      "tags": [
+        "git",
+        "nix",
+        "InfrastrucutreAsCode",
+        "declarative",
+        "reproducible"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ceph",
+      "tags": [
+        "Software-Defined-Storage",
+        "python",
+        "c++",
+        "javascript",
+        "distributed systems"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openafs",
+      "tags": [
+        "network",
+        "filesystems",
+        "git",
+        "storage",
+        "testing",
+        "tcp/udp",
+        "python",
+        "kernel",
+        "javascript"
+      ]
+    }
+  ]
+}

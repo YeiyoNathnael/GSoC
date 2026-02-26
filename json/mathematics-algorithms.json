@@ -1,0 +1,253 @@
+{
+  "tag": "Mathematics & Algorithms",
+  "slug": "mathematics-algorithms",
+  "source_tags": [
+    "algorithmics",
+    "algorithms",
+    "computation geometry",
+    "computational geometry",
+    "geometry",
+    "geometry processing",
+    "graph",
+    "graphs",
+    "math",
+    "mathematical optimizaton",
+    "mathematics",
+    "mesh processing",
+    "network biology",
+    "symbolic mathematics"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 16,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cern-hsf",
+      "tags": [
+        "algorithmics",
+        "big data",
+        "Performance Optimisation",
+        "machine learning",
+        "container orchestration",
+        "python",
+        "particle physics",
+        "artificial intelligence",
+        "c/c++",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openms-inc",
+      "tags": [
+        "deep learning",
+        "cython",
+        "mass spectrometry",
+        "pytorch",
+        "webdev",
+        "python",
+        "algorithms",
+        "c++",
+        "Streamlit",
+        "open science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/d-language-foundation",
+      "tags": [
+        "windows",
+        "C\\C++",
+        "data structures",
+        "optimizations",
+        "programming languages",
+        "operating systems",
+        "algorithms",
+        "make",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/machine-learning-for-science-ml4sci",
+      "tags": [
+        "physics",
+        "machine learning",
+        "python",
+        "algorithms",
+        "astronomy",
+        "c++",
+        "artificial intelligence",
+        "science and medicine",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gambit-the-package-for-computation-in-game-theory",
+      "tags": [
+        "algorithms",
+        "c++",
+        "game theory",
+        "mathematical optimizaton",
+        "python",
+        "visualization",
+        "wxwidgets"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cgal-project",
+      "tags": [
+        "c++",
+        "computation geometry",
+        "geometry",
+        "geometry processing",
+        "mesh processing",
+        "qt"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/graphite",
+      "tags": [
+        "webgpu",
+        "compilers",
+        "fonts",
+        "graphics",
+        "vulkan",
+        "rust",
+        "programming languages",
+        "computational geometry"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/geomscale",
+      "tags": [
+        "c++",
+        "computational biology",
+        "computational geometry",
+        "data science",
+        "github-actions",
+        "jupyter",
+        "mathematics",
+        "python",
+        "statistics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/brl-cad",
+      "tags": [
+        "deep neural net rendering",
+        "geometry",
+        "scripting",
+        "python",
+        "high-performance computing",
+        "2d/3d graphics",
+        "opencl",
+        "ray tracing",
+        "c/c++",
+        "opengl"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-genome-informatics",
+      "tags": [
+        "graph",
+        "biology",
+        "genomics",
+        "r-project",
+        "python",
+        "bioinformatics",
+        "data discovery",
+        "react",
+        "angular"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-julia-language",
+      "tags": [
+        "artificial intelligence",
+        "compilers",
+        "data science",
+        "garbage-collection",
+        "graphs",
+        "julia",
+        "machine learning",
+        "math",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sympy",
+      "tags": [
+        "jupyter",
+        "mathematics",
+        "numpy",
+        "physics",
+        "python",
+        "symbolic mathematics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sagemath",
+      "tags": [
+        "research",
+        "cython",
+        "python",
+        "mathematics",
+        "education"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/stdlib",
+      "tags": [
+        "web",
+        "statistics",
+        "typescript",
+        "node.js",
+        "scientific computing",
+        "mathematics",
+        "numerical computing",
+        "javascript",
+        "webassembly"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-octave",
+      "tags": [
+        "matlab",
+        "scientific computing",
+        "hg",
+        "mathematics",
+        "numerical methods",
+        "c++",
+        "numerical computation"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/national-resource-for-network-biology-nrnb",
+      "tags": [
+        "data science",
+        "network biology",
+        "scientific computing",
+        "LLM",
+        "python",
+        "web application",
+        "css",
+        "javascript",
+        "html",
+        "machine learning"
+      ]
+    }
+  ]
+}

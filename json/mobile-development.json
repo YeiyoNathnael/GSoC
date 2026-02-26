@@ -1,0 +1,328 @@
+{
+  "tag": "Mobile Development",
+  "slug": "mobile-development",
+  "source_tags": [
+    "android",
+    "app development",
+    "application",
+    "applications",
+    "apps",
+    "ios",
+    "mobile",
+    "mobile apps",
+    "mobile banking",
+    "mobile programming"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 21,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/erofs-filesystem",
+      "tags": [
+        "filesystems",
+        "agent sandbox",
+        "linux kernel",
+        "android",
+        "containers",
+        "gVisor",
+        "operating system",
+        "Containerd"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mit-app-inventor",
+      "tags": [
+        "android",
+        "development tools",
+        "education",
+        "gwt",
+        "ios",
+        "java",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossasia-bg",
+      "tags": [
+        "web",
+        "event solutions",
+        "firmware",
+        "android",
+        "python",
+        "javascript",
+        "hardware",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ankidroid",
+      "tags": [
+        "Flashcards",
+        "android",
+        "education",
+        "kotlin",
+        "mobile",
+        "rust",
+        "user generated content"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/liquid-galaxy-project",
+      "tags": [
+        "flutter",
+        "visualization",
+        "ux",
+        "Google Earth",
+        "android",
+        "networking",
+        "artificial intelligence",
+        "nodejs",
+        "linux",
+        "maps"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/52north-spatial-information-research-gmbh",
+      "tags": [
+        "open standards",
+        "Geoinformation",
+        "citizen science",
+        "spatial information infrastructures",
+        "java",
+        "ogc standards",
+        "web services",
+        "android",
+        "data analytics",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-mifos-initiative",
+      "tags": [
+        "android",
+        "angular",
+        "artificial intelligence",
+        "cloud",
+        "financial inclusion",
+        "fintech",
+        "java",
+        "kotlin",
+        "mobile banking",
+        "spring"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librehealth",
+      "tags": [
+        "android",
+        "dart/flutter",
+        "deep learning",
+        "hfoss",
+        "java",
+        "javascript",
+        "mobile apps",
+        "python",
+        "radiology",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-transit-software-foundation",
+      "tags": [
+        "Transit",
+        "android",
+        "apps",
+        "bus",
+        "docker",
+        "golang",
+        "ios",
+        "java",
+        "travel"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg",
+      "tags": [
+        "test input generation",
+        "verification of concurrent systems",
+        "java",
+        "android",
+        "program analysis",
+        "jvm",
+        "symbolic execution",
+        "model checking",
+        "distributed systems"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/neutralinojs",
+      "tags": [
+        "typescript",
+        "cross-platform",
+        "node.js",
+        "app development",
+        "framework",
+        "Desktop App Development",
+        "lightweight framework",
+        "c++",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ruby",
+      "tags": [
+        "web",
+        "application",
+        "java",
+        "ruby",
+        "server",
+        "ruby on rails",
+        "security",
+        "rubygems",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/stear-group",
+      "tags": [
+        "hpc",
+        "hpx",
+        "library",
+        "application",
+        "parallel algorithms",
+        "optimization",
+        "c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kde-community",
+      "tags": [
+        "qt",
+        "applications",
+        "science",
+        "data structures",
+        "qml",
+        "c++",
+        "education",
+        "desktop environment"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/dart",
+      "tags": [
+        "mobile apps",
+        "flutter",
+        "programming languages",
+        "dart"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/international-catrobat-association",
+      "tags": [
+        "visual programming",
+        "mobile programming",
+        "game engines",
+        "kotlin",
+        "flutter",
+        "creativity tools",
+        "python",
+        "education",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/c2si",
+      "tags": [
+        "tensorflow",
+        "java",
+        "go",
+        "python",
+        "ai",
+        "software",
+        "security",
+        "nodejs",
+        "cloud",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ccextractor-development",
+      "tags": [
+        "subtitles",
+        "flutter",
+        "video",
+        "rust",
+        "vr",
+        "mobile",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-food-facts",
+      "tags": [
+        "health",
+        "environment",
+        "flutter",
+        "open data",
+        "food",
+        "python",
+        "perl",
+        "javascript",
+        "mobile",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aossie",
+      "tags": [
+        "web",
+        "communication",
+        "flutter",
+        "Blockchain",
+        "Solidity",
+        "python",
+        "blockchain",
+        "artificial intelligence",
+        "javascript",
+        "mobile"
+      ]
+    }
+  ]
+}

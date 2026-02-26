@@ -1,0 +1,438 @@
+{
+  "tag": "Education & Humanities",
+  "slug": "education-humanities",
+  "source_tags": [
+    "Arts",
+    "Flashcards",
+    "History",
+    "Humanities",
+    "Massive community",
+    "archives",
+    "assyriology",
+    "bibliography",
+    "bibtex",
+    "books",
+    "cats",
+    "culture",
+    "dj",
+    "edtech",
+    "education",
+    "food",
+    "latex",
+    "learning",
+    "linguistics",
+    "literature",
+    "note-taking",
+    "pedagogy",
+    "teaching quality codebase"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 27,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-mailman",
+      "tags": [
+        "email",
+        "list management",
+        "python",
+        "rest",
+        "sqlalchemy",
+        "archives",
+        "zope",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/humanai",
+      "tags": [
+        "Arts",
+        "Humanities",
+        "ai",
+        "artificial intelligence",
+        "c++",
+        "data analysis",
+        "machine learning",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cuneiform-digital-library-initiative-cdli",
+      "tags": [
+        "History",
+        "SCSS",
+        "assyriology",
+        "culture",
+        "data",
+        "docker",
+        "javascript",
+        "linguistics",
+        "mysql",
+        "php"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jabref-ev",
+      "tags": [
+        "ai",
+        "bibliography",
+        "bibtex",
+        "java",
+        "javafx",
+        "latex",
+        "library",
+        "literature",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metabrainz-foundation-inc",
+      "tags": [
+        "music",
+        "books",
+        "music social network",
+        "open data",
+        "postgres",
+        "spark",
+        "python",
+        "perl",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/typelevel",
+      "tags": [
+        "web",
+        "node.js",
+        "functional programming",
+        "scala",
+        "AI/ML",
+        "cats",
+        "cloud",
+        "jvm",
+        "wasm",
+        "linux"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mixxx",
+      "tags": [
+        "qt",
+        "music",
+        "dj",
+        "pytorch",
+        "c++",
+        "streaming",
+        "onnx",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/omegaup",
+      "tags": [
+        "UX/UI",
+        "cloud",
+        "edtech",
+        "education",
+        "mysql",
+        "php",
+        "python",
+        "typescript",
+        "vue.js",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mit-app-inventor",
+      "tags": [
+        "ios",
+        "java",
+        "gwt",
+        "android",
+        "development tools",
+        "education",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sagemath",
+      "tags": [
+        "research",
+        "cython",
+        "python",
+        "mathematics",
+        "education"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/international-catrobat-association",
+      "tags": [
+        "visual programming",
+        "mobile programming",
+        "game engines",
+        "kotlin",
+        "flutter",
+        "creativity tools",
+        "python",
+        "education",
+        "javascript",
+        "swift"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/learning-unlimited",
+      "tags": [
+        "web",
+        "Outreach",
+        "python",
+        "full stack",
+        "css",
+        "education",
+        "javascript",
+        "html",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ankidroid",
+      "tags": [
+        "Flashcards",
+        "android",
+        "education",
+        "kotlin",
+        "mobile",
+        "rust",
+        "user generated content"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kde-community",
+      "tags": [
+        "qt",
+        "applications",
+        "science",
+        "data structures",
+        "qml",
+        "c++",
+        "education",
+        "desktop environment"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sugar-labs",
+      "tags": [
+        "typescript",
+        "generative AI",
+        "desktop",
+        "LLM",
+        "javascipt",
+        "python",
+        "programming languages",
+        "gtk",
+        "education",
+        "games"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/learning-equality",
+      "tags": [
+        "distributed databases",
+        "django",
+        "education",
+        "javascript",
+        "learning",
+        "offline",
+        "python",
+        "vue.js"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/circuitverseorg",
+      "tags": [
+        "canvas",
+        "digital logic design",
+        "education",
+        "javascript",
+        "pedagogy",
+        "rails",
+        "ruby",
+        "simulation",
+        "vue",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/submitty",
+      "tags": [
+        "web",
+        "communication",
+        "privacy/security",
+        "visualization",
+        "python",
+        "c++",
+        "education",
+        "javascript",
+        "php",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/uc-ospo",
+      "tags": [
+        "data science",
+        "pytorch",
+        "python",
+        "AI/ML",
+        "research software",
+        "bioinformatics",
+        "education",
+        "javascript",
+        "c/c++",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/oppia-foundation",
+      "tags": [
+        "web",
+        "typescript",
+        "Apache Beam",
+        "social impact",
+        "python",
+        "ai",
+        "education",
+        "google app engine",
+        "nonprofit",
+        "angular"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jderobot",
+      "tags": [
+        "opencv",
+        "tensorflow",
+        "artificial intelligence",
+        "gazebo",
+        "python",
+        "computer vision",
+        "developer tools",
+        "robotics",
+        "education",
+        "ros"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/processing-foundation",
+      "tags": [
+        "web",
+        "typescript",
+        "creative coding",
+        "java",
+        "graphics",
+        "design",
+        "webgl",
+        "education",
+        "javascript",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-food-facts",
+      "tags": [
+        "health",
+        "environment",
+        "flutter",
+        "open data",
+        "food",
+        "python",
+        "perl",
+        "javascript",
+        "mobile",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/moganlab",
+      "tags": [
+        "qt",
+        "AI for math",
+        "c++",
+        "editor",
+        "scheme",
+        "latex"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/drupal-association",
+      "tags": [
+        "web",
+        "mysql",
+        "DXP",
+        "Inclusive",
+        "Massive community",
+        "javascript",
+        "cloud",
+        "html",
+        "php",
+        "symfony"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/joplin",
+      "tags": [
+        "typescript",
+        "synchronisation",
+        "React-Native",
+        "search",
+        "AI/ML",
+        "electron",
+        "security",
+        "note-taking",
+        "react",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/zulip",
+      "tags": [
+        "integrations",
+        "typescript",
+        "teaching quality codebase",
+        "flutter",
+        "visual design",
+        "python",
+        "css",
+        "great developer tooling",
+        "team chat",
+        "django"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "tag": "Desktop Applications",
+  "slug": "desktop-applications",
+  "source_tags": [
+    "Desktop App Development",
+    "desktop",
+    "desktop application",
+    "desktop environment",
+    "editor",
+    "end user application",
+    "fonts",
+    "gtk",
+    "gtkmm",
+    "gui",
+    "office suite",
+    "qml",
+    "qt",
+    "text-editor",
+    "wxwidgets"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 18,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/neutralinojs",
+      "tags": [
+        "typescript",
+        "cross-platform",
+        "node.js",
+        "app development",
+        "framework",
+        "Desktop App Development",
+        "lightweight framework",
+        "c++",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/libreoffice",
+      "tags": [
+        "c++",
+        "desktop application",
+        "end user application",
+        "java",
+        "office suite",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kde-community",
+      "tags": [
+        "applications",
+        "c++",
+        "data structures",
+        "desktop environment",
+        "education",
+        "qml",
+        "qt",
+        "science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/haiku",
+      "tags": [
+        "c++",
+        "desktop",
+        "gui",
+        "kernel",
+        "media",
+        "network",
+        "posix",
+        "unix"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sugar-labs",
+      "tags": [
+        "LLM",
+        "desktop",
+        "education",
+        "games",
+        "generative AI",
+        "gtk",
+        "javascipt",
+        "programming languages",
+        "python",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "Flatpak",
+        "apps",
+        "desktop",
+        "graphics",
+        "gtk",
+        "linux",
+        "open source",
+        "operating systems",
+        "rust"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/neovim",
+      "tags": [
+        "Zig",
+        "ai",
+        "editor",
+        "lua",
+        "text-editor"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/moganlab",
+      "tags": [
+        "AI for math",
+        "c++",
+        "editor",
+        "latex",
+        "qt",
+        "scheme"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/graphite",
+      "tags": [
+        "webgpu",
+        "compilers",
+        "fonts",
+        "graphics",
+        "vulkan",
+        "rust",
+        "programming languages",
+        "computational geometry"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/synfig",
+      "tags": [
+        "2d/3d graphics",
+        "animation",
+        "c++",
+        "gtk",
+        "gtkmm",
+        "python",
+        "vector graphics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/videolan",
+      "tags": [
+        "qt",
+        "codecs",
+        "video",
+        "media database",
+        "assembly",
+        "c++",
+        "streaming",
+        "audio"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mixxx",
+      "tags": [
+        "qt",
+        "music",
+        "dj",
+        "pytorch",
+        "c++",
+        "streaming",
+        "onnx",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rizin",
+      "tags": [
+        "qt",
+        "go",
+        "disassembly",
+        "debugging",
+        "python",
+        "computer security",
+        "emulation",
+        "c++",
+        "reverse engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cgal-project",
+      "tags": [
+        "qt",
+        "geometry processing",
+        "mesh processing",
+        "geometry",
+        "computation geometry",
+        "c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/freecad",
+      "tags": [
+        "OpenInventor",
+        "cad",
+        "qt",
+        "3d",
+        "engineering",
+        "graphics",
+        "architecture",
+        "python",
+        "CAM",
+        "OpenCASCADE",
+        "BIM",
+        "c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-radio",
+      "tags": [
+        "qt",
+        "real-time",
+        "Software-Defined Radio",
+        "python",
+        "simd",
+        "dsp",
+        "cybersecurity",
+        "c++",
+        "communications engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/tiled",
+      "tags": [
+        "qt",
+        "Level Editor",
+        "c++",
+        "games"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gambit-the-package-for-computation-in-game-theory",
+      "tags": [
+        "game theory",
+        "visualization",
+        "python",
+        "wxwidgets",
+        "c++",
+        "algorithms",
+        "mathematical optimizaton"
+      ]
+    }
+  ]
+}

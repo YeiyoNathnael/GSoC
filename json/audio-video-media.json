@@ -1,0 +1,198 @@
+{
+  "tag": "Audio, Video & Media",
+  "slug": "audio-video-media",
+  "source_tags": [
+    "Live music",
+    "Software-Defined Radio",
+    "WebRTC",
+    "audio",
+    "browser",
+    "codecs",
+    "compression",
+    "digital signal processing",
+    "dsp",
+    "media",
+    "media database",
+    "multimedia",
+    "music",
+    "music social network",
+    "streaming",
+    "subtitles",
+    "video",
+    "video conferencing"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 12,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/videolan",
+      "tags": [
+        "assembly",
+        "audio",
+        "c++",
+        "codecs",
+        "media database",
+        "qt",
+        "streaming",
+        "video"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ffmpeg",
+      "tags": [
+        "asm",
+        "audio",
+        "git",
+        "multimedia",
+        "subtitles",
+        "video"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/grame",
+      "tags": [
+        "audio",
+        "c++",
+        "compiler",
+        "digital signal processing",
+        "function programming language",
+        "javascript",
+        "rust",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kiwix",
+      "tags": [
+        "browser",
+        "c++",
+        "compression",
+        "kotlin",
+        "nodejs",
+        "offline",
+        "python",
+        "vue.js"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-radio",
+      "tags": [
+        "Software-Defined Radio",
+        "c++",
+        "communications engineering",
+        "cybersecurity",
+        "dsp",
+        "python",
+        "qt",
+        "real-time",
+        "simd"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/pharo-consortium",
+      "tags": [
+        "Live music",
+        "git",
+        "spec",
+        "pharo",
+        "SUnit",
+        "programming languages",
+        "virtual machines",
+        "Modelling",
+        "smalltalk",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/haiku",
+      "tags": [
+        "network",
+        "unix",
+        "kernel",
+        "media",
+        "gui",
+        "posix",
+        "c++",
+        "desktop"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/internet-archive",
+      "tags": [
+        "hadoop",
+        "library",
+        "go",
+        "python",
+        "media",
+        "archiving",
+        "elasticsearch",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jitsi",
+      "tags": [
+        "WebRTC",
+        "java",
+        "javascript",
+        "kotlin",
+        "multimedia",
+        "react",
+        "video",
+        "video conferencing",
+        "webrtc"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metabrainz-foundation-inc",
+      "tags": [
+        "books",
+        "machine learning",
+        "music",
+        "music social network",
+        "open data",
+        "perl",
+        "postgres",
+        "python",
+        "spark"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mixxx",
+      "tags": [
+        "c++",
+        "dj",
+        "javascript",
+        "music",
+        "onnx",
+        "pytorch",
+        "qt",
+        "streaming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ccextractor-development",
+      "tags": [
+        "flutter",
+        "linux",
+        "mobile",
+        "rust",
+        "subtitles",
+        "video",
+        "vr"
+      ]
+    }
+  ]
+}

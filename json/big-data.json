@@ -1,0 +1,208 @@
+{
+  "tag": "Big Data",
+  "slug": "big-data",
+  "source_tags": [
+    "Apache Beam",
+    "NetCDF",
+    "Zarr",
+    "big data",
+    "distributed systems",
+    "hadoop",
+    "spark",
+    "xarray"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 13,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/oppia-foundation",
+      "tags": [
+        "web",
+        "typescript",
+        "Apache Beam",
+        "social impact",
+        "python",
+        "ai",
+        "education",
+        "google app engine",
+        "nonprofit",
+        "angular"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cbioportal-for-cancer-genomics",
+      "tags": [
+        "typescript",
+        "genomics",
+        "big data",
+        "precision medicine",
+        "java",
+        "mysql",
+        "cancer",
+        "bioinformatics",
+        "react",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/cern-hsf",
+      "tags": [
+        "algorithmics",
+        "big data",
+        "Performance Optimisation",
+        "machine learning",
+        "container orchestration",
+        "python",
+        "particle physics",
+        "artificial intelligence",
+        "c/c++",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/apache-software-foundation",
+      "tags": [
+        "big data",
+        "other",
+        "java",
+        "libraries",
+        "c++",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/tardis-rt-collaboration",
+      "tags": [
+        "big data",
+        "pandas",
+        "visualization",
+        "astrophysics",
+        "python",
+        "simulation",
+        "jupyter",
+        "numba",
+        "numpy"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/genome-assembly-and-annotation",
+      "tags": [
+        "hpc",
+        "genomics",
+        "big data",
+        "mysql",
+        "docker",
+        "pytorch",
+        "python",
+        "cloud",
+        "nextflow",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/malariagen",
+      "tags": [
+        "GCS",
+        "genomics",
+        "big data",
+        "python",
+        "cloud",
+        "analytics",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ceph",
+      "tags": [
+        "Software-Defined-Storage",
+        "python",
+        "c++",
+        "javascript",
+        "distributed systems"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-jpf-team-hg",
+      "tags": [
+        "test input generation",
+        "verification of concurrent systems",
+        "java",
+        "android",
+        "program analysis",
+        "jvm",
+        "symbolic execution",
+        "model checking",
+        "distributed systems"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/internet-archive",
+      "tags": [
+        "hadoop",
+        "library",
+        "go",
+        "python",
+        "media",
+        "archiving",
+        "elasticsearch",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ioos",
+      "tags": [
+        "Marine Biodiversity",
+        "NetCDF",
+        "Oceanography",
+        "Zarr",
+        "data management",
+        "java",
+        "open data",
+        "open science",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metabrainz-foundation-inc",
+      "tags": [
+        "music",
+        "books",
+        "music social network",
+        "open data",
+        "postgres",
+        "spark",
+        "python",
+        "perl",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mllam",
+      "tags": [
+        "Weather Forecasting",
+        "Zarr",
+        "ai",
+        "deep learning",
+        "earth science",
+        "machine learning",
+        "numpy",
+        "python",
+        "pytorch",
+        "xarray"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "tag": "Computer Vision & NLP",
+  "slug": "computer-vision-nlp",
+  "source_tags": [
+    "3D Reconstruction",
+    "Eye Tracking",
+    "Spatial AI",
+    "computer vision",
+    "image processing",
+    "natural language processing",
+    "nlp",
+    "opencv",
+    "search"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 8,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/invesalius",
+      "tags": [
+        "3D Reconstruction",
+        "dicom",
+        "cython",
+        "ehealth",
+        "Neuronavigation",
+        "medical imaging",
+        "python",
+        "3d printing",
+        "Vtk",
+        "numpy"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jderobot",
+      "tags": [
+        "artificial intelligence",
+        "computer vision",
+        "developer tools",
+        "education",
+        "gazebo",
+        "opencv",
+        "python",
+        "robotics",
+        "ros",
+        "tensorflow"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kornia",
+      "tags": [
+        "3D Geometry",
+        "Spatial AI",
+        "artificial intelligence",
+        "computer vision",
+        "cuda",
+        "data science",
+        "deep learning",
+        "machine learning",
+        "robotics",
+        "rust"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/uramaki-lab",
+      "tags": [
+        "Firebase",
+        "artificial intelligence",
+        "Eye Tracking",
+        "Usability",
+        "python",
+        "user experience",
+        "css",
+        "javascript",
+        "html"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openastronomy",
+      "tags": [
+        "solar physics",
+        "image processing",
+        "julia",
+        "python",
+        "astronomy",
+        "c++",
+        "high energy astrophysics",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/accord-project",
+      "tags": [
+        "artificial intelligence",
+        "legal technology",
+        "python",
+        "natural language processing",
+        "data modeling",
+        "json",
+        "react",
+        "document assembly",
+        "javascript",
+        "contract management"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossology",
+      "tags": [
+        "nlp",
+        "license compliance",
+        "automation",
+        "go",
+        "compliance automation",
+        "spdx",
+        "python",
+        "php",
+        "c/c++",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/joplin",
+      "tags": [
+        "typescript",
+        "synchronisation",
+        "React-Native",
+        "search",
+        "AI/ML",
+        "electron",
+        "security",
+        "note-taking",
+        "react",
+        "javascript"
+      ]
+    }
+  ]
+}

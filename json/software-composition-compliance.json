@@ -1,0 +1,82 @@
+{
+  "tag": "Software Composition & Compliance",
+  "slug": "software-composition-compliance",
+  "source_tags": [
+    "License",
+    "SBOM",
+    "SLSA",
+    "SoftwareCompositionAnalysis",
+    "compliance automation",
+    "component repository",
+    "dependencies",
+    "license compliance",
+    "spdx",
+    "supplychain"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 4,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sw360",
+      "tags": [
+        "SBOM",
+        "SpringBoot",
+        "compliance automation",
+        "component repository",
+        "couchdb",
+        "java",
+        "license compliance",
+        "react",
+        "vulnerabilities management"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossology",
+      "tags": [
+        "automation",
+        "c/c++",
+        "compliance automation",
+        "go",
+        "license compliance",
+        "nlp",
+        "php",
+        "postgresql",
+        "python",
+        "spdx"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aboutcode",
+      "tags": [
+        "C/Rust/Go",
+        "Django+PostgreSQL",
+        "License",
+        "SBOM",
+        "SoftwareCompositionAnalysis",
+        "dependencies",
+        "javascript",
+        "python",
+        "vulnerabilities"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/konflux",
+      "tags": [
+        "CI/CD",
+        "SLSA",
+        "Tekton",
+        "cloud-native",
+        "docker",
+        "go",
+        "kubernetes",
+        "python",
+        "supplychain",
+        "tekton"
+      ]
+    }
+  ]
+}

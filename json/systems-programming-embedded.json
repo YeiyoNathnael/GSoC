@@ -1,0 +1,171 @@
+{
+  "tag": "Systems Programming & Embedded",
+  "slug": "systems-programming-embedded",
+  "source_tags": [
+    "Embedded System",
+    "digital logic design",
+    "drivers",
+    "ebpf",
+    "embedded",
+    "firmware",
+    "hardware",
+    "low-level",
+    "multicore",
+    "open hardware",
+    "pci",
+    "real-time",
+    "systems programming"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 10,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/circuitverseorg",
+      "tags": [
+        "web",
+        "canvas",
+        "digital logic design",
+        "vue",
+        "pedagogy",
+        "ruby",
+        "simulation",
+        "rails",
+        "education",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kolibrios-project-team",
+      "tags": [
+        "OS",
+        "asm",
+        "assembly",
+        "drivers",
+        "fasm",
+        "kernel",
+        "low-level",
+        "operating system",
+        "pci"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-p4-language-consortium",
+      "tags": [
+        "ebpf",
+        "linux kernel",
+        "AI/ML Networking",
+        "programming language",
+        "llvm",
+        "networking",
+        "c++",
+        "networking security",
+        "mlir",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-freebsd-project",
+      "tags": [
+        "virtualization",
+        "llvm",
+        "POSIX shell",
+        "Embedded System",
+        "assembly",
+        "make",
+        "operating system"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rtems-project",
+      "tags": [
+        "assembly",
+        "c/c++",
+        "embedded",
+        "kernel",
+        "multicore",
+        "posix",
+        "python",
+        "real-time",
+        "rtos"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossasia-bg",
+      "tags": [
+        "android",
+        "django",
+        "event solutions",
+        "firmware",
+        "hardware",
+        "javascript",
+        "python",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/free-and-open-source-silicon-foundation",
+      "tags": [
+        "hardware",
+        "verilog",
+        "debug",
+        "risc-v",
+        "vhdl",
+        "electronic design tools",
+        "simulation",
+        "compiler"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-technologies-alliance-gfoss",
+      "tags": [
+        "web",
+        "c++",
+        "Artificial Inteligence",
+        "Machine Learning (ML)",
+        "python 3",
+        "robotics",
+        "open hardware",
+        "nodejs",
+        "javascript",
+        "c/c++"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-radio",
+      "tags": [
+        "qt",
+        "real-time",
+        "Software-Defined Radio",
+        "python",
+        "simd",
+        "dsp",
+        "cybersecurity",
+        "c++",
+        "communications engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/qemu",
+      "tags": [
+        "compiler",
+        "hypervisor",
+        "rust",
+        "python",
+        "kernel",
+        "systems programming",
+        "emulator",
+        "linux"
+      ]
+    }
+  ]
+}

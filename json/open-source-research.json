@@ -1,0 +1,349 @@
+{
+  "tag": "Open Source & Research",
+  "slug": "open-source-research",
+  "source_tags": [
+    "Digital Public Goods",
+    "Technology",
+    "citizen science",
+    "declarative",
+    "environment",
+    "hfoss",
+    "innovation",
+    "nonprofit",
+    "open data",
+    "open science",
+    "open source",
+    "open standards",
+    "other",
+    "reproducible",
+    "reproducible science",
+    "research",
+    "research software",
+    "science",
+    "science and medicine",
+    "social impact"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 22,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/52north-spatial-information-research-gmbh",
+      "tags": [
+        "Geoinformation",
+        "android",
+        "citizen science",
+        "data analytics",
+        "java",
+        "javascript",
+        "ogc standards",
+        "open standards",
+        "spatial information infrastructures",
+        "web services"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/osgeo-open-source-geospatial-foundation",
+      "tags": [
+        "c++",
+        "citizen science",
+        "geolocation",
+        "gis",
+        "java",
+        "javascript",
+        "mapping",
+        "open science",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/nixos-foundation",
+      "tags": [
+        "InfrastrucutreAsCode",
+        "declarative",
+        "git",
+        "nix",
+        "reproducible"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-healthcare-network",
+      "tags": [
+        "AI in Health",
+        "typescript",
+        "NextJs",
+        "Telemedicine and Remote Care",
+        "HMIS",
+        "python",
+        "electronic medical records",
+        "Digital Public Goods",
+        "react",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-food-facts",
+      "tags": [
+        "environment",
+        "flutter",
+        "food",
+        "health",
+        "javascript",
+        "machine learning",
+        "mobile",
+        "open data",
+        "perl",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/librehealth",
+      "tags": [
+        "web",
+        "radiology",
+        "deep learning",
+        "mobile apps",
+        "java",
+        "hfoss",
+        "android",
+        "python",
+        "dart/flutter",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/united-nations-office-of-information-communication-technology",
+      "tags": [
+        "Technology",
+        "css",
+        "innovation",
+        "javascript",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/oppia-foundation",
+      "tags": [
+        "Apache Beam",
+        "ai",
+        "angular",
+        "education",
+        "google app engine",
+        "nonprofit",
+        "python",
+        "social impact",
+        "typescript",
+        "web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/metabrainz-foundation-inc",
+      "tags": [
+        "music",
+        "books",
+        "music social network",
+        "open data",
+        "postgres",
+        "spark",
+        "python",
+        "perl",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ioos",
+      "tags": [
+        "Marine Biodiversity",
+        "NetCDF",
+        "Oceanography",
+        "Zarr",
+        "data management",
+        "java",
+        "open data",
+        "open science",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openms-inc",
+      "tags": [
+        "deep learning",
+        "cython",
+        "mass spectrometry",
+        "pytorch",
+        "webdev",
+        "python",
+        "algorithms",
+        "c++",
+        "Streamlit",
+        "open science"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnome-foundation",
+      "tags": [
+        "graphics",
+        "rust",
+        "apps",
+        "operating systems",
+        "gtk",
+        "Flatpak",
+        "desktop",
+        "linux",
+        "open source"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/apache-software-foundation",
+      "tags": [
+        "big data",
+        "other",
+        "java",
+        "libraries",
+        "c++",
+        "cloud"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/open-science-initiative-for-perfusion-imaging",
+      "tags": [
+        "reproducible science",
+        "data visualization",
+        "github",
+        "medical imaging",
+        "python",
+        "artificial intelligence",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/uc-ospo",
+      "tags": [
+        "data science",
+        "pytorch",
+        "python",
+        "AI/ML",
+        "research software",
+        "bioinformatics",
+        "education",
+        "javascript",
+        "c/c++",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sagemath",
+      "tags": [
+        "research",
+        "cython",
+        "python",
+        "mathematics",
+        "education"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/machine-learning-for-science-ml4sci",
+      "tags": [
+        "physics",
+        "machine learning",
+        "python",
+        "algorithms",
+        "astronomy",
+        "c++",
+        "artificial intelligence",
+        "science and medicine",
+        "data analysis"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-julia-language",
+      "tags": [
+        "garbage-collection",
+        "math",
+        "compilers",
+        "data science",
+        "julia",
+        "science",
+        "graphs",
+        "artificial intelligence",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/jabref-ev",
+      "tags": [
+        "javafx",
+        "library",
+        "bibliography",
+        "java",
+        "science",
+        "ai",
+        "bibtex",
+        "latex",
+        "literature"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kde-community",
+      "tags": [
+        "qt",
+        "applications",
+        "science",
+        "data structures",
+        "qml",
+        "c++",
+        "education",
+        "desktop environment"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gprmax",
+      "tags": [
+        "mpi",
+        "openmp",
+        "science",
+        "ground penetrating radar",
+        "python",
+        "geophysics",
+        "engineering",
+        "cuda",
+        "opencl",
+        "electromagnetics"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/mdanalysis",
+      "tags": [
+        "cython",
+        "science",
+        "python",
+        "high-performance-computing",
+        "machine-learning",
+        "computational-chemistry",
+        "molecular-simulation",
+        "c/c++"
+      ]
+    }
+  ]
+}

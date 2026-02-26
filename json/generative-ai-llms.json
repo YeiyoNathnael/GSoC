@@ -1,0 +1,185 @@
+{
+  "tag": "Generative AI & LLMs",
+  "slug": "generative-ai-llms",
+  "source_tags": [
+    "AI for math",
+    "GenAI",
+    "LLM",
+    "LLM chip design",
+    "LLMs",
+    "gen ai",
+    "generative AI",
+    "knowledge graph",
+    "largelanguagemodel",
+    "linked data",
+    "rdf",
+    "semantic web"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 11,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/moganlab",
+      "tags": [
+        "qt",
+        "AI for math",
+        "c++",
+        "editor",
+        "scheme",
+        "latex"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openvino-toolkit",
+      "tags": [
+        "inference",
+        "python",
+        "Agentic AI",
+        "arm",
+        "ai",
+        "Model Serving",
+        "c++",
+        "x86",
+        "gen ai"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gemini-cli",
+      "tags": [
+        "typescript",
+        "MCP",
+        "GenAI",
+        "developer tools",
+        "Software Agent",
+        "A2A"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/sugar-labs",
+      "tags": [
+        "LLM",
+        "desktop",
+        "education",
+        "games",
+        "generative AI",
+        "gtk",
+        "javascipt",
+        "programming languages",
+        "python",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kubeflow",
+      "tags": [
+        "typescript",
+        "generative AI",
+        "go",
+        "python",
+        "AI/ML",
+        "YAML",
+        "kubernetes",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/dbpedia",
+      "tags": [
+        "java",
+        "javascript",
+        "knowledge graph",
+        "largelanguagemodel",
+        "linked data",
+        "machine learning",
+        "python",
+        "rdf",
+        "scala",
+        "semantic web"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-openroad-initiative",
+      "tags": [
+        "verilog",
+        "OpenRoad",
+        "ASIC design",
+        "Open-source Design",
+        "python",
+        "Open EDA",
+        "LLM chip design",
+        "c++",
+        "tcl",
+        "OpenROAD chip design"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rocketchat",
+      "tags": [
+        "typescript",
+        "communications",
+        "node",
+        "messaging",
+        "group chat",
+        "Team Collaboration",
+        "LLM",
+        "Chat platform",
+        "generative ai",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/national-resource-for-network-biology-nrnb",
+      "tags": [
+        "data science",
+        "network biology",
+        "scientific computing",
+        "LLM",
+        "python",
+        "web application",
+        "css",
+        "javascript",
+        "html",
+        "machine learning"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/project-mesa",
+      "tags": [
+        "gis",
+        "LLMs",
+        "network topology",
+        "Generative Science",
+        "Agent Based Models",
+        "python",
+        "simulation",
+        "object oriented programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/wikimedia-foundation-nd",
+      "tags": [
+        "semantic web",
+        "i18n",
+        "wikimedia",
+        "wikipedia",
+        "Phyton",
+        "css",
+        "mediawiki",
+        "javascript",
+        "html",
+        "php"
+      ]
+    }
+  ]
+}

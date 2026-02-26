@@ -1,0 +1,207 @@
+{
+  "tag": "Networking",
+  "slug": "networking",
+  "source_tags": [
+    "AI/ML Networking",
+    "Internet measurements",
+    "Internet quality",
+    "RFCs",
+    "communications engineering",
+    "computer networking",
+    "ikev2",
+    "ipsec",
+    "libevent",
+    "network",
+    "network management system",
+    "network simulation",
+    "network topology",
+    "networking",
+    "nss",
+    "openwrt",
+    "routing",
+    "sdn",
+    "sftp",
+    "speed test",
+    "ssh",
+    "tcp/udp",
+    "vpn",
+    "wifi"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 12,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-p4-language-consortium",
+      "tags": [
+        "AI/ML Networking",
+        "c++",
+        "compiler",
+        "ebpf",
+        "linux kernel",
+        "llvm",
+        "mlir",
+        "networking",
+        "networking security",
+        "programming language"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-radio",
+      "tags": [
+        "qt",
+        "real-time",
+        "Software-Defined Radio",
+        "python",
+        "simd",
+        "dsp",
+        "cybersecurity",
+        "c++",
+        "communications engineering"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-ns-3-network-simulator-project",
+      "tags": [
+        "c++",
+        "computer networking",
+        "django",
+        "network simulation",
+        "python"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/the-libreswan-project",
+      "tags": [
+        "RFCs",
+        "ikev2",
+        "ipsec",
+        "kernel",
+        "libevent",
+        "nss",
+        "vpn"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/measurement-lab",
+      "tags": [
+        "Internet measurements",
+        "Internet quality",
+        "css",
+        "data analysis",
+        "html",
+        "javascript",
+        "python",
+        "speed test",
+        "sql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openwisp",
+      "tags": [
+        "django",
+        "javascript",
+        "lua",
+        "network management system",
+        "networking",
+        "openwrt",
+        "python",
+        "sdn",
+        "vpn",
+        "wifi"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/project-mesa",
+      "tags": [
+        "gis",
+        "LLMs",
+        "network topology",
+        "Generative Science",
+        "Agent Based Models",
+        "python",
+        "simulation",
+        "object oriented programming"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/haiku",
+      "tags": [
+        "network",
+        "unix",
+        "kernel",
+        "media",
+        "gui",
+        "posix",
+        "c++",
+        "desktop"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openafs",
+      "tags": [
+        "filesystems",
+        "git",
+        "javascript",
+        "kernel",
+        "network",
+        "python",
+        "storage",
+        "tcp/udp",
+        "testing"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/liquid-galaxy-project",
+      "tags": [
+        "flutter",
+        "visualization",
+        "ux",
+        "Google Earth",
+        "android",
+        "networking",
+        "artificial intelligence",
+        "nodejs",
+        "linux",
+        "maps"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/openstreetmap",
+      "tags": [
+        "web",
+        "glTF",
+        "ui",
+        "docker",
+        "routing",
+        "python",
+        "databases",
+        "c++",
+        "javascript",
+        "geodata"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/libssh",
+      "tags": [
+        "ci",
+        "cryptography",
+        "git",
+        "security",
+        "sftp",
+        "ssh"
+      ]
+    }
+  ]
+}

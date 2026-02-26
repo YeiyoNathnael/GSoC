@@ -1,0 +1,207 @@
+{
+  "tag": "Communications & Collaboration",
+  "slug": "communications-collaboration",
+  "source_tags": [
+    "Chat platform",
+    "Outreach",
+    "Team Collaboration",
+    "collaboration",
+    "communication",
+    "communications",
+    "email",
+    "event solutions",
+    "great developer tooling",
+    "group chat",
+    "integrations",
+    "list management",
+    "messaging",
+    "offline",
+    "synchronisation",
+    "team chat",
+    "user generated content"
+  ],
+  "total_orgs_checked": 185,
+  "tag_orgs_count": 12,
+  "organizations": [
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/rocketchat",
+      "tags": [
+        "Chat platform",
+        "LLM",
+        "Team Collaboration",
+        "communications",
+        "generative ai",
+        "group chat",
+        "javascript",
+        "messaging",
+        "node",
+        "typescript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/meshery",
+      "tags": [
+        "devops",
+        "cloud native infrastructure",
+        "visual design",
+        "infrastructure as design",
+        "Platform Engineering",
+        "ai",
+        "golang",
+        "collaboration",
+        "kubernetes",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/submitty",
+      "tags": [
+        "web",
+        "communication",
+        "privacy/security",
+        "visualization",
+        "python",
+        "c++",
+        "education",
+        "javascript",
+        "php",
+        "postgresql"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/aossie",
+      "tags": [
+        "web",
+        "communication",
+        "flutter",
+        "Blockchain",
+        "Solidity",
+        "python",
+        "blockchain",
+        "artificial intelligence",
+        "javascript",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/gnu-mailman",
+      "tags": [
+        "archives",
+        "django",
+        "email",
+        "list management",
+        "python",
+        "rest",
+        "sqlalchemy",
+        "zope"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/fossasia-bg",
+      "tags": [
+        "web",
+        "event solutions",
+        "firmware",
+        "android",
+        "python",
+        "javascript",
+        "hardware",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/zulip",
+      "tags": [
+        "css",
+        "django",
+        "flutter",
+        "great developer tooling",
+        "integrations",
+        "python",
+        "teaching quality codebase",
+        "team chat",
+        "typescript",
+        "visual design"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/learning-equality",
+      "tags": [
+        "offline",
+        "vue.js",
+        "python",
+        "distributed databases",
+        "education",
+        "javascript",
+        "learning",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/kiwix",
+      "tags": [
+        "offline",
+        "vue.js",
+        "python",
+        "c++",
+        "nodejs",
+        "kotlin",
+        "browser",
+        "compression"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/learning-unlimited",
+      "tags": [
+        "web",
+        "Outreach",
+        "python",
+        "full stack",
+        "css",
+        "education",
+        "javascript",
+        "html",
+        "django"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/joplin",
+      "tags": [
+        "typescript",
+        "synchronisation",
+        "React-Native",
+        "search",
+        "AI/ML",
+        "electron",
+        "security",
+        "note-taking",
+        "react",
+        "javascript"
+      ]
+    },
+    {
+      "name": "Program Organization",
+      "url": "https://summerofcode.withgoogle.com/programs/2026/organizations/ankidroid",
+      "tags": [
+        "user generated content",
+        "kotlin",
+        "Flashcards",
+        "android",
+        "rust",
+        "education",
+        "mobile"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading… × GSoC 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Overridden by JS */
+  --c1: #5B6CF6;
+  --c2: #8B5CF6;
+  --c-rgb: 91,108,246;
+  --c-bg: rgba(91,108,246,0.10);
+  --c-border: rgba(91,108,246,0.25);
+  --c-dim: rgba(91,108,246,0.06);
+  /* Neutrals */
+  --bg:      #07090E;
+  --bg2:     #0D1017;
+  --surface: #111520;
+  --surface2:#181D2C;
+  --bdr:     rgba(255,255,255,0.07);
+  --bdr2:    rgba(255,255,255,0.12);
+  --text:    #E4E8F2;
+  --text-m:  #5A6380;
+  --text-d:  #3A4060;
+  --white:   #ffffff;
+  --r-sm: 8px; --r-md: 14px; --r-lg: 20px; --r-xl: 28px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
+
+/* ── BACK NAV ──────────────────────────────────────────────────────────── */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(7,9,14,0.85); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--bdr);
+  padding: 12px 48px;
+  display: flex; align-items: center; gap: 16px;
+}
+.back-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600;
+  color: var(--c1); background: var(--c-bg);
+  border: 1px solid var(--c-border);
+  border-radius: 100px; padding: 6px 14px;
+  text-decoration: none; transition: all 0.15s;
+  font-family: 'DM Mono', monospace;
+}
+.back-btn:hover { background: var(--c1); color: white; }
+.topbar-tag {
+  font-size: 13px; font-weight: 600; color: var(--text-m);
+  display: flex; align-items: center; gap: 8px;
+}
+.topbar-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--c1); }
+.topbar-count {
+  font-family: 'DM Mono', monospace; font-size: 11px;
+  color: var(--c1); background: var(--c-bg);
+  border: 1px solid var(--c-border);
+  padding: 3px 10px; border-radius: 100px;
+}
+
+/* ── HERO ──────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative; overflow: hidden;
+  padding: 60px 48px 72px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--bdr);
+}
+.hero-bg-glow {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 60% 80% at 30% 50%, rgba(var(--c-rgb),0.10) 0%, transparent 65%);
+}
+.hero-bg-grid {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.04;
+  background-image: linear-gradient(rgba(var(--c-rgb),0.5) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(var(--c-rgb),0.5) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.hero-inner {
+  position: relative; z-index: 1;
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center;
+}
+.hero-left { display: flex; flex-direction: column; gap: 20px; }
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.tag-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--c-bg); border: 1px solid var(--c-border);
+  border-radius: 100px; padding: 5px 14px;
+  font-size: 11px; font-weight: 700; color: var(--c1);
+  font-family: 'DM Mono', monospace; letter-spacing: 1px; text-transform: uppercase;
+}
+.tag-pulse { width: 6px; height: 6px; border-radius: 50%; background: var(--c1); box-shadow: 0 0 8px var(--c1); animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.8)} }
+.gsoc-badge {
+  font-size: 11px; color: var(--text-m);
+  font-family: 'DM Mono', monospace; letter-spacing: 0.5px;
+}
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  line-height: 0.9; letter-spacing: 2px;
+  color: var(--white);
+}
+.hero-title .tag-color { color: var(--c1); }
+.hero-desc { font-size: 14px; color: var(--text-m); line-height: 1.7; max-width: 500px; }
+.hero-stats {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px;
+}
+.hstat {
+  background: var(--surface); border: 1px solid var(--bdr2);
+  border-radius: var(--r-md); padding: 14px 20px;
+  display: flex; flex-direction: column; gap: 3px; min-width: 100px;
+}
+.hstat-n {
+  font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; line-height: 1;
+  color: var(--c1);
+}
+.hstat-l {
+  font-size: 9px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; font-family: 'DM Mono', monospace;
+  color: var(--text-d);
+}
+/* ── ICON BOX ──────────────────────────────────────────────────────────── */
+.hero-icon-wrap { flex-shrink: 0; }
+.icon-box {
+  width: 160px; height: 160px; border-radius: 32px;
+  background: var(--c-bg); border: 2px solid var(--c-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 72px;
+  box-shadow: 0 20px 60px rgba(var(--c-rgb),0.2), 0 0 0 1px rgba(var(--c-rgb),0.1);
+  animation: iconFloat 4s ease-in-out infinite;
+}
+@keyframes iconFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+
+/* ── WAVE ──────────────────────────────────────────────────────────────── */
+.wave { width:100%; overflow:hidden; line-height:0; margin-bottom:-2px; background:var(--bg2); }
+.wave svg { display:block; width:100%; }
+
+/* ── MAIN ──────────────────────────────────────────────────────────────── */
+.main { background: #0A0C12; min-height: 60vh; }
+
+/* ── STATUS ────────────────────────────────────────────────────────────── */
+.status-wrap { max-width: 1200px; margin: 0 auto; padding: 16px 48px 0; }
+.status {
+  padding: 12px 16px; border-radius: var(--r-sm);
+  font-size: 12px; font-family: 'DM Mono', monospace; font-weight: 500;
+  display: flex; align-items: center; gap: 8px;
+}
+.status.loading { background: var(--surface); color: var(--text-m); border: 1px solid var(--bdr); }
+.status.error   { background: rgba(239,68,68,0.08); color: #FCA5A5; border: 1px solid rgba(239,68,68,0.2); }
+.status.ok      { background: rgba(34,197,94,0.08); color: #86EFAC; border: 1px solid rgba(34,197,94,0.2); }
+
+/* ── SOURCE TAGS STRIP ─────────────────────────────────────────────────── */
+.source-strip {
+  max-width: 1200px; margin: 0 auto;
+  padding: 20px 48px 0;
+}
+.source-strip h3 {
+  font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; font-family: 'DM Mono', monospace;
+  color: var(--text-d); margin-bottom: 10px;
+}
+.source-pills { display: flex; flex-wrap: wrap; gap: 5px; }
+.source-pill {
+  font-size: 10px; font-family: 'DM Mono', monospace;
+  color: var(--text-m); background: var(--surface);
+  border: 1px solid var(--bdr); border-radius: 5px;
+  padding: 3px 9px;
+}
+
+/* ── TOOLBAR ───────────────────────────────────────────────────────────── */
+.toolbar {
+  max-width: 1200px; margin: 0 auto;
+  padding: 20px 48px 12px;
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+}
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-icon {
+  position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+  color: var(--text-m); pointer-events: none;
+}
+.search-input {
+  width: 100%; background: var(--surface);
+  border: 1.5px solid var(--bdr2); border-radius: var(--r-sm);
+  padding: 10px 16px 10px 40px;
+  font-family: 'DM Sans', sans-serif; font-size: 13px;
+  color: var(--text); outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input::placeholder { color: var(--text-d); }
+.search-input:focus { border-color: var(--c1); box-shadow: 0 0 0 3px rgba(var(--c-rgb),0.10); }
+.filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  background: var(--surface); border: 1.5px solid var(--bdr2);
+  border-radius: 100px; padding: 6px 14px;
+  font-size: 11px; font-weight: 600; font-family: 'DM Sans', sans-serif;
+  color: var(--text-m); cursor: pointer;
+  transition: all 0.15s; white-space: nowrap;
+}
+.chip:hover { color: var(--text); background: var(--surface2); }
+.chip.active { background: var(--c1); border-color: var(--c1); color: white; }
+.result-count {
+  font-size: 11px; font-family: 'DM Mono', monospace;
+  color: var(--text-m); background: var(--surface);
+  border: 1px solid var(--bdr); padding: 6px 12px;
+  border-radius: 100px; white-space: nowrap; margin-left: auto;
+}
+.result-count b { color: var(--c1); }
+
+/* ── ORG GRID ──────────────────────────────────────────────────────────── */
+.grid {
+  max-width: 1200px; margin: 0 auto;
+  padding: 8px 48px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: var(--surface);
+  border: 1.5px solid var(--bdr);
+  border-radius: var(--r-lg);
+  padding: 20px 20px 16px;
+  transition: transform 0.2s cubic-bezier(.2,.8,.3,1), box-shadow 0.2s, border-color 0.2s;
+  animation: cardIn 0.35s ease both;
+  display: flex; flex-direction: column; gap: 10px;
+  position: relative; overflow: hidden;
+}
+.card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--c1), var(--c2));
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 36px rgba(0,0,0,0.4), 0 0 0 1px rgba(var(--c-rgb),0.12);
+  border-color: rgba(var(--c-rgb),0.25);
+  background: var(--surface2);
+}
+@keyframes cardIn { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+.card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.card-name {
+  font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.4;
+}
+.card-name a { color: inherit; text-decoration: none; }
+.card-name a:hover { color: var(--c1); }
+.tag-dot {
+  flex-shrink: 0; margin-top: 3px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--c1); box-shadow: 0 0 8px var(--c1);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+.card-ctx {
+  background: var(--c-dim); border-left: 2px solid var(--c1);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: 8px 12px;
+  font-size: 11px; font-family: 'DM Mono', monospace;
+  color: var(--text-m); line-height: 1.6; word-break: break-word;
+}
+.ctx-lbl {
+  display: block; font-size: 8px; text-transform: uppercase;
+  letter-spacing: 1.5px; color: var(--c1); margin-bottom: 3px; font-weight: 700;
+}
+.card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+.match-tag {
+  font-size: 9px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; font-family: 'DM Mono', monospace;
+  padding: 3px 8px; border-radius: 4px;
+}
+.mt-tag     { background: rgba(var(--c-rgb),0.12); color: var(--c1); }
+.mt-api     { background: rgba(245,158,11,0.12);   color: #FCD34D; }
+.mt-section { background: rgba(99,102,241,0.12);   color: #A5B4FC; }
+.mt-keyword { background: rgba(239,68,68,0.12);    color: #FCA5A5; }
+.visit-btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; font-weight: 600;
+  color: var(--c1); background: var(--c-bg);
+  border: 1px solid var(--c-border);
+  border-radius: 100px; padding: 5px 12px;
+  text-decoration: none; transition: all 0.15s;
+}
+.visit-btn:hover { background: var(--c1); color: white; border-color: var(--c1); }
+
+/* ── EMPTY ─────────────────────────────────────────────────────────────── */
+.empty { grid-column:1/-1; text-align:center; padding:80px 20px; display:none; }
+.empty.show { display:block; }
+.empty-icon { font-size: 3rem; margin-bottom: 16px; }
+.empty h3 { font-size: 16px; color: var(--text-m); margin-bottom: 8px; }
+.empty p  { font-size: 12px; color: var(--text-d); font-family: 'DM Mono', monospace; }
+
+/* ── FOOTER ────────────────────────────────────────────────────────────── */
+footer {
+  background: var(--bg2); border-top: 1px solid var(--bdr);
+  padding: 24px 48px; text-align: center;
+}
+footer p { font-size: 11px; color: var(--text-d); font-family: 'DM Mono', monospace; line-height: 2; }
+footer a { color: var(--text-m); text-decoration: none; }
+footer a:hover { color: var(--text); }
+
+@media (max-width: 768px) {
+  .hero { padding: 40px 24px 56px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-icon-wrap { display: none; }
+  .hero-title { font-size: 3.5rem; }
+  .toolbar, .grid, .source-strip, .status-wrap { padding-left: 24px; padding-right: 24px; }
+  .topbar { padding: 10px 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<nav class="topbar">
+  <a class="back-btn" href="../index.html">← All Tags</a>
+  <div class="topbar-tag">
+    <span class="topbar-dot"></span>
+    <span id="topbar-name">Loading…</span>
+  </div>
+  <div class="topbar-count" id="topbar-count"></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-bg-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <div class="tag-badge"><span class="tag-pulse"></span><span id="hero-tag-name">Loading</span></div>
+        <span class="gsoc-badge">Google Summer of Code 2026</span>
+      </div>
+      <h1 class="hero-title">
+        <span id="h1-line1">–</span><br>
+        <span class="tag-color" id="h1-line2">ORGS</span>
+      </h1>
+      <p class="hero-desc" id="hero-desc">Organizations participating in GSoC 2026 tagged with this technology.</p>
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-n" id="stat-orgs">–</span><span class="hstat-l">Organizations</span></div>
+        <div class="hstat"><span class="hstat-n" id="stat-src">–</span><span class="hstat-l">Source tags</span></div>
+      </div>
+    </div>
+    <div class="hero-icon-wrap">
+      <div class="icon-box" id="icon-box">✦</div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE -->
+<div class="wave">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#0A0C12"/>
+  </svg>
+</div>
+
+<div class="main">
+  <!-- STATUS -->
+  <div class="status-wrap">
+    <div class="status loading" id="status">⏳ Initializing…</div>
+  </div>
+
+  <!-- SOURCE TAGS -->
+  <div class="source-strip" id="source-strip" style="display:none">
+    <h3>Merged from</h3>
+    <div class="source-pills" id="source-pills"></div>
+  </div>
+
+  <!-- TOOLBAR -->
+  <div class="toolbar" id="toolbar" style="display:none">
+    <div class="search-wrap">
+      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input class="search-input" id="search" type="text" placeholder="Search organizations…" autocomplete="off">
+    </div>
+    <div class="filter-chips">
+      <button class="chip active" data-f="all">All</button>
+      <button class="chip" data-f="tag">Tag match</button>
+      <button class="chip" data-f="api">API</button>
+      <button class="chip" data-f="section">Section</button>
+      <button class="chip" data-f="keyword">Keyword</button>
+    </div>
+    <div class="result-count">showing <b id="showing">0</b></div>
+  </div>
+
+  <!-- ORG GRID -->
+  <div class="grid" id="grid">
+    <div class="empty" id="empty">
+      <div class="empty-icon">🔍</div>
+      <h3>No results</h3>
+      <p>Try adjusting your search or filter</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>
+    <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a>
+    &nbsp;·&nbsp;
+    <a href="../index.html">← Back to all tags</a>
+  </p>
+</footer>
+
+<script>
+// ── TAG METADATA (embedded) ───────────────────────────────────────────────
+const TAG_META = {
+  "python":{"tag":"Python","icon":"🐍","color":"#3B82F6","c2":"#60A5FA","src":["cython","micropython","numba","phyton","python","python 3"]},
+  "javascript":{"tag":"JavaScript","icon":"⚡","color":"#EAB308","c2":"#FDE047","src":["Node.js","electron","javascipt","javascript","node","nodejs","reactjs javascript","webpack"]},
+  "c-c":{"tag":"C/C++","icon":"⚙️","color":"#6366F1","c2":"#818CF8","src":["C\\C++","c language","c++","c/c++","cpp"]},
+  "web-backend-full-stack":{"tag":"Web Backend & Full Stack","icon":"🌐","color":"#10B981","c2":"#34D399","src":["Django+PostgreSQL","Firebase","JSON Schema","api","cms","django","full stack","graphql","grpc","microservices","rest","web","webdev"]},
+  "developer-tools-qa":{"tag":"Developer Tools & QA","icon":"🛠️","color":"#64748B","c2":"#94A3B8","src":["QA automation","SUnit","buildfarms","code review tool","debugging","devtools","fuzz-testing","libraries","packaging","performance","software","standards","testing","tools"]},
+  "java-jvm":{"tag":"Java & JVM","icon":"☕","color":"#F97316","c2":"#FB923C","src":[".net","Multiplatform","SpringBoot","cross-platform","eclipsejavaide","gradle","java","javafx","jvm","kotlin","scala","spring"]},
+  "web-frontend":{"tag":"Web Frontend","icon":"🎨","color":"#06B6D4","c2":"#22D3EE","src":["NextJs","React-Native","SCSS","angular","canvas","css","html","react","reactjs","vue","vue.js","wasm","webassembly","webgl","webgpu"]},
+  "scripting-other-languages":{"tag":"Scripting & Other Languages","icon":"📜","color":"#8B5CF6","c2":"#A78BFA","src":["ffi","functional programming","haskell","interpreters","julia","lua","matlab","ocaml","perl","polyglot","r-project","scheme","scripting","smalltalk","tcl","virtual machines"]},
+  "data-science-analytics":{"tag":"Data Science & Analytics","icon":"📊","color":"#0EA5E9","c2":"#38BDF8","src":["Causal Inference","Scipy","Streamlit","analytics","data analysis","data visualization","jupyter","napari","numpy","pandas","statistics","time-series","visualization"]},
+  "education-humanities":{"tag":"Education & Humanities","icon":"📚","color":"#F43F5E","c2":"#FB7185","src":["Arts","Flashcards","History","Humanities","archives","assyriology","bibtex","books","cats","culture","dj","education","edtech","food","latex","learning","linguistics","literature","pedagogy"]},
+  "artificial-intelligence":{"tag":"Artificial Intelligence","icon":"🤖","color":"#EC4899","c2":"#F472B6","src":["A2A","AI Agent","AI/ML","AIML","Agent Based Models","Agentic AI","Agents","Artificial Inteligence","Compostion AI","Embodied AI","Generative Science","Software Agent","ai","artificial-intelligence"]},
+  "compilers-build-tools":{"tag":"Compilers & Build Tools","icon":"🔨","color":"#F59E0B","c2":"#FCD34D","src":["GNU","Parsers & Compilers","WDL","antlr","autotools","build systems","clang","cmake","compiler","compilers","gcc","gnu make","llvm","make","mlir","nextflow","toolchain"]},
+  "scientific-computing-hpc":{"tag":"Scientific Computing & HPC","icon":"⚡","color":"#14B8A6","c2":"#2DD4BF","src":["Computational Science","cuda","gpu","hpc","hpx","mpi","numerical algorithms","numerical computing","opencl","openmp","parallel algorithms","scientific computing","simd","simulation"]},
+  "cloud-infrastructure":{"tag":"Cloud & Infrastructure","icon":"☁️","color":"#FF9900","c2":"#FFB84D","src":["Backup","Checkpoint/Restore","DXP","GCS","OpenTelemetry","Platform Engineering","Software-Defined-Storage","archiving","cloud","cloud native","envoy","infrastructure","observability","prometheus","storage","terraform"]},
+  "containers-kubernetes":{"tag":"Containers & Kubernetes","icon":"🐳","color":"#326CE5","c2":"#5C8FF5","src":["Containerd","Flatpak","container orchestration","containers","containers kubernetes","docker","kubernetes"]},
+  "databases":{"tag":"Databases","icon":"🗄️","color":"#336791","c2":"#5B90BC","src":["Database Engines","SQL Features","couchdb","data structures","database","databases","distributed databases","elasticsearch","mysql","postgres","postgresql","sql","sqlalchemy"]},
+  "linux-unix":{"tag":"Linux & Unix","icon":"🐧","color":"#FCC624","c2":"#FFD84D","src":["POSIX shell","bsd","cups","filesystems","iio","kernel","kernel scripting","linux","linux kernel","mobian","nix","posix","printing","shell","shell script","unix","userland","windows"]},
+  "open-source-research":{"tag":"Open Source & Research","icon":"🔓","color":"#22C55E","c2":"#4ADE80","src":["Digital Public Goods","Technology","citizen science","declarative","environment","hfoss","innovation","nonprofit","open data","open science","open source","open standards","reproducible","research","research software","science","social impact"]},
+  "bioinformatics-health":{"tag":"Bioinformatics & Health","icon":"🧬","color":"#2ECC71","c2":"#52E090","src":["AI in Health","Drug Discovery","Electronic Medical Record System","HMIS","Health Care","Neuronavigation","bioinformatics","biology","brain modelling","cancer","computational biology","dicom","ehealth","electronic medical records","fhir","genetics","genomics","health","mass spectrometry","medical imaging","neuroanatomy","neuroimage processing","neuroscience","precision medicine","radiology"]},
+  "mobile-development":{"tag":"Mobile Development","icon":"📱","color":"#3B82F6","c2":"#60A5FA","src":["android","app development","application","applications","apps","ios","mobile","mobile apps","mobile banking","mobile programming"]},
+  "devops-ci-cd":{"tag":"DevOps & CI/CD","icon":"🔄","color":"#EE4444","c2":"#F87171","src":["CI/CD","DevSecOps","GitHub Actions","automation","ci","continuous delivery","continuous integration","devops","dvcs","git","github","hg","tekton","version control"]},
+  "machine-learning":{"tag":"Machine Learning","icon":"🧠","color":"#A855F7","c2":"#C084FC","src":["Benchmark","HuggingFace","ML Ops","Model Serving","Orchestrator","deep learning","deep neural net rendering","inference","machine-learning","onnx","pytorch","scikit-learn","tensorflow"]},
+  "security":{"tag":"Security","icon":"🔒","color":"#EF4444","c2":"#F87171","src":["Juice Shop","Sandbox","Security Cryptography","Threat Intelligence","ZAP","agent sandbox","application security","computer security","cryptography","cybersecurity","decompilation","gVisor","honeypots","ida-pro","malware analysis","networking security","privacy","reverse engineering","security","vulnerabilities"]},
+  "desktop-applications":{"tag":"Desktop Applications","icon":"🖥️","color":"#0078D4","c2":"#4DA6FF","src":["Desktop App Development","desktop","desktop application","desktop environment","editor","end user application","fonts","gtk","gtkmm","gui","office suite","qml","qt","text-editor","wxwidgets"]},
+  "go":{"tag":"Go","icon":"🐹","color":"#00ACD7","c2":"#33C4E4","src":["C/Rust/Go","go","golang"]},
+  "typescript":{"tag":"TypeScript","icon":"📘","color":"#3178C6","c2":"#5599E0","src":["typescript","ts"]},
+  "graphics-3d":{"tag":"Graphics & 3D","icon":"🎮","color":"#FF6B9D","c2":"#FF8FB5","src":["2d/3d graphics","3D Geometry","3d","3d printing","BIM","CAM","GEGL","OpenCASCADE","OpenInventor","Vtk","animation","architecture","cad","glTF","graphics","illustration","opengl","photography","ray tracing","rendering","vector graphics","visual design","vulkan"]},
+  "mathematics-algorithms":{"tag":"Mathematics & Algorithms","icon":"∑","color":"#E74C3C","c2":"#F07060","src":["algorithmics","algorithms","computation geometry","computational geometry","geometry","geometry processing","graph","graphs","math","mathematical optimizaton","mathematics","mesh processing","network biology","symbolic mathematics"]},
+  "operating-systems-virtualization":{"tag":"Operating Systems & Virtualization","icon":"💻","color":"#1793D1","c2":"#40AFEC","src":["OS","emulation","emulator","hypervisor","kvm","operating system","operating system developer tools","operating systems","qemu","rtos","virtualization","xen"]},
+  "rust":{"tag":"Rust","icon":"🦀","color":"#CE422B","c2":"#E05C45","src":["rust"]},
+  "physical-earth-sciences":{"tag":"Physical & Earth Sciences","icon":"🔭","color":"#3B82F6","c2":"#60A5FA","src":["Adjoint Design Optimization","Computational Fluid Dynamics","Ecological Forecasting","Fluid Dynamics","Marine Biodiversity","Oceanography","Polar Science","Weather Forecasting","aerodynamics","astronomy","astrophysics","chemistry","climate science","computational-chemistry","earth science","ecosystem models","electromagnetics","geophysics","ground penetrating radar","high energy astrophysics","materials science","molecular-simulation","particle physics","physics","quantum chemistry","solar physics","space"]},
+  "systems-low-level-languages":{"tag":"Systems & Low-level Languages","icon":"🔧","color":"#94A3B8","c2":"#B0BDD0","src":["Fortran","Zig","arm","asm","assembly","assembly language","disassembly","fasm","risc-v","verilog","vhdl","x86"]},
+  "iot-robotics-autonomous-systems":{"tag":"IoT, Robotics & Autonomous Systems","icon":"🤖","color":"#00C49A","c2":"#33D4B0","src":["Autonomous Drive","Drone","Hardware Control","MCP","Python Robotics","Robot Dataflow","Transit","automotive","autonomous vehicle","bus","fleet management","gazebo","iot","iot & edge","pixhawk","raspberry pi","raspberrypi_builds","robotics","ros","softwaredefinedvehicles","travel","unmanned vehicle","zephyr"]},
+  "big-data":{"tag":"Big Data","icon":"🌊","color":"#E25A1C","c2":"#F07040","src":["Apache Beam","NetCDF","Zarr","big data","distributed systems","hadoop","spark","xarray"]},
+  "networking":{"tag":"Networking","icon":"🌐","color":"#00BFFF","c2":"#33CCFF","src":["AI/ML Networking","Internet measurements","Internet quality","RFCs","communications engineering","computer networking","ikev2","ipsec","libevent","network","network management system","network simulation","network topology","networking","nss","openwrt","routing","sdn","sftp","speed test","ssh","tcp/udp","vpn","wifi"]},
+  "audio-video-media":{"tag":"Audio, Video & Media","icon":"🎵","color":"#9B59B6","c2":"#B07BC9","src":["Live music","Software-Defined Radio","WebRTC","audio","browser","codecs","compression","digital signal processing","dsp","media","media database","multimedia","music","music social network","streaming","subtitles","video","video conferencing"]},
+  "communications-collaboration":{"tag":"Communications & Collaboration","icon":"💬","color":"#4CAF50","c2":"#6FC573","src":["Chat platform","Outreach","Team Collaboration","collaboration","communication","communications","email","event solutions","great developer tooling","group chat","integrations","list management","messaging","offline","synchronisation","team chat","user generated content"]},
+  "generative-ai-llms":{"tag":"Generative AI & LLMs","icon":"✨","color":"#C77DFF","c2":"#D9A0FF","src":["AI for math","GenAI","LLM","LLM chip design","LLMs","gen ai","generative AI","knowledge graph","largelanguagemodel","linked data","rdf","semantic web"]},
+  "mobile-languages":{"tag":"Mobile Languages","icon":"📲","color":"#0075C2","c2":"#3399E0","src":["dart","dart/flutter","flutter","swift"]},
+  "accessibility-ux":{"tag":"Accessibility & UX","icon":"♿","color":"#FF69B4","c2":"#FF8FCE","src":["Inclusive","UX/UI","Usability","accessibility","design","i18n","ui","user experience","ux"]},
+  "systems-programming-embedded":{"tag":"Systems Programming & Embedded","icon":"🔌","color":"#A8DADC","c2":"#C0E8EA","src":["Embedded System","digital logic design","drivers","ebpf","embedded","firmware","hardware","low-level","multicore","open hardware","pci","real-time","systems programming"]},
+  "ruby-php":{"tag":"Ruby & PHP","icon":"💎","color":"#CC342D","c2":"#E05550","src":["php","rails","ruby","ruby on rails","rubygems","symfony"]},
+  "computer-vision-nlp":{"tag":"Computer Vision & NLP","icon":"👁️","color":"#4ECDC4","c2":"#72DAD3","src":["3D Reconstruction","Eye Tracking","Spatial AI","computer vision","image processing","natural language processing","nlp","opencv","search"]},
+  "games-simulation":{"tag":"Games & Simulation","icon":"🎮","color":"#27AE60","c2":"#52C882","src":["Bevy","Level Editor","creativity tools","game engines","game theory","games","sdl","vr"]},
+  "gis-geospatial":{"tag":"GIS & Geospatial","icon":"🗺️","color":"#27AE60","c2":"#52C882","src":["Geoinformation","Google Earth","geodata","geolocation","geospatial","gis","mapping","maps","ogc standards","spatial information infrastructures"]},
+  "software-composition-compliance":{"tag":"Software Composition & Compliance","icon":"📋","color":"#607D8B","c2":"#8BA0AD","src":["License","SBOM","SLSA","SoftwareCompositionAnalysis","compliance automation","component repository","dependencies","license compliance","spdx","supplychain"]},
+  "fintech-blockchain":{"tag":"Fintech & Blockchain","icon":"💰","color":"#F0B90B","c2":"#F5CF4F","src":["Solidity","blockchain","contract management","document assembly","financial inclusion","fintech","legal technology"]},
+  "electronic-design-hardware":{"tag":"Electronic Design & Hardware","icon":"🔋","color":"#95A5A6","c2":"#B0BCBD","src":["ASIC design","Open EDA","Open-source Design","OpenROAD chip design","OpenRoad","electronic design tools"]}
+};
+
+// ── INIT ──────────────────────────────────────────────────────────────────
+const params = new URLSearchParams(location.search);
+const slug   = params.get('slug') || '';
+const meta   = TAG_META[slug];
+
+if (!meta) {
+  document.getElementById('status').className = 'status error';
+  document.getElementById('status').textContent = `⚠️ Unknown tag slug: "${slug}". Check the URL.`;
+} else {
+  applyTheme(meta);
+  renderHero(meta);
+  loadOrgs(meta, slug);
+}
+
+// ── THEME ──────────────────────────────────────────────────────────────────
+function applyTheme(m) {
+  const rgb = hexToRgb(m.color);
+  const root = document.documentElement;
+  root.style.setProperty('--c1',      m.color);
+  root.style.setProperty('--c2',      m.c2);
+  root.style.setProperty('--c-rgb',   rgb);
+  root.style.setProperty('--c-bg',    `rgba(${rgb},0.10)`);
+  root.style.setProperty('--c-border',`rgba(${rgb},0.25)`);
+  root.style.setProperty('--c-dim',   `rgba(${rgb},0.06)`);
+  document.title = `${m.tag} × GSoC 2026`;
+}
+
+// ── HERO ──────────────────────────────────────────────────────────────────
+function renderHero(m) {
+  document.getElementById('topbar-name').textContent = m.tag;
+  document.getElementById('topbar-count').textContent = ``;
+  document.getElementById('hero-tag-name').textContent = m.tag;
+  document.getElementById('icon-box').textContent = m.icon;
+
+  // Split tag name for big title
+  const words = m.tag.split(' ');
+  const mid   = Math.ceil(words.length / 2);
+  document.getElementById('h1-line1').textContent = words.slice(0, mid).join(' ');
+  document.getElementById('h1-line2').textContent = words.slice(mid).join(' ') || 'ORGS';
+
+  document.getElementById('hero-desc').textContent =
+    `${m.tag} organizations participating in GSoC 2026. Browse, search, and filter by match type.`;
+
+  document.getElementById('stat-src').textContent = m.src.length;
+
+  // Source tags strip
+  const strip = document.getElementById('source-strip');
+  const pills = document.getElementById('source-pills');
+  m.src.forEach(s => {
+    const p = document.createElement('span');
+    p.className = 'source-pill'; p.textContent = s;
+    pills.appendChild(p);
+  });
+  strip.style.display = '';
+}
+
+// ── LOAD ORGS ──────────────────────────────────────────────────────────────
+let allOrgs = [];
+let activeFilter = 'all';
+
+function loadOrgs(m, slug) {
+  const statusEl = document.getElementById('status');
+  statusEl.textContent = `⏳ Loading ../json/${slug}.json…`;
+
+  fetch(`../json/${slug}.json`)
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(data => {
+      statusEl.className = 'status ok';
+      statusEl.textContent = `✅ Loaded ${slug}.json`;
+      setTimeout(() => statusEl.parentElement.style.display = 'none', 2500);
+
+      allOrgs = data.organizations || data.orgs || data.data || [];
+      document.getElementById('stat-orgs').textContent = allOrgs.length;
+      document.getElementById('topbar-count').textContent = `${allOrgs.length} orgs`;
+
+      document.getElementById('toolbar').style.display = 'flex';
+      render();
+    })
+    .catch(err => {
+      statusEl.className = 'status error';
+      statusEl.textContent = `⚠️ Could not load ../json/${slug}.json — ${err.message}`;
+    });
+}
+
+// ── RENDER ─────────────────────────────────────────────────────────────────
+function render() {
+  const q    = document.getElementById('search').value.toLowerCase().trim();
+  const grid = document.getElementById('grid');
+  const empty = document.getElementById('empty');
+
+  const filtered = allOrgs.filter(org => {
+    const name = (org.name || '').toLowerCase();
+    const ctx  = (org.tech_context || JSON.stringify(org.matched_fields || '') || '').toLowerCase();
+    if (q && !name.includes(q) && !ctx.includes(q)) return false;
+    if (activeFilter === 'all') return true;
+    const mt = (org.match_type || '').toLowerCase();
+    if (activeFilter === 'tag')     return mt.includes('tag');
+    if (activeFilter === 'api')     return mt.includes('api');
+    if (activeFilter === 'section') return mt.includes('section');
+    if (activeFilter === 'keyword') return mt.includes('keyword') || mt.includes('golang') || mt.includes('language');
+    return true;
+  });
+
+  document.getElementById('showing').textContent = filtered.length;
+  [...grid.querySelectorAll('.card')].forEach(c => c.remove());
+
+  if (filtered.length === 0) { empty.classList.add('show'); return; }
+  empty.classList.remove('show');
+
+  filtered.forEach((org, i) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.animationDelay = `${Math.min(i * 30, 500)}ms`;
+
+    const name    = esc(org.name || 'Unknown');
+    const url     = org.url || '#';
+    const ctx     = esc(org.tech_context || JSON.stringify(org.matched_fields || '') || '');
+    const mt      = (org.match_type || '').toLowerCase();
+    const chipCls = mt.includes('tag') ? 'mt-tag' : mt.includes('api') ? 'mt-api' : mt.includes('sec') ? 'mt-section' : 'mt-keyword';
+    const chipLbl = (org.match_type || 'match').replace(/_/g,' ');
+
+    card.innerHTML = `
+      <div class="card-head">
+        <div class="card-name"><a href="${url}" target="_blank" rel="noopener">${name}</a></div>
+        <span class="tag-dot"></span>
+      </div>
+      ${ctx ? `<div class="card-ctx"><span class="ctx-lbl">tech context</span>${ctx.slice(0,220)}${ctx.length>220?'…':''}</div>` : ''}
+      <div class="card-foot">
+        <span class="match-tag ${chipCls}">${chipLbl}</span>
+        <a class="visit-btn" href="${url}" target="_blank" rel="noopener">
+          View org
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>`;
+    grid.appendChild(card);
+  });
+}
+
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function hexToRgb(hex) {
+  const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return r ? `${parseInt(r[1],16)},${parseInt(r[2],16)},${parseInt(r[3],16)}` : '91,108,246';
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.querySelectorAll('.chip').forEach(c => {
+  c.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(x => x.classList.remove('active'));
+    c.classList.add('active');
+    activeFilter = c.dataset.f;
+    render();
+  });
+});
+</script>
+</body>
+</html>
