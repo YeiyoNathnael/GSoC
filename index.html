@@ -1,247 +1,525 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <title>GSoC 2026 · Technology Tags</title> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"> -->
+<!-- <style> -->
+<!-- :root { -->
+<!--   --blue:   #1A73E8; -->
+<!--   --blue2:  #1557B0; -->
+<!--   --blue-lt:#E8F0FE; -->
+<!--   --blue-m: #4285F4; -->
+<!--   --red:    #EA4335; -->
+<!--   --yellow: #FBBC04; -->
+<!--   --green:  #34A853; -->
+<!--   --bg:     #F8F9FA; -->
+<!--   --white:  #FFFFFF; -->
+<!--   --card-shadow: 0 1px 3px rgba(60,64,67,.15), 0 2px 8px rgba(60,64,67,.10); -->
+<!--   --card-hover:  0 4px 12px rgba(60,64,67,.20), 0 8px 24px rgba(60,64,67,.12); -->
+<!--   --text:   #202124; -->
+<!--   --text2:  #3C4043; -->
+<!--   --text3:  #5F6368; -->
+<!--   --text4:  #80868B; -->
+<!--   --border: #DADCE0; -->
+<!--   --r: 12px; -->
+<!-- } -->
+<!-- *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} -->
+<!-- html{scroll-behavior:smooth} -->
+<!-- body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-height:100vh} -->
+<!---->
+<!-- /* ── TOP BAR ── */ -->
+<!-- .topbar{ -->
+<!--   background:var(--white); -->
+<!--   border-bottom:1px solid var(--border); -->
+<!--   padding:0 32px; -->
+<!--   display:flex;align-items:center;gap:16px;height:64px; -->
+<!--   position:sticky;top:0;z-index:100; -->
+<!-- } -->
+<!-- .topbar-logo{ -->
+<!--   display:flex;align-items:center;gap:10px; -->
+<!--   font-size:20px;font-weight:500;color:var(--text); -->
+<!--   text-decoration:none; -->
+<!-- } -->
+<!-- .google-g{ -->
+<!--   display:inline-flex;align-items:center;justify-content:center; -->
+<!--   width:32px;height:32px;border-radius:50%; -->
+<!--   background:linear-gradient(135deg,#4285F4 25%,#34A853 25%,#34A853 50%,#FBBC04 50%,#FBBC04 75%,#EA4335 75%); -->
+<!--   font-size:0; -->
+<!-- } -->
+<!-- .topbar-sep{color:var(--border);font-weight:300;font-size:22px} -->
+<!-- .topbar-title{font-size:18px;font-weight:400;color:var(--text3)} -->
+<!-- .topbar-right{margin-left:auto;display:flex;align-items:center;gap:8px} -->
+<!-- .year-chip{ -->
+<!--   background:var(--blue-lt);color:var(--blue); -->
+<!--   font-size:12px;font-weight:500;font-family:'Roboto Mono',monospace; -->
+<!--   padding:4px 12px;border-radius:100px;letter-spacing:.5px; -->
+<!-- } -->
+<!---->
+<!-- /* ── HERO ── */ -->
+<!-- .hero{ -->
+<!--   background:var(--white); -->
+<!--   border-bottom:1px solid var(--border); -->
+<!--   padding:48px 32px 52px; -->
+<!-- } -->
+<!-- .hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:24px} -->
+<!-- .hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap} -->
+<!-- .hero-title{font-size:40px;font-weight:400;color:var(--text);letter-spacing:-0.5px;line-height:1.2} -->
+<!-- .hero-title b{font-weight:700} -->
+<!-- .hero-title .g{color:#4285F4} -->
+<!-- .hero-title .o1{color:#EA4335} -->
+<!-- .hero-title .o2{color:#FBBC04} -->
+<!-- .hero-title .g2{color:#34A853} -->
+<!-- .hero-title .l{color:#4285F4} -->
+<!-- .hero-title .e{color:#EA4335} -->
+<!-- .hero-sub{font-size:16px;color:var(--text3);font-weight:400;max-width:580px;line-height:1.6;margin-top:4px} -->
+<!-- .hero-stats{display:flex;gap:8px;flex-wrap:wrap} -->
+<!-- .hstat{ -->
+<!--   background:var(--bg);border:1px solid var(--border); -->
+<!--   border-radius:var(--r);padding:16px 24px; -->
+<!--   display:flex;flex-direction:column;gap:2px;min-width:120px; -->
+<!-- } -->
+<!-- .hstat-n{font-size:32px;font-weight:700;color:var(--blue);line-height:1} -->
+<!-- .hstat-l{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text4);margin-top:2px} -->
+<!---->
+<!-- /* ── TOOLBAR ── */ -->
+<!-- .toolbar{ -->
+<!--   max-width:1200px;margin:24px auto 0;padding:0 32px; -->
+<!--   display:flex;gap:10px;align-items:center;flex-wrap:wrap; -->
+<!-- } -->
+<!-- .search-wrap{position:relative;flex:1;min-width:220px;max-width:480px} -->
+<!-- .search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text4);pointer-events:none} -->
+<!-- .search-input{ -->
+<!--   width:100%;background:var(--white); -->
+<!--   border:1px solid var(--border);border-radius:24px; -->
+<!--   padding:10px 18px 10px 44px; -->
+<!--   font-family:'Roboto',sans-serif;font-size:14px;color:var(--text); -->
+<!--   outline:none;transition:border-color .2s,box-shadow .2s; -->
+<!-- } -->
+<!-- .search-input::placeholder{color:var(--text4)} -->
+<!-- .search-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,115,232,.12)} -->
+<!-- .filter-pills{display:flex;gap:6px;flex-wrap:wrap} -->
+<!-- .pill{ -->
+<!--   background:var(--white);border:1px solid var(--border);border-radius:100px; -->
+<!--   padding:7px 16px;font-size:13px;font-weight:500;color:var(--text3); -->
+<!--   cursor:pointer;transition:all .15s;font-family:'Roboto',sans-serif; -->
+<!-- } -->
+<!-- .pill:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-lt)} -->
+<!-- .pill.active{background:var(--blue);border-color:var(--blue);color:white} -->
+<!-- .result-info{ -->
+<!--   margin-left:auto;font-size:13px;color:var(--text4); -->
+<!--   font-family:'Roboto Mono',monospace;white-space:nowrap; -->
+<!-- } -->
+<!-- .result-info b{color:var(--blue)} -->
+<!---->
+<!-- /* ── GRID ── */ -->
+<!-- .grid{ -->
+<!--   max-width:1200px;margin:20px auto 0;padding:0 32px 64px; -->
+<!--   display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px; -->
+<!-- } -->
+<!---->
+<!-- /* ── TAG CARD ── */ -->
+<!-- .tag-card{ -->
+<!--   background:var(--white); -->
+<!--   border:1px solid var(--border);border-radius:var(--r); -->
+<!--   padding:20px;cursor:pointer;text-decoration:none;color:inherit; -->
+<!--   transition:box-shadow .2s,transform .2s,border-color .2s; -->
+<!--   animation:fadeUp .35s ease both; -->
+<!--   display:flex;flex-direction:column;gap:0; -->
+<!--   overflow:hidden;position:relative; -->
+<!-- } -->
+<!-- .tag-card:hover{ -->
+<!--   box-shadow:var(--card-hover); -->
+<!--   transform:translateY(-3px); -->
+<!--   border-color:rgba(var(--c-rgb),.4); -->
+<!--   text-decoration:none; -->
+<!-- } -->
+<!-- /* top color strip */ -->
+<!-- .tag-card::before{ -->
+<!--   content:'';position:absolute;top:0;left:0;right:0;height:4px; -->
+<!--   background:var(--card-color,var(--blue)); -->
+<!-- } -->
+<!-- @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}} -->
+<!---->
+<!-- .card-emoji{ -->
+<!--   font-size:80px;line-height:1;margin-bottom:18px;margin-top:0;text-align:center;display:block; -->
+<!-- } -->
+<!-- .card-img-main { -->
+<!--   display: block; -->
+<!--   margin: 0 auto 18px auto; -->
+<!--   height: 80px; -->
+<!--   max-width: 120px; -->
+<!--   width: auto; -->
+<!--   object-fit: contain; -->
+<!--   box-shadow: 0 2px 8px rgba(60,64,67,.10); -->
+<!-- } -->
+<!---->
+<!-- .card-count{ -->
+<!--   font-size:42px;font-weight:900;line-height:1; -->
+<!--   color:var(--card-color,var(--blue)); -->
+<!--   font-family:'Roboto',sans-serif; -->
+<!-- } -->
+<!-- .card-count-sub{ -->
+<!--   font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px; -->
+<!--   color:var(--text4);margin-bottom:10px;font-family:'Roboto Mono',monospace; -->
+<!-- } -->
+<!-- .card-name{ -->
+<!--   font-size:15px;font-weight:500;color:var(--text); -->
+<!--   line-height:1.35;margin-bottom:12px;flex:1; -->
+<!-- } -->
+<!-- .card-cat{ -->
+<!--   display:inline-flex;align-items:center; -->
+<!--   font-size:11px;font-weight:500;letter-spacing:.5px;text-transform:uppercase; -->
+<!--   padding:3px 10px;border-radius:100px; -->
+<!--   background:rgba(var(--c-rgb),.1);color:var(--card-color,var(--blue)); -->
+<!-- } -->
+<!-- .card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px} -->
+<!-- .browse-link{ -->
+<!--   font-size:13px;font-weight:500;color:var(--blue); -->
+<!--   display:flex;align-items:center;gap:3px; -->
+<!-- } -->
+<!-- .hidden{display:none!important} -->
+<!-- .empty{grid-column:1/-1;text-align:center;padding:80px 20px;display:none} -->
+<!-- .empty.show{display:block} -->
+<!-- .empty h3{font-size:18px;color:var(--text3);margin-bottom:8px;font-weight:400} -->
+<!-- .empty p{font-size:14px;color:var(--text4)} -->
+<!---->
+<!-- /* ── FOOTER ── */ -->
+<!-- footer{ -->
+<!--   background:var(--white);border-top:1px solid var(--border); -->
+<!--   padding:24px 32px;text-align:center; -->
+<!-- } -->
+<!-- footer p{font-size:13px;color:var(--text4);line-height:2} -->
+<!-- footer a{color:var(--blue);text-decoration:none} -->
+<!-- footer a:hover{text-decoration:underline} -->
+<!---->
+<!-- @media(max-width:640px){ -->
+<!--   .hero{padding:32px 20px 36px} -->
+<!--   .toolbar,.grid{padding-left:20px;padding-right:20px} -->
+<!--   .topbar{padding:0 20px} -->
+<!--   .hero-title{font-size:28px} -->
+<!-- } -->
+<!-- </style> -->
+<!-- </head> -->
+<!-- <body> -->
+<!---->
+<!-- <!-- TOP BAR --> -->
+<!-- <header class="topbar"> -->
+<!--   <div class="topbar-logo"> -->
+<!--     <div class="google-g"></div> -->
+<!--     <span>Summer of Code</span> -->
+<!--   </div> -->
+<!--   <span class="topbar-sep">/</span> -->
+<!--   <span class="topbar-title">Technology Tags</span> -->
+<!--   <div class="topbar-right"> -->
+<!--     <span class="year-chip">2026</span> -->
+<!--   </div> -->
+<!-- </header> -->
+<!---->
+<!-- <!-- HERO --> -->
+<!-- <section class="hero"> -->
+<!--   <div class="hero-inner"> -->
+<!--     <div class="hero-row"> -->
+<!--       <div> -->
+<!--         <h1 class="hero-title"> -->
+<!--           <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span> -->
+<!--           &nbsp;<b>Summer of Code 2026</b> -->
+<!--         </h1> -->
+<!--         <p class="hero-sub">Browse all participating organizations by technology. Find communities working with your favorite stack.</p> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="hero-stats"> -->
+<!--       <div class="hstat"><span class="hstat-n">48</span><span class="hstat-l">Tag Categories</span></div> -->
+<!--       <div class="hstat"><span class="hstat-n">185</span><span class="hstat-l">Unique Orgs</span></div> -->
+<!--       <div class="hstat"><span class="hstat-n">2026</span><span class="hstat-l">Edition</span></div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </section> -->
+<!---->
+<!-- <!-- TOOLBAR --> -->
+<!-- <div class="toolbar"> -->
+<!--   <div class="search-wrap"> -->
+<!--     <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> -->
+<!--     <input class="search-input" id="search" type="text" placeholder="Search tag categories…" autocomplete="off"> -->
+<!--   </div> -->
+<!--   <div class="filter-pills" id="pills"> -->
+<!--     <button class="pill active" data-cat="all">All</button> -->
+<!--     <button class="pill" data-cat="languages">Languages</button> -->
+<!--     <button class="pill" data-cat="web">Web</button> -->
+<!--     <button class="pill" data-cat="ai">AI / Data</button> -->
+<!--     <button class="pill" data-cat="systems">Systems</button> -->
+<!--     <button class="pill" data-cat="devops">DevOps</button> -->
+<!--     <button class="pill" data-cat="science">Science</button> -->
+<!--     <button class="pill" data-cat="other">Other</button> -->
+<!--   </div> -->
+<!--   <div class="result-info">Showing <b id="showing">48</b> of 48</div> -->
+<!-- </div> -->
+<!---->
+<!-- <!-- GRID --> -->
+<!-- <div class="grid" id="grid"> -->
+<!--   <div class="empty" id="empty"><h3>No tags found</h3><p>Try a different search term</p></div> -->
+<!-- </div> -->
+<!---->
+<!-- <footer> -->
+<!--   <p> -->
+<!--     <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code</a> -->
+<!--     &nbsp;·&nbsp; 185 organizations &nbsp;·&nbsp; 48 technology categories -->
+<!--   </p> -->
+<!-- </footer> -->
+<!---->
+<!-- <script> -->
+<!-- const CAT_LABELS={languages:"Language",web:"Web",ai:"AI & Data",systems:"Systems",devops:"DevOps",science:"Science",other:"Other"}; -->
+<!---->
+<!-- const TAGS=[ -->
+<!--   {tag:"Python",slug:"python",count:106,cat:"languages",icon:"🐍",color:"#1565C0",rgb:"21,101,192"}, -->
+<!--   {tag:"JavaScript",slug:"javascript",count:62,cat:"languages",icon:"⚡",color:"#F9A825",rgb:"249,168,37"}, -->
+<!--   {tag:"C/C++",slug:"c-c",count:53,cat:"languages",icon:"⚙️",color:"#512DA8",rgb:"81,45,168"}, -->
+<!--   {tag:"Web Backend & Full Stack",slug:"web-backend-full-stack",count:49,cat:"web",icon:"🌐",color:"#00897B",rgb:"0,137,123"}, -->
+<!--   {tag:"Developer Tools & QA",slug:"developer-tools-qa",count:43,cat:"systems",icon:"🛠️",color:"#546E7A",rgb:"84,110,122"}, -->
+<!--   {tag:"Java & JVM",slug:"java-jvm",count:37,cat:"languages",icon:"☕",color:"#E64A19",rgb:"230,74,25"}, -->
+<!--   {tag:"Web Frontend",slug:"web-frontend",count:35,cat:"web",icon:"🎨",color:"#0097A7",rgb:"0,151,167"}, -->
+<!--   {tag:"Scripting & Other Languages",slug:"scripting-other-languages",count:35,cat:"languages",icon:"📜",color:"#7B1FA2",rgb:"123,31,162"}, -->
+<!--   {tag:"Data Science & Analytics",slug:"data-science-analytics",count:32,cat:"ai",icon:"📊",color:"#0277BD",rgb:"2,119,189"}, -->
+<!--   {tag:"Education & Humanities",slug:"education-humanities",count:27,cat:"other",icon:"📚",color:"#C62828",rgb:"198,40,40"}, -->
+<!--   {tag:"Artificial Intelligence",slug:"artificial-intelligence",count:26,cat:"ai",icon:"🤖",color:"#AD1457",rgb:"173,20,87"}, -->
+<!--   {tag:"Compilers & Build Tools",slug:"compilers-build-tools",count:25,cat:"systems",icon:"🔨",color:"#F57F17",rgb:"245,127,23"}, -->
+<!--   {tag:"Scientific Computing & HPC",slug:"scientific-computing-hpc",count:25,cat:"science",icon:"🔬",color:"#00695C",rgb:"0,105,92"}, -->
+<!--   {tag:"Cloud & Infrastructure",slug:"cloud-infrastructure",count:23,cat:"devops",icon:"☁️",color:"#FF6F00",rgb:"255,111,0"}, -->
+<!--   {tag:"Containers & Kubernetes",slug:"containers-kubernetes",count:23,cat:"devops",icon:"🐳",color:"#1565C0",rgb:"21,101,192"}, -->
+<!--   {tag:"Databases",slug:"databases",count:23,cat:"ai",icon:"🗄️",color:"#1B5E20",rgb:"27,94,32"}, -->
+<!--   {tag:"Linux & Unix",slug:"linux-unix",count:22,cat:"systems",icon:"🐧",color:"#827717",rgb:"130,119,23"}, -->
+<!--   {tag:"Open Source & Research",slug:"open-source-research",count:22,cat:"other",icon:"🔓",color:"#2E7D32",rgb:"46,125,50"}, -->
+<!--   {tag:"Bioinformatics & Health",slug:"bioinformatics-health",count:21,cat:"science",icon:"🧬",color:"#1A6B1A",rgb:"26,107,26"}, -->
+<!--   {tag:"Mobile Development",slug:"mobile-development",count:21,cat:"other",icon:"📱",color:"#1565C0",rgb:"21,101,192"}, -->
+<!--   {tag:"DevOps & CI/CD",slug:"devops-ci-cd",count:19,cat:"devops",icon:"🔄",color:"#B71C1C",rgb:"183,28,28"}, -->
+<!--   {tag:"Machine Learning",slug:"machine-learning",count:19,cat:"ai",icon:"🧠",color:"#6A1B9A",rgb:"106,27,154"}, -->
+<!--   {tag:"Security",slug:"security",count:18,cat:"systems",icon:"🔒",color:"#C62828",rgb:"198,40,40"}, -->
+<!--   {tag:"Desktop Applications",slug:"desktop-applications",count:18,cat:"other",icon:"🖥️",color:"#1565C0",rgb:"21,101,192"}, -->
+<!--   {tag:"Go",slug:"go",count:17,cat:"languages",icon:"🐹",color:"#00838F",rgb:"0,131,143"}, -->
+<!--   {tag:"TypeScript",slug:"typescript",count:17,cat:"languages",icon:"📘",color:"#1565C0",rgb:"21,101,192"}, -->
+<!--   {tag:"Graphics & 3D",slug:"graphics-3d",count:16,cat:"other",icon:"🎮",color:"#880E4F",rgb:"136,14,79"}, -->
+<!--   {tag:"Mathematics & Algorithms",slug:"mathematics-algorithms",count:16,cat:"science",icon:"∑",color:"#B71C1C",rgb:"183,28,28"}, -->
+<!--   {tag:"Operating Systems & Virtualization",slug:"operating-systems-virtualization",count:16,cat:"systems",icon:"💻",color:"#0D47A1",rgb:"13,71,161"}, -->
+<!--   {tag:"Rust",slug:"rust",count:16,cat:"languages",icon:"🦀",color:"#BF360C",rgb:"191,54,12"}, -->
+<!--   {tag:"Physical & Earth Sciences",slug:"physical-earth-sciences",count:15,cat:"science",icon:"🔭",color:"#0D47A1",rgb:"13,71,161"}, -->
+<!--   {tag:"Systems & Low-level Languages",slug:"systems-low-level-languages",count:14,cat:"languages",icon:"🔧",color:"#37474F",rgb:"55,71,79"}, -->
+<!--   {tag:"IoT, Robotics & Autonomous Systems",slug:"iot-robotics-autonomous-systems",count:14,cat:"other",icon:"🤖",color:"#004D40",rgb:"0,77,64"}, -->
+<!--   {tag:"Big Data",slug:"big-data",count:13,cat:"ai",icon:"🌊",color:"#BF360C",rgb:"191,54,12"}, -->
+<!--   {tag:"Networking",slug:"networking",count:12,cat:"systems",icon:"🌐",color:"#01579B",rgb:"1,87,155"}, -->
+<!--   {tag:"Audio, Video & Media",slug:"audio-video-media",count:12,cat:"other",icon:"🎵",color:"#4A148C",rgb:"74,20,140"}, -->
+<!--   {tag:"Communications & Collaboration",slug:"communications-collaboration",count:12,cat:"other",icon:"💬",color:"#1B5E20",rgb:"27,94,32"}, -->
+<!--   {tag:"Generative AI & LLMs",slug:"generative-ai-llms",count:11,cat:"ai",icon:"✨",color:"#880E4F",rgb:"136,14,79"}, -->
+<!--   {tag:"Mobile Languages",slug:"mobile-languages",count:11,cat:"languages",icon:"📲",color:"#01579B",rgb:"1,87,155"}, -->
+<!--   {tag:"Accessibility & UX",slug:"accessibility-ux",count:10,cat:"other",icon:"♿",color:"#880E4F",rgb:"136,14,79"}, -->
+<!--   {tag:"Systems Programming & Embedded",slug:"systems-programming-embedded",count:10,cat:"systems",icon:"🔌",color:"#37474F",rgb:"55,71,79"}, -->
+<!--   {tag:"Ruby & PHP",slug:"ruby-php",count:10,cat:"languages",icon:"💎",color:"#B71C1C",rgb:"183,28,28"}, -->
+<!--   {tag:"Computer Vision & NLP",slug:"computer-vision-nlp",count:8,cat:"ai",icon:"👁️",color:"#006064",rgb:"0,96,100"}, -->
+<!--   {tag:"Games & Simulation",slug:"games-simulation",count:8,cat:"other",icon:"🎮",color:"#1B5E20",rgb:"27,94,32"}, -->
+<!--   {tag:"GIS & Geospatial",slug:"gis-geospatial",count:6,cat:"science",icon:"🗺️",color:"#1B5E20",rgb:"27,94,32"}, -->
+<!--   {tag:"Software Composition & Compliance",slug:"software-composition-compliance",count:4,cat:"other",icon:"📋",color:"#37474F",rgb:"55,71,79"}, -->
+<!--   {tag:"Fintech & Blockchain",slug:"fintech-blockchain",count:3,cat:"other",icon:"💰",color:"#E65100",rgb:"230,81,0"}, -->
+<!--   {tag:"Electronic Design & Hardware",slug:"electronic-design-hardware",count:2,cat:"systems",icon:"🔋",color:"#546E7A",rgb:"84,110,122"}, -->
+<!-- ]; -->
+<!---->
+<!-- const grid=document.getElementById('grid'); -->
+<!-- const tagImages = { -->
+<!--   'python': 'python-logo.png', -->
+<!--   'javascript': 'javascript.webp', -->
+<!--   'c-c': 'C,C++.jpg', -->
+<!--   'linux-unix': 'Linux.png', -->
+<!--   'java-jvm': 'java.webp', -->
+<!--   'rust': 'rust.png', -->
+<!--   'containers-kubernetes': 'kubernetes.png', -->
+<!--   'databases': 'database.png', -->
+<!--   'artificial-intelligence': 'AI.png', -->
+<!--   // Add more mappings as images are added -->
+<!-- }; -->
+<!-- TAGS.forEach((t,i)=>{ -->
+<!--   const a=document.createElement('a'); -->
+<!--   a.className='tag-card'; -->
+<!--   a.href=`tags/tag.html?slug=${t.slug}`; -->
+<!--   a.dataset.cat=t.cat; -->
+<!--   a.dataset.name=t.tag.toLowerCase(); -->
+<!--   a.style.cssText=`--card-color:${t.color};--c-rgb:${t.rgb};animation-delay:${Math.min(i*18,400)}ms`; -->
+<!--   let emojiHtml = ''; -->
+<!--   if(tagImages[t.slug]) { -->
+<!--     emojiHtml = `<img class=\"card-img-main\" src=\"images/${tagImages[t.slug]}\" alt=\"${t.tag} logo\">`; -->
+<!--   } else { -->
+<!--     emojiHtml = `<div class=\\\"card-emoji card-img-main\\\">${t.icon}</div>`; -->
+<!--   } -->
+<!--   a.innerHTML=` -->
+<!--     ${emojiHtml} -->
+<!--     <div class=\"card-name\">${esc(t.tag)}</div> -->
+<!--     <div class=\"card-count\">${t.count}</div> -->
+<!--     <div class=\"card-count-sub\">organizations</div> -->
+<!--     <div class=\"card-footer\"> -->
+<!--       <span class=\"card-cat\">${CAT_LABELS[t.cat]||t.cat}</span> -->
+<!--       <span class=\"browse-link\">Browse →</span> -->
+<!--     </div>`; -->
+<!--   grid.appendChild(a); -->
+<!-- }); -->
+<!---->
+<!-- let activeCat='all'; -->
+<!-- function render(){ -->
+<!--   const q=document.getElementById('search').value.toLowerCase().trim(); -->
+<!--   let shown=0; -->
+<!--   document.querySelectorAll('.tag-card').forEach(c=>{ -->
+<!--     const show=(!q||c.dataset.name.includes(q))&&(activeCat==='all'||c.dataset.cat===activeCat); -->
+<!--     c.classList.toggle('hidden',!show); -->
+<!--     if(show)shown++; -->
+<!--   }); -->
+<!--   document.getElementById('showing').textContent=shown; -->
+<!--   document.getElementById('empty').classList.toggle('show',shown===0); -->
+<!-- } -->
+<!-- document.getElementById('search').addEventListener('input',render); -->
+<!-- document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{ -->
+<!--   document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active')); -->
+<!--   p.classList.add('active');activeCat=p.dataset.cat;render(); -->
+<!-- })); -->
+<!-- function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')} -->
+<!-- </script> -->
+<!-- </body> -->
+<!-- </html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GSoC 2026 · Technology Tags</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>GSoC 2026 · Technology Index</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --blue:   #1A73E8;
-  --blue2:  #1557B0;
-  --blue-lt:#E8F0FE;
-  --blue-m: #4285F4;
-  --red:    #EA4335;
-  --yellow: #FBBC04;
-  --green:  #34A853;
-  --bg:     #F8F9FA;
-  --white:  #FFFFFF;
-  --card-shadow: 0 1px 3px rgba(60,64,67,.15), 0 2px 8px rgba(60,64,67,.10);
-  --card-hover:  0 4px 12px rgba(60,64,67,.20), 0 8px 24px rgba(60,64,67,.12);
-  --text:   #202124;
-  --text2:  #3C4043;
-  --text3:  #5F6368;
-  --text4:  #80868B;
-  --border: #DADCE0;
-  --r: 12px;
+  --ink:   #0A0A0F;
+  --ink2:  #2D2D3A;
+  --ink3:  #6B6B80;
+  --ink4:  #ABABBE;
+  --paper: #FAFAF7;
+  --paper2:#F3F3EE;
+  --paper3:#E8E8E0;
+  --white: #FFFFFF;
+  --rule:  #E2E2D9;
+  --blue:  #1A56DB;
+  --accent:#FF4D1C;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
 
-/* ── TOP BAR ── */
-.topbar{
-  background:var(--white);
-  border-bottom:1px solid var(--border);
-  padding:0 32px;
-  display:flex;align-items:center;gap:16px;height:64px;
-  position:sticky;top:0;z-index:100;
-}
-.topbar-logo{
-  display:flex;align-items:center;gap:10px;
-  font-size:20px;font-weight:500;color:var(--text);
-  text-decoration:none;
-}
-.google-g{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:32px;height:32px;border-radius:50%;
-  background:linear-gradient(135deg,#4285F4 25%,#34A853 25%,#34A853 50%,#FBBC04 50%,#FBBC04 75%,#EA4335 75%);
-  font-size:0;
-}
-.topbar-sep{color:var(--border);font-weight:300;font-size:22px}
-.topbar-title{font-size:18px;font-weight:400;color:var(--text3)}
-.topbar-right{margin-left:auto;display:flex;align-items:center;gap:8px}
-.year-chip{
-  background:var(--blue-lt);color:var(--blue);
-  font-size:12px;font-weight:500;font-family:'Roboto Mono',monospace;
-  padding:4px 12px;border-radius:100px;letter-spacing:.5px;
-}
+/* ── TOPBAR ── */
+.topbar{background:var(--ink);padding:0 40px;height:52px;display:flex;align-items:center;gap:0;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;margin-right:20px}
+.logo-dots{display:flex;gap:3px}
+.logo-dots span{width:7px;height:7px;border-radius:50%}
+.logo-dots span:nth-child(1){background:#4285F4}
+.logo-dots span:nth-child(2){background:#EA4335}
+.logo-dots span:nth-child(3){background:#FBBC04}
+.logo-dots span:nth-child(4){background:#34A853}
+.logo-text{font-size:13px;font-weight:500;color:rgba(255,255,255,.65);letter-spacing:.2px}
+.topbar-rule{width:1px;height:18px;background:rgba(255,255,255,.15);margin-right:18px}
+.topbar-sub{font-size:13px;font-weight:400;color:rgba(255,255,255,.4)}
+.topbar-right{margin-left:auto}
+.year-badge{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--accent);background:rgba(255,77,28,.12);border:1px solid rgba(255,77,28,.25);padding:3px 9px;border-radius:4px;letter-spacing:1px}
 
 /* ── HERO ── */
-.hero{
-  background:var(--white);
-  border-bottom:1px solid var(--border);
-  padding:48px 32px 52px;
-}
-.hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
-.hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.hero-title{font-size:40px;font-weight:400;color:var(--text);letter-spacing:-0.5px;line-height:1.2}
-.hero-title b{font-weight:700}
-.hero-title .g{color:#4285F4}
-.hero-title .o1{color:#EA4335}
-.hero-title .o2{color:#FBBC04}
-.hero-title .g2{color:#34A853}
-.hero-title .l{color:#4285F4}
-.hero-title .e{color:#EA4335}
-.hero-sub{font-size:16px;color:var(--text3);font-weight:400;max-width:580px;line-height:1.6;margin-top:4px}
-.hero-stats{display:flex;gap:8px;flex-wrap:wrap}
-.hstat{
-  background:var(--bg);border:1px solid var(--border);
-  border-radius:var(--r);padding:16px 24px;
-  display:flex;flex-direction:column;gap:2px;min-width:120px;
-}
-.hstat-n{font-size:32px;font-weight:700;color:var(--blue);line-height:1}
-.hstat-l{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text4);margin-top:2px}
+.hero{padding:60px 40px 52px;border-bottom:1px solid var(--rule);background:var(--white);position:relative;overflow:hidden}
+.hero::before{content:'2026';position:absolute;right:-10px;top:-30px;font-family:'Playfair Display',serif;font-size:200px;font-weight:900;color:var(--paper3);line-height:1;pointer-events:none;user-select:none}
+.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+.hero-kicker{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.hero-kicker::before{content:'';display:block;width:20px;height:2px;background:var(--accent)}
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,64px);font-weight:900;line-height:1.0;letter-spacing:-1px;color:var(--ink);margin-bottom:20px}
+.hero-h1 em{font-style:italic;color:var(--blue)}
+.hero-sub{font-size:15px;font-weight:300;color:var(--ink3);max-width:480px;line-height:1.7}
+.hero-stats{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;flex-shrink:0}
+.hstat{background:var(--paper);padding:16px 26px;text-align:right}
+.hstat-n{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--ink);line-height:1;display:block}
+.hstat-l{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1.2px;color:var(--ink4);margin-top:3px;display:block}
 
 /* ── TOOLBAR ── */
-.toolbar{
-  max-width:1200px;margin:24px auto 0;padding:0 32px;
-  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
-}
-.search-wrap{position:relative;flex:1;min-width:220px;max-width:480px}
-.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text4);pointer-events:none}
-.search-input{
-  width:100%;background:var(--white);
-  border:1px solid var(--border);border-radius:24px;
-  padding:10px 18px 10px 44px;
-  font-family:'Roboto',sans-serif;font-size:14px;color:var(--text);
-  outline:none;transition:border-color .2s,box-shadow .2s;
-}
-.search-input::placeholder{color:var(--text4)}
-.search-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,115,232,.12)}
-.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
-.pill{
-  background:var(--white);border:1px solid var(--border);border-radius:100px;
-  padding:7px 16px;font-size:13px;font-weight:500;color:var(--text3);
-  cursor:pointer;transition:all .15s;font-family:'Roboto',sans-serif;
-}
-.pill:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-lt)}
-.pill.active{background:var(--blue);border-color:var(--blue);color:white}
-.result-info{
-  margin-left:auto;font-size:13px;color:var(--text4);
-  font-family:'Roboto Mono',monospace;white-space:nowrap;
-}
-.result-info b{color:var(--blue)}
+.toolbar{max-width:1160px;margin:0 auto;padding:22px 40px 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.search-wrap{position:relative;flex:1;min-width:190px;max-width:320px}
+.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--ink4);pointer-events:none}
+.search-input{width:100%;background:var(--white);border:1.5px solid var(--rule);border-radius:8px;padding:9px 14px 9px 38px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);outline:none;transition:border-color .18s,box-shadow .18s}
+.search-input::placeholder{color:var(--ink4)}
+.search-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.08)}
+.filter-pills{display:flex;gap:5px;flex-wrap:wrap}
+.pill{background:transparent;border:1.5px solid var(--rule);border-radius:6px;padding:6px 13px;font-size:12px;font-weight:500;color:var(--ink3);cursor:pointer;transition:all .15s;font-family:'DM Sans',sans-serif}
+.pill:hover{border-color:var(--ink2);color:var(--ink)}
+.pill.active{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.result-info{margin-left:auto;font-size:12px;color:var(--ink4);font-family:'DM Mono',monospace;white-space:nowrap}
+.result-info b{color:var(--ink2)}
 
 /* ── GRID ── */
-.grid{
-  max-width:1200px;margin:20px auto 0;padding:0 32px 64px;
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;
-}
+.grid{max-width:1160px;margin:18px auto 0;padding:0 40px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:8px}
 
 /* ── TAG CARD ── */
-.tag-card{
-  background:var(--white);
-  border:1px solid var(--border);border-radius:var(--r);
-  padding:20px;cursor:pointer;text-decoration:none;color:inherit;
-  transition:box-shadow .2s,transform .2s,border-color .2s;
-  animation:fadeUp .35s ease both;
-  display:flex;flex-direction:column;gap:0;
-  overflow:hidden;position:relative;
-}
-.tag-card:hover{
-  box-shadow:var(--card-hover);
-  transform:translateY(-3px);
-  border-color:rgba(var(--c-rgb),.4);
-  text-decoration:none;
-}
-/* top color strip */
-.tag-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:4px;
-  background:var(--card-color,var(--blue));
-}
-@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.tag-card{background:var(--white);border:1.5px solid var(--rule);border-radius:10px;padding:16px 18px;cursor:pointer;text-decoration:none;color:inherit;display:flex;align-items:center;gap:13px;transition:border-color .18s,box-shadow .18s,transform .2s cubic-bezier(.2,.8,.3,1);animation:cardIn .32s ease both;position:relative}
+.tag-card:hover{border-color:var(--card-color);box-shadow:0 2px 20px rgba(0,0,0,.07),0 0 0 1px var(--card-color);transform:translateY(-2px);text-decoration:none}
+@keyframes cardIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
-.card-emoji{
-  font-size:80px;line-height:1;margin-bottom:18px;margin-top:0;text-align:center;display:block;
-}
-.card-img-main {
-  display: block;
-  margin: 0 auto 18px auto;
-  height: 80px;
-  max-width: 120px;
-  width: auto;
-  object-fit: contain;
-  box-shadow: 0 2px 8px rgba(60,64,67,.10);
-}
-}
-.card-count{
-  font-size:42px;font-weight:900;line-height:1;
-  color:var(--card-color,var(--blue));
-  font-family:'Roboto',sans-serif;
-}
-.card-count-sub{
-  font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px;
-  color:var(--text4);margin-bottom:10px;font-family:'Roboto Mono',monospace;
-}
-.card-name{
-  font-size:15px;font-weight:500;color:var(--text);
-  line-height:1.35;margin-bottom:12px;flex:1;
-}
-.card-cat{
-  display:inline-flex;align-items:center;
-  font-size:11px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;
-  padding:3px 10px;border-radius:100px;
-  background:rgba(var(--c-rgb),.1);color:var(--card-color,var(--blue));
-}
-.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
-.browse-link{
-  font-size:13px;font-weight:500;color:var(--blue);
-  display:flex;align-items:center;gap:3px;
-}
+.tc-icon{flex-shrink:0;width:44px;height:44px;border-radius:10px;background:var(--card-color-lt,var(--paper2));display:flex;align-items:center;justify-content:center;font-size:21px}
+.tc-icon img{width:26px;height:26px;object-fit:contain}
+.tc-body{flex:1;min-width:0}
+.tc-name{font-size:14px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tc-meta{display:flex;align-items:center;gap:5px}
+.tc-count{font-family:'DM Mono',monospace;font-size:12px;font-weight:500;color:var(--card-color)}
+.tc-sep{color:var(--ink4);font-size:11px}
+.tc-cat{font-size:11px;font-weight:500;color:var(--ink4);text-transform:uppercase;letter-spacing:.5px}
+.tc-arrow{flex-shrink:0;color:var(--ink4);transition:color .15s,transform .18s}
+.tag-card:hover .tc-arrow{color:var(--card-color);transform:translateX(3px)}
+
 .hidden{display:none!important}
-.empty{grid-column:1/-1;text-align:center;padding:80px 20px;display:none}
+.empty{grid-column:1/-1;text-align:center;padding:100px 20px;display:none}
 .empty.show{display:block}
-.empty h3{font-size:18px;color:var(--text3);margin-bottom:8px;font-weight:400}
-.empty p{font-size:14px;color:var(--text4)}
+.empty h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--ink3);margin-bottom:10px}
+.empty p{font-size:14px;color:var(--ink4)}
 
-/* ── FOOTER ── */
-footer{
-  background:var(--white);border-top:1px solid var(--border);
-  padding:24px 32px;text-align:center;
-}
-footer p{font-size:13px;color:var(--text4);line-height:2}
-footer a{color:var(--blue);text-decoration:none}
-footer a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--rule);padding:24px 40px;text-align:center}
+footer p{font-size:12px;color:var(--ink4);line-height:2}
+footer a{color:var(--ink3);text-decoration:none}
+footer a:hover{color:var(--ink)}
 
-@media(max-width:640px){
-  .hero{padding:32px 20px 36px}
-  .toolbar,.grid{padding-left:20px;padding-right:20px}
+@media(max-width:700px){
+  .hero{padding:36px 20px}
+  .hero::before{display:none}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-stats{flex-direction:row}
+  .toolbar,.grid,footer{padding-left:20px;padding-right:20px}
   .topbar{padding:0 20px}
-  .hero-title{font-size:28px}
 }
 </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
 <header class="topbar">
-  <div class="topbar-logo">
-    <div class="google-g"></div>
-    <span>Summer of Code</span>
-  </div>
-  <span class="topbar-sep">/</span>
-  <span class="topbar-title">Technology Tags</span>
-  <div class="topbar-right">
-    <span class="year-chip">2026</span>
-  </div>
+  <a class="logo" href="index.html">
+    <div class="logo-dots"><span></span><span></span><span></span><span></span></div>
+    <span class="logo-text">Summer of Code</span>
+  </a>
+  <div class="topbar-rule"></div>
+  <span class="topbar-sub">Technology Index</span>
+  <div class="topbar-right"><span class="year-badge">GSoC 2026</span></div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-row">
-      <div>
-        <h1 class="hero-title">
-          <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
-          &nbsp;<b>Summer of Code 2026</b>
-        </h1>
-        <p class="hero-sub">Browse all participating organizations by technology. Find communities working with your favorite stack.</p>
-      </div>
+    <div>
+      <div class="hero-kicker">Technology Index</div>
+      <h1 class="hero-h1">Find orgs by<br><em>tech stack</em></h1>
+      <p class="hero-sub">Browse all 185 participating organizations by the technologies they use. Every language, framework, and tool — indexed.</p>
     </div>
     <div class="hero-stats">
-      <div class="hstat"><span class="hstat-n">48</span><span class="hstat-l">Tag Categories</span></div>
-      <div class="hstat"><span class="hstat-n">185</span><span class="hstat-l">Unique Orgs</span></div>
+      <div class="hstat"><span class="hstat-n">48</span><span class="hstat-l">Categories</span></div>
+      <div class="hstat"><span class="hstat-n">185</span><span class="hstat-l">Orgs</span></div>
       <div class="hstat"><span class="hstat-n">2026</span><span class="hstat-l">Edition</span></div>
     </div>
   </div>
 </section>
 
-<!-- TOOLBAR -->
 <div class="toolbar">
   <div class="search-wrap">
-    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input class="search-input" id="search" type="text" placeholder="Search tag categories…" autocomplete="off">
+    <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input class="search-input" id="search" type="text" placeholder="Search technologies…" autocomplete="off">
   </div>
   <div class="filter-pills" id="pills">
     <button class="pill active" data-cat="all">All</button>
@@ -256,121 +534,100 @@ footer a:hover{text-decoration:underline}
   <div class="result-info">Showing <b id="showing">48</b> of 48</div>
 </div>
 
-<!-- GRID -->
 <div class="grid" id="grid">
-  <div class="empty" id="empty"><h3>No tags found</h3><p>Try a different search term</p></div>
+  <div class="empty" id="empty">
+    <h3>Nothing found</h3>
+    <p>Try a different search or filter</p>
+  </div>
 </div>
 
-<footer>
-  <p>
-    <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code</a>
-    &nbsp;·&nbsp; 185 organizations &nbsp;·&nbsp; 48 technology categories
-  </p>
-</footer>
+<footer><p><a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a> &nbsp;·&nbsp; 185 organizations &nbsp;·&nbsp; 48 technology categories</p></footer>
 
 <script>
 const CAT_LABELS={languages:"Language",web:"Web",ai:"AI & Data",systems:"Systems",devops:"DevOps",science:"Science",other:"Other"};
-
 const TAGS=[
-  {tag:"Python",slug:"python",count:106,cat:"languages",icon:"🐍",color:"#1565C0",rgb:"21,101,192"},
-  {tag:"JavaScript",slug:"javascript",count:62,cat:"languages",icon:"⚡",color:"#F9A825",rgb:"249,168,37"},
-  {tag:"C/C++",slug:"c-c",count:53,cat:"languages",icon:"⚙️",color:"#512DA8",rgb:"81,45,168"},
-  {tag:"Web Backend & Full Stack",slug:"web-backend-full-stack",count:49,cat:"web",icon:"🌐",color:"#00897B",rgb:"0,137,123"},
-  {tag:"Developer Tools & QA",slug:"developer-tools-qa",count:43,cat:"systems",icon:"🛠️",color:"#546E7A",rgb:"84,110,122"},
-  {tag:"Java & JVM",slug:"java-jvm",count:37,cat:"languages",icon:"☕",color:"#E64A19",rgb:"230,74,25"},
-  {tag:"Web Frontend",slug:"web-frontend",count:35,cat:"web",icon:"🎨",color:"#0097A7",rgb:"0,151,167"},
-  {tag:"Scripting & Other Languages",slug:"scripting-other-languages",count:35,cat:"languages",icon:"📜",color:"#7B1FA2",rgb:"123,31,162"},
-  {tag:"Data Science & Analytics",slug:"data-science-analytics",count:32,cat:"ai",icon:"📊",color:"#0277BD",rgb:"2,119,189"},
-  {tag:"Education & Humanities",slug:"education-humanities",count:27,cat:"other",icon:"📚",color:"#C62828",rgb:"198,40,40"},
-  {tag:"Artificial Intelligence",slug:"artificial-intelligence",count:26,cat:"ai",icon:"🤖",color:"#AD1457",rgb:"173,20,87"},
-  {tag:"Compilers & Build Tools",slug:"compilers-build-tools",count:25,cat:"systems",icon:"🔨",color:"#F57F17",rgb:"245,127,23"},
-  {tag:"Scientific Computing & HPC",slug:"scientific-computing-hpc",count:25,cat:"science",icon:"🔬",color:"#00695C",rgb:"0,105,92"},
-  {tag:"Cloud & Infrastructure",slug:"cloud-infrastructure",count:23,cat:"devops",icon:"☁️",color:"#FF6F00",rgb:"255,111,0"},
-  {tag:"Containers & Kubernetes",slug:"containers-kubernetes",count:23,cat:"devops",icon:"🐳",color:"#1565C0",rgb:"21,101,192"},
-  {tag:"Databases",slug:"databases",count:23,cat:"ai",icon:"🗄️",color:"#1B5E20",rgb:"27,94,32"},
-  {tag:"Linux & Unix",slug:"linux-unix",count:22,cat:"systems",icon:"🐧",color:"#827717",rgb:"130,119,23"},
-  {tag:"Open Source & Research",slug:"open-source-research",count:22,cat:"other",icon:"🔓",color:"#2E7D32",rgb:"46,125,50"},
-  {tag:"Bioinformatics & Health",slug:"bioinformatics-health",count:21,cat:"science",icon:"🧬",color:"#1A6B1A",rgb:"26,107,26"},
-  {tag:"Mobile Development",slug:"mobile-development",count:21,cat:"other",icon:"📱",color:"#1565C0",rgb:"21,101,192"},
-  {tag:"DevOps & CI/CD",slug:"devops-ci-cd",count:19,cat:"devops",icon:"🔄",color:"#B71C1C",rgb:"183,28,28"},
-  {tag:"Machine Learning",slug:"machine-learning",count:19,cat:"ai",icon:"🧠",color:"#6A1B9A",rgb:"106,27,154"},
-  {tag:"Security",slug:"security",count:18,cat:"systems",icon:"🔒",color:"#C62828",rgb:"198,40,40"},
-  {tag:"Desktop Applications",slug:"desktop-applications",count:18,cat:"other",icon:"🖥️",color:"#1565C0",rgb:"21,101,192"},
-  {tag:"Go",slug:"go",count:17,cat:"languages",icon:"🐹",color:"#00838F",rgb:"0,131,143"},
-  {tag:"TypeScript",slug:"typescript",count:17,cat:"languages",icon:"📘",color:"#1565C0",rgb:"21,101,192"},
-  {tag:"Graphics & 3D",slug:"graphics-3d",count:16,cat:"other",icon:"🎮",color:"#880E4F",rgb:"136,14,79"},
-  {tag:"Mathematics & Algorithms",slug:"mathematics-algorithms",count:16,cat:"science",icon:"∑",color:"#B71C1C",rgb:"183,28,28"},
-  {tag:"Operating Systems & Virtualization",slug:"operating-systems-virtualization",count:16,cat:"systems",icon:"💻",color:"#0D47A1",rgb:"13,71,161"},
-  {tag:"Rust",slug:"rust",count:16,cat:"languages",icon:"🦀",color:"#BF360C",rgb:"191,54,12"},
-  {tag:"Physical & Earth Sciences",slug:"physical-earth-sciences",count:15,cat:"science",icon:"🔭",color:"#0D47A1",rgb:"13,71,161"},
-  {tag:"Systems & Low-level Languages",slug:"systems-low-level-languages",count:14,cat:"languages",icon:"🔧",color:"#37474F",rgb:"55,71,79"},
-  {tag:"IoT, Robotics & Autonomous Systems",slug:"iot-robotics-autonomous-systems",count:14,cat:"other",icon:"🤖",color:"#004D40",rgb:"0,77,64"},
-  {tag:"Big Data",slug:"big-data",count:13,cat:"ai",icon:"🌊",color:"#BF360C",rgb:"191,54,12"},
-  {tag:"Networking",slug:"networking",count:12,cat:"systems",icon:"🌐",color:"#01579B",rgb:"1,87,155"},
-  {tag:"Audio, Video & Media",slug:"audio-video-media",count:12,cat:"other",icon:"🎵",color:"#4A148C",rgb:"74,20,140"},
-  {tag:"Communications & Collaboration",slug:"communications-collaboration",count:12,cat:"other",icon:"💬",color:"#1B5E20",rgb:"27,94,32"},
-  {tag:"Generative AI & LLMs",slug:"generative-ai-llms",count:11,cat:"ai",icon:"✨",color:"#880E4F",rgb:"136,14,79"},
-  {tag:"Mobile Languages",slug:"mobile-languages",count:11,cat:"languages",icon:"📲",color:"#01579B",rgb:"1,87,155"},
-  {tag:"Accessibility & UX",slug:"accessibility-ux",count:10,cat:"other",icon:"♿",color:"#880E4F",rgb:"136,14,79"},
-  {tag:"Systems Programming & Embedded",slug:"systems-programming-embedded",count:10,cat:"systems",icon:"🔌",color:"#37474F",rgb:"55,71,79"},
-  {tag:"Ruby & PHP",slug:"ruby-php",count:10,cat:"languages",icon:"💎",color:"#B71C1C",rgb:"183,28,28"},
-  {tag:"Computer Vision & NLP",slug:"computer-vision-nlp",count:8,cat:"ai",icon:"👁️",color:"#006064",rgb:"0,96,100"},
-  {tag:"Games & Simulation",slug:"games-simulation",count:8,cat:"other",icon:"🎮",color:"#1B5E20",rgb:"27,94,32"},
-  {tag:"GIS & Geospatial",slug:"gis-geospatial",count:6,cat:"science",icon:"🗺️",color:"#1B5E20",rgb:"27,94,32"},
-  {tag:"Software Composition & Compliance",slug:"software-composition-compliance",count:4,cat:"other",icon:"📋",color:"#37474F",rgb:"55,71,79"},
-  {tag:"Fintech & Blockchain",slug:"fintech-blockchain",count:3,cat:"other",icon:"💰",color:"#E65100",rgb:"230,81,0"},
-  {tag:"Electronic Design & Hardware",slug:"electronic-design-hardware",count:2,cat:"systems",icon:"🔋",color:"#546E7A",rgb:"84,110,122"},
+  {tag:"Python",slug:"python",count:106,cat:"languages",icon:"🐍",color:"#1D4ED8",rgb:"29,78,216"},
+  {tag:"JavaScript",slug:"javascript",count:62,cat:"languages",icon:"⚡",color:"#B45309",rgb:"180,83,9"},
+  {tag:"C/C++",slug:"c-c",count:53,cat:"languages",icon:"⚙️",color:"#6D28D9",rgb:"109,40,217"},
+  {tag:"Web Backend & Full Stack",slug:"web-backend-full-stack",count:49,cat:"web",icon:"🌐",color:"#0F766E",rgb:"15,118,110"},
+  {tag:"Developer Tools & QA",slug:"developer-tools-qa",count:43,cat:"systems",icon:"🛠️",color:"#374151",rgb:"55,65,81"},
+  {tag:"Java & JVM",slug:"java-jvm",count:37,cat:"languages",icon:"☕",color:"#C2410C",rgb:"194,65,12"},
+  {tag:"Web Frontend",slug:"web-frontend",count:35,cat:"web",icon:"🎨",color:"#0E7490",rgb:"14,116,144"},
+  {tag:"Scripting & Other Languages",slug:"scripting-other-languages",count:35,cat:"languages",icon:"📜",color:"#7C3AED",rgb:"124,58,237"},
+  {tag:"Data Science & Analytics",slug:"data-science-analytics",count:32,cat:"ai",icon:"📊",color:"#1D4ED8",rgb:"29,78,216"},
+  {tag:"Education & Humanities",slug:"education-humanities",count:27,cat:"other",icon:"📚",color:"#991B1B",rgb:"153,27,27"},
+  {tag:"Artificial Intelligence",slug:"artificial-intelligence",count:26,cat:"ai",icon:"🤖",color:"#BE185D",rgb:"190,24,93"},
+  {tag:"Compilers & Build Tools",slug:"compilers-build-tools",count:25,cat:"systems",icon:"🔨",color:"#92400E",rgb:"146,64,14"},
+  {tag:"Scientific Computing & HPC",slug:"scientific-computing-hpc",count:25,cat:"science",icon:"🔬",color:"#065F46",rgb:"6,95,70"},
+  {tag:"Cloud & Infrastructure",slug:"cloud-infrastructure",count:23,cat:"devops",icon:"☁️",color:"#9A3412",rgb:"154,52,18"},
+  {tag:"Containers & Kubernetes",slug:"containers-kubernetes",count:23,cat:"devops",icon:"🐳",color:"#1E40AF",rgb:"30,64,175"},
+  {tag:"Databases",slug:"databases",count:23,cat:"ai",icon:"🗄️",color:"#166534",rgb:"22,101,52"},
+  {tag:"Linux & Unix",slug:"linux-unix",count:22,cat:"systems",icon:"🐧",color:"#78350F",rgb:"120,53,15"},
+  {tag:"Open Source & Research",slug:"open-source-research",count:22,cat:"other",icon:"🔓",color:"#14532D",rgb:"20,83,45"},
+  {tag:"Bioinformatics & Health",slug:"bioinformatics-health",count:21,cat:"science",icon:"🧬",color:"#064E3B",rgb:"6,78,59"},
+  {tag:"Mobile Development",slug:"mobile-development",count:21,cat:"other",icon:"📱",color:"#1E3A8A",rgb:"30,58,138"},
+  {tag:"DevOps & CI/CD",slug:"devops-ci-cd",count:19,cat:"devops",icon:"🔄",color:"#7F1D1D",rgb:"127,29,29"},
+  {tag:"Machine Learning",slug:"machine-learning",count:19,cat:"ai",icon:"🧠",color:"#4C1D95",rgb:"76,29,149"},
+  {tag:"Security",slug:"security",count:18,cat:"systems",icon:"🔒",color:"#B91C1C",rgb:"185,28,28"},
+  {tag:"Desktop Applications",slug:"desktop-applications",count:18,cat:"other",icon:"🖥️",color:"#1E40AF",rgb:"30,64,175"},
+  {tag:"Go",slug:"go",count:17,cat:"languages",icon:"🐹",color:"#0C4A6E",rgb:"12,74,110"},
+  {tag:"TypeScript",slug:"typescript",count:17,cat:"languages",icon:"📘",color:"#1D4ED8",rgb:"29,78,216"},
+  {tag:"Graphics & 3D",slug:"graphics-3d",count:16,cat:"other",icon:"🎮",color:"#831843",rgb:"131,24,67"},
+  {tag:"Mathematics & Algorithms",slug:"mathematics-algorithms",count:16,cat:"science",icon:"∑",color:"#78350F",rgb:"120,53,15"},
+  {tag:"Operating Systems & Virtualization",slug:"operating-systems-virtualization",count:16,cat:"systems",icon:"💻",color:"#1E3A8A",rgb:"30,58,138"},
+  {tag:"Rust",slug:"rust",count:16,cat:"languages",icon:"🦀",color:"#9A3412",rgb:"154,52,18"},
+  {tag:"Physical & Earth Sciences",slug:"physical-earth-sciences",count:15,cat:"science",icon:"🔭",color:"#1E3A8A",rgb:"30,58,138"},
+  {tag:"Systems & Low-level Languages",slug:"systems-low-level-languages",count:14,cat:"languages",icon:"🔧",color:"#1F2937",rgb:"31,41,55"},
+  {tag:"IoT, Robotics & Autonomous",slug:"iot-robotics-autonomous-systems",count:14,cat:"other",icon:"🤖",color:"#064E3B",rgb:"6,78,59"},
+  {tag:"Big Data",slug:"big-data",count:13,cat:"ai",icon:"🌊",color:"#7C2D12",rgb:"124,45,18"},
+  {tag:"Networking",slug:"networking",count:12,cat:"systems",icon:"🌐",color:"#1E3A8A",rgb:"30,58,138"},
+  {tag:"Audio, Video & Media",slug:"audio-video-media",count:12,cat:"other",icon:"🎵",color:"#3B0764",rgb:"59,7,100"},
+  {tag:"Communications & Collaboration",slug:"communications-collaboration",count:12,cat:"other",icon:"💬",color:"#14532D",rgb:"20,83,45"},
+  {tag:"Generative AI & LLMs",slug:"generative-ai-llms",count:11,cat:"ai",icon:"✨",color:"#701A75",rgb:"112,26,117"},
+  {tag:"Mobile Languages",slug:"mobile-languages",count:11,cat:"languages",icon:"📲",color:"#1E3A8A",rgb:"30,58,138"},
+  {tag:"Accessibility & UX",slug:"accessibility-ux",count:10,cat:"other",icon:"♿",color:"#701A75",rgb:"112,26,117"},
+  {tag:"Systems Programming & Embedded",slug:"systems-programming-embedded",count:10,cat:"systems",icon:"🔌",color:"#1F2937",rgb:"31,41,55"},
+  {tag:"Ruby & PHP",slug:"ruby-php",count:10,cat:"languages",icon:"💎",color:"#881337",rgb:"136,19,55"},
+  {tag:"Computer Vision & NLP",slug:"computer-vision-nlp",count:8,cat:"ai",icon:"👁️",color:"#164E63",rgb:"22,78,99"},
+  {tag:"Games & Simulation",slug:"games-simulation",count:8,cat:"other",icon:"🕹️",color:"#14532D",rgb:"20,83,45"},
+  {tag:"GIS & Geospatial",slug:"gis-geospatial",count:6,cat:"science",icon:"🗺️",color:"#14532D",rgb:"20,83,45"},
+  {tag:"Software Composition & Compliance",slug:"software-composition-compliance",count:4,cat:"other",icon:"📋",color:"#374151",rgb:"55,65,81"},
+  {tag:"Fintech & Blockchain",slug:"fintech-blockchain",count:3,cat:"other",icon:"💰",color:"#78350F",rgb:"120,53,15"},
+  {tag:"Electronic Design & Hardware",slug:"electronic-design-hardware",count:2,cat:"systems",icon:"🔋",color:"#1E293B",rgb:"30,41,59"},
 ];
-
+const tagImages={'python':'images/python-logo.png','javascript':'images/javascript.webp','c-c':'images/C,C++.jpg','linux-unix':'images/Linux.png','java-jvm':'images/java.webp','rust':'images/rust.png','containers-kubernetes':'images/kubernetes.png','databases':'images/database.png','artificial-intelligence':'images/AI.png'};
 const grid=document.getElementById('grid');
-const tagImages = {
-  'python': 'python-logo.png',
-  'javascript': 'javascript.webp',
-  'c-c': 'C,C++.jpg',
-  'linux-unix': 'Linux.png',
-  'java-jvm': 'java.webp',
-  'rust': 'rust.png',
-  'containers-kubernetes': 'kubernetes.png',
-  'databases': 'database.png',
-  'artificial-intelligence': 'AI.png',
-  // Add more mappings as images are added
-};
 TAGS.forEach((t,i)=>{
   const a=document.createElement('a');
   a.className='tag-card';
   a.href=`tags/tag.html?slug=${t.slug}`;
   a.dataset.cat=t.cat;
   a.dataset.name=t.tag.toLowerCase();
-  a.style.cssText=`--card-color:${t.color};--c-rgb:${t.rgb};animation-delay:${Math.min(i*18,400)}ms`;
-  let emojiHtml = '';
-  if(tagImages[t.slug]) {
-    emojiHtml = `<img class=\"card-img-main\" src=\"images/${tagImages[t.slug]}\" alt=\"${t.tag} logo\">`;
-  } else {
-    emojiHtml = `<div class=\\\"card-emoji card-img-main\\\">${t.icon}</div>`;
-  }
+  a.style.cssText=`--card-color:${t.color};--card-color-lt:rgba(${t.rgb},.08);animation-delay:${Math.min(i*12,400)}ms`;
+  const icon=tagImages[t.slug]?`<img src="${tagImages[t.slug]}" alt="${t.tag}">`:`${t.icon}`;
   a.innerHTML=`
-    ${emojiHtml}
-    <div class=\"card-name\">${esc(t.tag)}</div>
-    <div class=\"card-count\">${t.count}</div>
-    <div class=\"card-count-sub\">organizations</div>
-    <div class=\"card-footer\">
-      <span class=\"card-cat\">${CAT_LABELS[t.cat]||t.cat}</span>
-      <span class=\"browse-link\">Browse →</span>
-    </div>`;
+    <div class="tc-icon">${icon}</div>
+    <div class="tc-body">
+      <div class="tc-name">${esc(t.tag)}</div>
+      <div class="tc-meta">
+        <span class="tc-count">${t.count} orgs</span>
+        <span class="tc-sep">·</span>
+        <span class="tc-cat">${CAT_LABELS[t.cat]||t.cat}</span>
+      </div>
+    </div>
+    <div class="tc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>`;
   grid.appendChild(a);
 });
-
 let activeCat='all';
 function render(){
   const q=document.getElementById('search').value.toLowerCase().trim();
-  let shown=0;
+  let n=0;
   document.querySelectorAll('.tag-card').forEach(c=>{
-    const show=(!q||c.dataset.name.includes(q))&&(activeCat==='all'||c.dataset.cat===activeCat);
-    c.classList.toggle('hidden',!show);
-    if(show)shown++;
+    const ok=(!q||c.dataset.name.includes(q))&&(activeCat==='all'||c.dataset.cat===activeCat);
+    c.classList.toggle('hidden',!ok);if(ok)n++;
   });
-  document.getElementById('showing').textContent=shown;
-  document.getElementById('empty').classList.toggle('show',shown===0);
+  document.getElementById('showing').textContent=n;
+  document.getElementById('empty').classList.toggle('show',n===0);
 }
 document.getElementById('search').addEventListener('input',render);
 document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{

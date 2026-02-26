@@ -1,292 +1,738 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
+<!-- <head> -->
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <title>Loading… · GSoC 2026</title> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet"> -->
+<!-- <style> -->
+<!-- :root{ -->
+<!--   --c:      #1A73E8; /* overridden by JS */ -->
+<!--   --c-lt:   #E8F0FE; -->
+<!--   --c-md:   rgba(26,115,232,.12); -->
+<!--   --c-bdr:  rgba(26,115,232,.3); -->
+<!--   --bg:     #F8F9FA; -->
+<!--   --white:  #FFFFFF; -->
+<!--   --border: #DADCE0; -->
+<!--   --text:   #202124; -->
+<!--   --text2:  #3C4043; -->
+<!--   --text3:  #5F6368; -->
+<!--   --text4:  #80868B; -->
+<!--   --shadow: 0 1px 3px rgba(60,64,67,.15),0 2px 8px rgba(60,64,67,.10); -->
+<!--   --shadow-h:0 4px 12px rgba(60,64,67,.20),0 8px 24px rgba(60,64,67,.12); -->
+<!--   --r: 12px; -->
+<!-- } -->
+<!-- *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} -->
+<!-- html{scroll-behavior:smooth} -->
+<!-- body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-height:100vh} -->
+<!---->
+<!-- /* ── TOP BAR ── */ -->
+<!-- .topbar{ -->
+<!--   background:var(--white);border-bottom:1px solid var(--border); -->
+<!--   padding:0 32px;display:flex;align-items:center;gap:14px;height:64px; -->
+<!--   position:sticky;top:0;z-index:100; -->
+<!-- } -->
+<!-- .back-btn{ -->
+<!--   display:inline-flex;align-items:center;gap:6px; -->
+<!--   font-size:13px;font-weight:500;color:var(--c); -->
+<!--   background:var(--c-lt);border:1px solid var(--c-bdr); -->
+<!--   border-radius:100px;padding:7px 16px;text-decoration:none; -->
+<!--   transition:all .15s; -->
+<!-- } -->
+<!-- .back-btn:hover{background:var(--c);color:white} -->
+<!-- .topbar-crumb{font-size:13px;color:var(--text4);display:flex;align-items:center;gap:6px} -->
+<!-- .topbar-crumb b{color:var(--text2);font-weight:500} -->
+<!-- .topbar-count{ -->
+<!--   margin-left:auto; -->
+<!--   background:var(--c-lt);color:var(--c); -->
+<!--   font-size:12px;font-weight:500;font-family:'Roboto Mono',monospace; -->
+<!--   padding:4px 12px;border-radius:100px; -->
+<!-- } -->
+<!---->
+<!-- /* ── HERO ── */ -->
+<!-- .hero{ -->
+<!--   background:var(--white);border-bottom:1px solid var(--border); -->
+<!--   padding:0;overflow:hidden; -->
+<!-- } -->
+<!-- .hero-color-bar{height:6px;background:var(--c);width:100%} -->
+<!-- .hero-inner{ -->
+<!--   max-width:1200px;margin:0 auto; -->
+<!--   padding:36px 32px 40px; -->
+<!--   display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start; -->
+<!-- } -->
+<!-- .hero-tag{ -->
+<!--   display:inline-flex;align-items:center;gap:8px; -->
+<!--   background:var(--c-lt);border:1px solid var(--c-bdr); -->
+<!--   border-radius:100px;padding:5px 14px;margin-bottom:14px; -->
+<!--   font-size:12px;font-weight:500;color:var(--c); -->
+<!--   font-family:'Roboto Mono',monospace;letter-spacing:.5px;text-transform:uppercase; -->
+<!-- } -->
+<!-- .hero-pulse{width:6px;height:6px;border-radius:50%;background:var(--c);animation:pulse 2s ease-in-out infinite} -->
+<!-- @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}} -->
+<!-- h1{ -->
+<!--   font-size:36px;font-weight:400;color:var(--text); -->
+<!--   letter-spacing:-.5px;line-height:1.2;margin-bottom:10px; -->
+<!-- } -->
+<!-- h1 b{font-weight:700} -->
+<!-- .hero-sub{font-size:15px;color:var(--text3);line-height:1.6;max-width:560px;margin-bottom:24px} -->
+<!-- .hero-stats{display:flex;gap:10px;flex-wrap:wrap} -->
+<!-- .hstat{ -->
+<!--   background:var(--bg);border:1px solid var(--border);border-radius:var(--r); -->
+<!--   padding:14px 20px;display:flex;flex-direction:column;gap:2px;min-width:110px; -->
+<!-- } -->
+<!-- .hstat-n{font-size:28px;font-weight:700;color:var(--c);line-height:1} -->
+<!-- .hstat-l{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text4);margin-top:2px} -->
+<!---->
+<!-- /* icon box */ -->
+<!-- .hero-icon-box{ -->
+<!--   width:120px;height:120px;border-radius:24px; -->
+<!--   background:var(--c-lt);border:2px solid var(--c-bdr); -->
+<!--   display:flex;align-items:center;justify-content:center; -->
+<!--   font-size:56px;flex-shrink:0; -->
+<!--   box-shadow:0 4px 20px rgba(0,0,0,.08); -->
+<!-- } -->
+<!---->
+<!-- /* ── SOURCE TAGS STRIP ── */ -->
+<!-- .source-strip{ -->
+<!--   background:var(--white);border-bottom:1px solid var(--border); -->
+<!--   padding:14px 32px; -->
+<!--   display:flex;align-items:center;gap:12px;flex-wrap:wrap; -->
+<!-- } -->
+<!-- .source-label{ -->
+<!--   font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px; -->
+<!--   color:var(--text4);font-family:'Roboto Mono',monospace;white-space:nowrap; -->
+<!-- } -->
+<!-- .source-pills{display:flex;flex-wrap:wrap;gap:5px} -->
+<!-- .src-pill{ -->
+<!--   font-size:11px;font-family:'Roboto Mono',monospace; -->
+<!--   color:var(--text3);background:var(--bg); -->
+<!--   border:1px solid var(--border);border-radius:4px;padding:2px 8px; -->
+<!-- } -->
+<!---->
+<!-- /* ── TOOLBAR ── */ -->
+<!-- .toolbar{ -->
+<!--   max-width:1200px;margin:0 auto;padding:20px 32px 12px; -->
+<!--   display:flex;gap:10px;align-items:center;flex-wrap:wrap; -->
+<!-- } -->
+<!-- .search-wrap{position:relative;flex:1;min-width:200px;max-width:400px} -->
+<!-- .search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--text4);pointer-events:none} -->
+<!-- .search-input{ -->
+<!--   width:100%;background:var(--white);border:1px solid var(--border);border-radius:24px; -->
+<!--   padding:9px 16px 9px 40px;font-family:'Roboto',sans-serif;font-size:13px;color:var(--text);outline:none; -->
+<!--   transition:border-color .2s,box-shadow .2s; -->
+<!-- } -->
+<!-- .search-input::placeholder{color:var(--text4)} -->
+<!-- .search-input:focus{border-color:var(--c);box-shadow:0 0 0 3px var(--c-md)} -->
+<!-- .filter-chips{display:flex;gap:6px;flex-wrap:wrap} -->
+<!-- .chip{ -->
+<!--   background:var(--white);border:1px solid var(--border);border-radius:100px; -->
+<!--   padding:6px 14px;font-size:12px;font-weight:500;color:var(--text3); -->
+<!--   cursor:pointer;transition:all .15s;font-family:'Roboto',sans-serif; -->
+<!-- } -->
+<!-- .chip:hover{border-color:var(--c);color:var(--c);background:var(--c-lt)} -->
+<!-- .chip.active{background:var(--c);border-color:var(--c);color:white} -->
+<!-- .rc{margin-left:auto;font-size:13px;color:var(--text4);font-family:'Roboto Mono',monospace;white-space:nowrap} -->
+<!-- .rc b{color:var(--c)} -->
+<!---->
+<!-- /* ── STATUS ── */ -->
+<!-- .status-wrap{max-width:1200px;margin:0 auto;padding:12px 32px 0} -->
+<!-- .status{ -->
+<!--   padding:10px 16px;border-radius:var(--r);font-size:13px; -->
+<!--   font-family:'Roboto Mono',monospace;display:flex;align-items:center;gap:8px; -->
+<!-- } -->
+<!-- .status.loading{background:#E8F0FE;color:#1565C0;border:1px solid rgba(26,115,232,.2)} -->
+<!-- .status.ok{background:#E6F4EA;color:#137333;border:1px solid rgba(19,115,51,.2)} -->
+<!-- .status.error{background:#FCE8E6;color:#C5221F;border:1px solid rgba(197,34,31,.2)} -->
+<!---->
+<!-- /* ── ORG GRID ── */ -->
+<!-- .grid{ -->
+<!--   max-width:1200px;margin:0 auto;padding:8px 32px 64px; -->
+<!--   display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px; -->
+<!-- } -->
+<!---->
+<!-- /* ── ORG CARD ── */ -->
+<!-- .card{ -->
+<!--   background:var(--white);border:1px solid var(--border); -->
+<!--   border-radius:var(--r);padding:0; -->
+<!--   transition:box-shadow .2s,transform .2s; -->
+<!--   animation:fadeUp .3s ease both; -->
+<!--   display:flex;flex-direction:column;overflow:hidden; -->
+<!-- } -->
+<!-- .card:hover{box-shadow:var(--shadow-h);transform:translateY(-2px)} -->
+<!-- @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}} -->
+<!---->
+<!-- /* colored left border */ -->
+<!-- .card{border-left:4px solid var(--c)} -->
+<!---->
+<!-- .card-head{ -->
+<!--   padding:16px 18px 12px; -->
+<!--   display:flex;align-items:flex-start;gap:12px; -->
+<!--   border-bottom:1px solid var(--border); -->
+<!-- } -->
+<!-- .card-avatar{ -->
+<!--   flex-shrink:0;width:40px;height:40px;border-radius:8px; -->
+<!--   background:var(--c-lt);border:1px solid var(--c-bdr); -->
+<!--   display:flex;align-items:center;justify-content:center; -->
+<!--   font-size:18px;font-weight:700;color:var(--c); -->
+<!--   font-family:'Roboto',sans-serif; -->
+<!-- } -->
+<!-- .card-head-right{flex:1;min-width:0} -->
+<!-- .card-name{ -->
+<!--   font-size:15px;font-weight:500;color:var(--text); -->
+<!--   line-height:1.35;margin-bottom:2px;word-break:break-word; -->
+<!-- } -->
+<!-- .card-name a{color:inherit;text-decoration:none} -->
+<!-- .card-name a:hover{color:var(--c);text-decoration:underline} -->
+<!-- .card-url{ -->
+<!--   font-size:11px;color:var(--text4);font-family:'Roboto Mono',monospace; -->
+<!--   white-space:nowrap;overflow:hidden;text-overflow:ellipsis; -->
+<!--   display:flex;align-items:center;gap:4px; -->
+<!-- } -->
+<!-- .card-url a{color:var(--text4);text-decoration:none} -->
+<!-- .card-url a:hover{color:var(--c)} -->
+<!---->
+<!-- .card-body{padding:12px 18px;flex:1} -->
+<!-- .card-ctx{ -->
+<!--   font-size:13px;color:var(--text2);line-height:1.6; -->
+<!-- } -->
+<!-- .ctx-label{ -->
+<!--   font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1px; -->
+<!--   color:var(--text4);margin-bottom:5px;font-family:'Roboto Mono',monospace; -->
+<!--   display:block; -->
+<!-- } -->
+<!-- .card-foot{ -->
+<!--   padding:10px 18px 14px; -->
+<!--   display:flex;align-items:center;justify-content:space-between; -->
+<!-- } -->
+<!-- .mt-chip{ -->
+<!--   font-size:11px;font-weight:500;padding:3px 10px;border-radius:4px; -->
+<!--   font-family:'Roboto Mono',monospace;letter-spacing:.5px;text-transform:uppercase; -->
+<!-- } -->
+<!-- .mt-tag     {background:#E8F0FE;color:#1A73E8} -->
+<!-- .mt-api     {background:#FEF7E0;color:#E37400} -->
+<!-- .mt-section {background:#EDE7F6;color:#5E35B1} -->
+<!-- .mt-keyword {background:#FCE8E6;color:#C5221F} -->
+<!-- .mt-default {background:var(--bg);color:var(--text3)} -->
+<!-- .visit-btn{ -->
+<!--   display:inline-flex;align-items:center;gap:5px; -->
+<!--   font-size:13px;font-weight:500;color:var(--c); -->
+<!--   background:var(--c-lt);border:1px solid var(--c-bdr); -->
+<!--   border-radius:100px;padding:6px 16px;text-decoration:none; -->
+<!--   transition:all .15s; -->
+<!-- } -->
+<!-- .visit-btn:hover{background:var(--c);color:white} -->
+<!---->
+<!-- .empty{grid-column:1/-1;text-align:center;padding:80px 20px;display:none} -->
+<!-- .empty.show{display:block} -->
+<!-- .empty-icon{font-size:3rem;margin-bottom:16px} -->
+<!-- .empty h3{font-size:18px;font-weight:400;color:var(--text3);margin-bottom:8px} -->
+<!-- .empty p{font-size:13px;color:var(--text4)} -->
+<!---->
+<!-- /* ── FOOTER ── */ -->
+<!-- footer{background:var(--white);border-top:1px solid var(--border);padding:20px 32px;text-align:center} -->
+<!-- footer p{font-size:12px;color:var(--text4);line-height:2} -->
+<!-- footer a{color:var(--c);text-decoration:none} -->
+<!-- footer a:hover{text-decoration:underline} -->
+<!---->
+<!-- @media(max-width:768px){ -->
+<!--   .hero-inner{grid-template-columns:1fr}.hero-icon-box{display:none} -->
+<!--   .hero-inner,.toolbar,.grid,.source-strip,.status-wrap,.topbar{padding-left:20px;padding-right:20px} -->
+<!-- } -->
+<!-- </style> -->
+<!-- </head> -->
+<!-- <body> -->
+<!---->
+<!-- <!-- TOP BAR --> -->
+<!-- <nav class="topbar"> -->
+<!--   <a class="back-btn" href="../index.html"> -->
+<!--     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg> -->
+<!--     All Tags -->
+<!--   </a> -->
+<!--   <div class="topbar-crumb"> -->
+<!--     GSoC 2026 &rsaquo; <b id="topbar-name">Loading…</b> -->
+<!--   </div> -->
+<!--   <div class="topbar-count" id="topbar-count" style="display:none"></div> -->
+<!-- </nav> -->
+<!---->
+<!-- <!-- HERO --> -->
+<!-- <section class="hero"> -->
+<!--   <div class="hero-color-bar"></div> -->
+<!--   <div class="hero-inner"> -->
+<!--     <div> -->
+<!--       <div class="hero-tag" id="hero-tag"> -->
+<!--         <span class="hero-pulse"></span> -->
+<!--         <span id="hero-tag-label">Loading</span> -->
+<!--       </div> -->
+<!--       <h1><b id="h1-name">—</b><br><span id="h1-sub" style="color:var(--text3);font-weight:300">Organizations · GSoC 2026</span></h1> -->
+<!--       <p class="hero-sub" id="hero-sub">Organizations participating in Google Summer of Code 2026 tagged with this technology.</p> -->
+<!--       <div class="hero-stats"> -->
+<!--         <div class="hstat"><span class="hstat-n" id="stat-orgs">–</span><span class="hstat-l">Organizations</span></div> -->
+<!--         <div class="hstat"><span class="hstat-n" id="stat-src">–</span><span class="hstat-l">Source Tags</span></div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="hero-icon-box" id="icon-box">✦</div> -->
+<!--   </div> -->
+<!-- </section> -->
+<!---->
+<!-- <!-- SOURCE TAGS --> -->
+<!-- <div class="source-strip" id="source-strip" style="display:none"> -->
+<!--   <span class="source-label">Merged from</span> -->
+<!--   <div class="source-pills" id="source-pills"></div> -->
+<!-- </div> -->
+<!---->
+<!-- <!-- STATUS --> -->
+<!-- <div class="status-wrap"> -->
+<!--   <div class="status loading" id="status">⏳ Loading data…</div> -->
+<!-- </div> -->
+<!---->
+<!-- <!-- TOOLBAR --> -->
+<!-- <div class="toolbar" id="toolbar" style="display:none"> -->
+<!--   <div class="search-wrap"> -->
+<!--     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> -->
+<!--     <input class="search-input" id="search" type="text" placeholder="Search organizations…" autocomplete="off"> -->
+<!--   </div> -->
+<!--   <div class="filter-chips"> -->
+<!--     <button class="chip active" data-f="all">All</button> -->
+<!--     <button class="chip" data-f="tag">Tag match</button> -->
+<!--     <button class="chip" data-f="api">API</button> -->
+<!--     <button class="chip" data-f="section">Section</button> -->
+<!--     <button class="chip" data-f="keyword">Keyword</button> -->
+<!--   </div> -->
+<!--   <div class="rc">showing <b id="showing">0</b></div> -->
+<!-- </div> -->
+<!---->
+<!-- <!-- GRID --> -->
+<!-- <div class="grid" id="grid"> -->
+<!--   <div class="empty" id="empty"> -->
+<!--     <div class="empty-icon">🔍</div> -->
+<!--     <h3>No results found</h3> -->
+<!--     <p>Try adjusting your search or filter</p> -->
+<!--   </div> -->
+<!-- </div> -->
+<!---->
+<!-- <footer> -->
+<!--   <p> -->
+<!--     <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a> -->
+<!--     &nbsp;·&nbsp; -->
+<!--     <a href="../index.html">← Back to all tags</a> -->
+<!--   </p> -->
+<!-- </footer> -->
+<!---->
+<!-- <script> -->
+<!-- /* ── TAG METADATA ────────────────────────────────────────────────────── */ -->
+<!-- const TAG_META={ -->
+<!--   "python":   {tag:"Python",icon:"🐍",color:"#1565C0"}, -->
+<!--   "javascript":{tag:"JavaScript",icon:"⚡",color:"#F9A825"}, -->
+<!--   "c-c":      {tag:"C/C++",icon:"⚙️",color:"#512DA8"}, -->
+<!--   "web-backend-full-stack":{tag:"Web Backend & Full Stack",icon:"🌐",color:"#00897B"}, -->
+<!--   "developer-tools-qa":{tag:"Developer Tools & QA",icon:"🛠️",color:"#546E7A"}, -->
+<!--   "java-jvm": {tag:"Java & JVM",icon:"☕",color:"#E64A19"}, -->
+<!--   "web-frontend":{tag:"Web Frontend",icon:"🎨",color:"#0097A7"}, -->
+<!--   "scripting-other-languages":{tag:"Scripting & Other Languages",icon:"📜",color:"#7B1FA2"}, -->
+<!--   "data-science-analytics":{tag:"Data Science & Analytics",icon:"📊",color:"#0277BD"}, -->
+<!--   "education-humanities":{tag:"Education & Humanities",icon:"📚",color:"#C62828"}, -->
+<!--   "artificial-intelligence":{tag:"Artificial Intelligence",icon:"🤖",color:"#AD1457"}, -->
+<!--   "compilers-build-tools":{tag:"Compilers & Build Tools",icon:"🔨",color:"#F57F17"}, -->
+<!--   "scientific-computing-hpc":{tag:"Scientific Computing & HPC",icon:"🔬",color:"#00695C"}, -->
+<!--   "cloud-infrastructure":{tag:"Cloud & Infrastructure",icon:"☁️",color:"#FF6F00"}, -->
+<!--   "containers-kubernetes":{tag:"Containers & Kubernetes",icon:"🐳",color:"#1565C0"}, -->
+<!--   "databases":{tag:"Databases",icon:"🗄️",color:"#1B5E20"}, -->
+<!--   "linux-unix":{tag:"Linux & Unix",icon:"🐧",color:"#827717"}, -->
+<!--   "open-source-research":{tag:"Open Source & Research",icon:"🔓",color:"#2E7D32"}, -->
+<!--   "bioinformatics-health":{tag:"Bioinformatics & Health",icon:"🧬",color:"#1A6B1A"}, -->
+<!--   "mobile-development":{tag:"Mobile Development",icon:"📱",color:"#1565C0"}, -->
+<!--   "devops-ci-cd":{tag:"DevOps & CI/CD",icon:"🔄",color:"#B71C1C"}, -->
+<!--   "machine-learning":{tag:"Machine Learning",icon:"🧠",color:"#6A1B9A"}, -->
+<!--   "security":{tag:"Security",icon:"🔒",color:"#C62828"}, -->
+<!--   "desktop-applications":{tag:"Desktop Applications",icon:"🖥️",color:"#1565C0"}, -->
+<!--   "go":{tag:"Go",icon:"🐹",color:"#00838F"}, -->
+<!--   "typescript":{tag:"TypeScript",icon:"📘",color:"#1565C0"}, -->
+<!--   "graphics-3d":{tag:"Graphics & 3D",icon:"🎮",color:"#880E4F"}, -->
+<!--   "mathematics-algorithms":{tag:"Mathematics & Algorithms",icon:"∑",color:"#B71C1C"}, -->
+<!--   "operating-systems-virtualization":{tag:"Operating Systems & Virtualization",icon:"💻",color:"#0D47A1"}, -->
+<!--   "rust":{tag:"Rust",icon:"🦀",color:"#BF360C"}, -->
+<!--   "physical-earth-sciences":{tag:"Physical & Earth Sciences",icon:"🔭",color:"#0D47A1"}, -->
+<!--   "systems-low-level-languages":{tag:"Systems & Low-level Languages",icon:"🔧",color:"#37474F"}, -->
+<!--   "iot-robotics-autonomous-systems":{tag:"IoT, Robotics & Autonomous Systems",icon:"🤖",color:"#004D40"}, -->
+<!--   "big-data":{tag:"Big Data",icon:"🌊",color:"#BF360C"}, -->
+<!--   "networking":{tag:"Networking",icon:"🌐",color:"#01579B"}, -->
+<!--   "audio-video-media":{tag:"Audio, Video & Media",icon:"🎵",color:"#4A148C"}, -->
+<!--   "communications-collaboration":{tag:"Communications & Collaboration",icon:"💬",color:"#1B5E20"}, -->
+<!--   "generative-ai-llms":{tag:"Generative AI & LLMs",icon:"✨",color:"#880E4F"}, -->
+<!--   "mobile-languages":{tag:"Mobile Languages",icon:"📲",color:"#01579B"}, -->
+<!--   "accessibility-ux":{tag:"Accessibility & UX",icon:"♿",color:"#880E4F"}, -->
+<!--   "systems-programming-embedded":{tag:"Systems Programming & Embedded",icon:"🔌",color:"#37474F"}, -->
+<!--   "ruby-php":{tag:"Ruby & PHP",icon:"💎",color:"#B71C1C"}, -->
+<!--   "computer-vision-nlp":{tag:"Computer Vision & NLP",icon:"👁️",color:"#006064"}, -->
+<!--   "games-simulation":{tag:"Games & Simulation",icon:"🎮",color:"#1B5E20"}, -->
+<!--   "gis-geospatial":{tag:"GIS & Geospatial",icon:"🗺️",color:"#1B5E20"}, -->
+<!--   "software-composition-compliance":{tag:"Software Composition & Compliance",icon:"📋",color:"#37474F"}, -->
+<!--   "fintech-blockchain":{tag:"Fintech & Blockchain",icon:"💰",color:"#E65100"}, -->
+<!--   "electronic-design-hardware":{tag:"Electronic Design & Hardware",icon:"🔋",color:"#546E7A"}, -->
+<!-- }; -->
+<!---->
+<!-- /* ── INIT ──────────────────────────────────────────────────────────── */ -->
+<!-- const params=new URLSearchParams(location.search); -->
+<!-- const slug=params.get('slug')||''; -->
+<!-- const meta=TAG_META[slug]; -->
+<!---->
+<!-- if(!meta){ -->
+<!--   setStatus('error',`⚠️ Unknown tag: "${slug}"`); -->
+<!-- }else{ -->
+<!--   applyTheme(meta.color); -->
+<!--   renderHero(meta,slug); -->
+<!--   loadOrgs(slug); -->
+<!-- } -->
+<!---->
+<!-- function applyTheme(hex){ -->
+<!--   const r=document.documentElement; -->
+<!--   r.style.setProperty('--c',hex); -->
+<!--   // derive light/border from hex -->
+<!--   const rgb=hexToRgb(hex); -->
+<!--   r.style.setProperty('--c-lt',`rgba(${rgb},.1)`); -->
+<!--   r.style.setProperty('--c-md',`rgba(${rgb},.12)`); -->
+<!--   r.style.setProperty('--c-bdr',`rgba(${rgb},.3)`); -->
+<!-- } -->
+<!-- function renderHero(m,slug){ -->
+<!--   document.title=`${m.tag} · GSoC 2026`; -->
+<!--   document.getElementById('topbar-name').textContent=m.tag; -->
+<!--   document.getElementById('hero-tag-label').textContent=m.tag; -->
+<!--   document.getElementById('h1-name').textContent=m.tag; -->
+<!--   document.getElementById('icon-box').textContent=m.icon; -->
+<!--   document.getElementById('hero-sub').textContent= -->
+<!--     `Organizations participating in Google Summer of Code 2026 tagged with ${m.tag}. Browse, search, and explore.`; -->
+<!-- } -->
+<!---->
+<!-- /* ── LOAD JSON ──────────────────────────────────────────────────────── */ -->
+<!-- let allOrgs=[]; -->
+<!-- let activeFilter='all'; -->
+<!---->
+<!-- function loadOrgs(slug){ -->
+<!--   setStatus('loading',`⏳ Loading ${slug}.json…`); -->
+<!--   fetch(`../json/${slug}.json`) -->
+<!--     .then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}) -->
+<!--     .then(data=>{ -->
+<!--       setStatus('ok',`✅ Loaded successfully`); -->
+<!--       setTimeout(()=>document.querySelector('.status-wrap').style.display='none',2000); -->
+<!---->
+<!--       // Try every possible array field name -->
+<!--       allOrgs = data.organizations||data.orgs||data.data||data.results||[]; -->
+<!--       if(!Array.isArray(allOrgs)&&typeof allOrgs==='object'){ -->
+<!--         allOrgs=Object.values(allOrgs); -->
+<!--       } -->
+<!---->
+<!--       // Source tags from meta — try to get from data too -->
+<!--       const srcTags=data.source_tags||[]; -->
+<!--       if(srcTags.length){ -->
+<!--         const pills=document.getElementById('source-pills'); -->
+<!--         pills.innerHTML=''; -->
+<!--         srcTags.forEach(s=>{ -->
+<!--           const p=document.createElement('span'); -->
+<!--           p.className='src-pill';p.textContent=s;pills.appendChild(p); -->
+<!--         }); -->
+<!--         document.getElementById('source-strip').style.display='flex'; -->
+<!--         document.getElementById('stat-src').textContent=srcTags.length; -->
+<!--       }else{ -->
+<!--         document.getElementById('source-strip').style.display='none'; -->
+<!--       } -->
+<!---->
+<!--       document.getElementById('stat-orgs').textContent=allOrgs.length; -->
+<!--       document.getElementById('topbar-count').textContent=`${allOrgs.length} orgs`; -->
+<!--       document.getElementById('topbar-count').style.display=''; -->
+<!--       document.getElementById('toolbar').style.display='flex'; -->
+<!--       render(); -->
+<!--     }) -->
+<!--     .catch(err=>{ -->
+<!--       setStatus('error',`⚠️ Could not load ../json/${slug}.json — ${err.message}`); -->
+<!--     }); -->
+<!-- } -->
+<!---->
+<!-- /* ── RENDER ────────────────────────────────────────────────────────── */ -->
+<!-- function render(){ -->
+<!--   const q=document.getElementById('search').value.toLowerCase().trim(); -->
+<!--   const grid=document.getElementById('grid'); -->
+<!--   const empty=document.getElementById('empty'); -->
+<!---->
+<!--   const filtered=allOrgs.filter(org=>{ -->
+<!--     const rawUrl=getField(org,'url','website','link','gsoc_url','homepage_url')||''; -->
+<!--     const name=slugToName(rawUrl)||getField(org,'name','org_name','organization','title','project_name')||'Unknown Organization'; -->
+<!--     const ctx=getContext(org); -->
+<!--     const nameMatch=!q||name.toLowerCase().includes(q); -->
+<!--     const ctxMatch=!q||ctx.toLowerCase().includes(q); -->
+<!--     if(!nameMatch&&!ctxMatch)return false; -->
+<!--     if(activeFilter==='all')return true; -->
+<!--     const mt=(org.match_type||'').toLowerCase(); -->
+<!--     if(activeFilter==='tag')    return mt.includes('tag'); -->
+<!--     if(activeFilter==='api')    return mt.includes('api'); -->
+<!--     if(activeFilter==='section')return mt.includes('section'); -->
+<!--     if(activeFilter==='keyword')return mt.includes('keyword')||mt.includes('language')||mt.includes('match'); -->
+<!--     return true; -->
+<!--   }); -->
+<!---->
+<!--   document.getElementById('showing').textContent=filtered.length; -->
+<!--   [...grid.querySelectorAll('.card')].forEach(c=>c.remove()); -->
+<!--   if(!filtered.length){empty.classList.add('show');return} -->
+<!--   empty.classList.remove('show'); -->
+<!---->
+<!--   filtered.forEach((org,i)=>{ -->
+<!--     const url=getField(org,'url','website','link','gsoc_url','homepage_url')||'#'; -->
+<!--     const name=slugToName(url)||getField(org,'name','org_name','organization','title','project_name')||'Unknown Organization'; -->
+<!--     const ctx=getContext(org); -->
+<!--     const mt=(org.match_type||'').toLowerCase(); -->
+<!--     const initial=name.trim()[0]?.toUpperCase()||'?'; -->
+<!---->
+<!--     // Match type chip styling -->
+<!--     let chipCls='mt-default'; -->
+<!--     let chipLbl=org.match_type||'match'; -->
+<!--     if(mt.includes('tag'))   {chipCls='mt-tag';   chipLbl='Tag match'} -->
+<!--     else if(mt.includes('api')){chipCls='mt-api';  chipLbl='API match'} -->
+<!--     else if(mt.includes('sec')){chipCls='mt-section';chipLbl='Section match'} -->
+<!--     else if(mt.length)        {chipCls='mt-keyword';chipLbl=org.match_type} -->
+<!---->
+<!--     // Clean URL for display -->
+<!--     let displayUrl=''; -->
+<!--     try{displayUrl=new URL(url).hostname.replace('www.','')}catch(e){displayUrl=url} -->
+<!---->
+<!--     const card=document.createElement('div'); -->
+<!--     card.className='card'; -->
+<!--     card.style.animationDelay=`${Math.min(i*25,500)}ms`; -->
+<!--     card.innerHTML=` -->
+<!--       <div class="card-head"> -->
+<!--         <div class="card-avatar">${esc(initial)}</div> -->
+<!--         <div class="card-head-right"> -->
+<!--           <div class="card-name"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a></div> -->
+<!--           ${url&&url!=='#'?`<div class="card-url"> -->
+<!--             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> -->
+<!--             <a href="${esc(url)}" target="_blank" rel="noopener">${esc(displayUrl)}</a> -->
+<!--           </div>`:''} -->
+<!--         </div> -->
+<!--       </div> -->
+<!--       ${ctx?`<div class="card-body"> -->
+<!--         <span class="ctx-label">Tech Context</span> -->
+<!--         <div class="card-ctx">${esc(ctx.slice(0,240))}${ctx.length>240?'…':''}</div> -->
+<!--       </div>`:''} -->
+<!--       <div class="card-foot"> -->
+<!--         <span class="mt-chip ${chipCls}">${esc(chipLbl)}</span> -->
+<!--         <a class="visit-btn" href="${esc(url)}" target="_blank" rel="noopener"> -->
+<!--           Visit org -->
+<!--           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg> -->
+<!--         </a> -->
+<!--       </div>`; -->
+<!--     grid.appendChild(card); -->
+<!--   }); -->
+<!-- } -->
+<!---->
+<!-- /* ── HELPERS ───────────────────────────────────────────────────────── */ -->
+<!-- function slugToName(url){ -->
+<!--   try{ -->
+<!--     const parts=new URL(url).pathname.replace(/\/+$/,'').split('/'); -->
+<!--     const slug=parts[parts.length-1]; -->
+<!--     if(!slug)return null; -->
+<!--     // Convert "pecan-project" → "Pecan Project" -->
+<!--     return slug.split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' '); -->
+<!--   }catch(e){return null} -->
+<!-- } -->
+<!-- function getField(obj,...keys){ -->
+<!--   for(const k of keys){if(obj[k]!=null&&obj[k]!=='')return obj[k]} -->
+<!--   return null; -->
+<!-- } -->
+<!-- function getContext(org){ -->
+<!--   // Try all possible field names -->
+<!--   let ctx=getField(org,'tech_context','context','description','technologies','matched_text','tech','summary'); -->
+<!--   if(!ctx)return ''; -->
+<!--   // Strip literal "" or '' artifacts from JSON.stringify fallbacks -->
+<!--   ctx=String(ctx).trim(); -->
+<!--   if(ctx==='"\"'||ctx==='""'||ctx==="''"||ctx==='{}'||ctx==='[]'||ctx==='null')return ''; -->
+<!--   return ctx; -->
+<!-- } -->
+<!-- function setStatus(type,msg){ -->
+<!--   const el=document.getElementById('status'); -->
+<!--   el.className='status '+type;el.textContent=msg; -->
+<!-- } -->
+<!-- function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')} -->
+<!-- function hexToRgb(hex){ -->
+<!--   const r=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex); -->
+<!--   return r?`${parseInt(r[1],16)},${parseInt(r[2],16)},${parseInt(r[3],16)}`:'26,115,232'; -->
+<!-- } -->
+<!---->
+<!-- document.getElementById('search').addEventListener('input',render); -->
+<!-- document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{ -->
+<!--   document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active')); -->
+<!--   c.classList.add('active');activeFilter=c.dataset.f;render(); -->
+<!-- })); -->
+<!-- </script> -->
+<!-- </body> -->
+<!-- </html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Loading… · GSoC 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
-:root{
-  --c:      #1A73E8; /* overridden by JS */
-  --c-lt:   #E8F0FE;
-  --c-md:   rgba(26,115,232,.12);
-  --c-bdr:  rgba(26,115,232,.3);
-  --bg:     #F8F9FA;
-  --white:  #FFFFFF;
-  --border: #DADCE0;
-  --text:   #202124;
-  --text2:  #3C4043;
-  --text3:  #5F6368;
-  --text4:  #80868B;
-  --shadow: 0 1px 3px rgba(60,64,67,.15),0 2px 8px rgba(60,64,67,.10);
-  --shadow-h:0 4px 12px rgba(60,64,67,.20),0 8px 24px rgba(60,64,67,.12);
-  --r: 12px;
+:root {
+  --c:     #1A56DB;
+  --c-lt:  rgba(26,86,219,.08);
+  --c-bdr: rgba(26,86,219,.25);
+  --ink:   #0A0A0F;
+  --ink2:  #2D2D3A;
+  --ink3:  #6B6B80;
+  --ink4:  #ABABBE;
+  --paper: #FAFAF7;
+  --paper2:#F3F3EE;
+  --white: #FFFFFF;
+  --rule:  #E2E2D9;
+  --accent:#FF4D1C;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
 
-/* ── TOP BAR ── */
-.topbar{
-  background:var(--white);border-bottom:1px solid var(--border);
-  padding:0 32px;display:flex;align-items:center;gap:14px;height:64px;
-  position:sticky;top:0;z-index:100;
-}
-.back-btn{
-  display:inline-flex;align-items:center;gap:6px;
-  font-size:13px;font-weight:500;color:var(--c);
-  background:var(--c-lt);border:1px solid var(--c-bdr);
-  border-radius:100px;padding:7px 16px;text-decoration:none;
-  transition:all .15s;
-}
-.back-btn:hover{background:var(--c);color:white}
-.topbar-crumb{font-size:13px;color:var(--text4);display:flex;align-items:center;gap:6px}
-.topbar-crumb b{color:var(--text2);font-weight:500}
-.topbar-count{
-  margin-left:auto;
-  background:var(--c-lt);color:var(--c);
-  font-size:12px;font-weight:500;font-family:'Roboto Mono',monospace;
-  padding:4px 12px;border-radius:100px;
-}
+/* ── TOPBAR ── */
+.topbar{background:var(--ink);padding:0 40px;height:52px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:100}
+.back-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:rgba(255,255,255,.55);text-decoration:none;transition:color .15s;letter-spacing:.2px}
+.back-btn svg{opacity:.6}
+.back-btn:hover{color:white}
+.topbar-rule{width:1px;height:18px;background:rgba(255,255,255,.15)}
+.topbar-crumb{font-size:13px;color:rgba(255,255,255,.4)}
+.topbar-crumb b{color:rgba(255,255,255,.8);font-weight:500}
+.topbar-count{margin-left:auto;font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--c);background:rgba(26,86,219,.18);border:1px solid rgba(26,86,219,.35);padding:3px 10px;border-radius:4px;letter-spacing:.5px;display:none}
 
 /* ── HERO ── */
-.hero{
-  background:var(--white);border-bottom:1px solid var(--border);
-  padding:0;overflow:hidden;
-}
-.hero-color-bar{height:6px;background:var(--c);width:100%}
-.hero-inner{
-  max-width:1200px;margin:0 auto;
-  padding:36px 32px 40px;
-  display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;
-}
-.hero-tag{
-  display:inline-flex;align-items:center;gap:8px;
-  background:var(--c-lt);border:1px solid var(--c-bdr);
-  border-radius:100px;padding:5px 14px;margin-bottom:14px;
-  font-size:12px;font-weight:500;color:var(--c);
-  font-family:'Roboto Mono',monospace;letter-spacing:.5px;text-transform:uppercase;
-}
-.hero-pulse{width:6px;height:6px;border-radius:50%;background:var(--c);animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-h1{
-  font-size:36px;font-weight:400;color:var(--text);
-  letter-spacing:-.5px;line-height:1.2;margin-bottom:10px;
-}
-h1 b{font-weight:700}
-.hero-sub{font-size:15px;color:var(--text3);line-height:1.6;max-width:560px;margin-bottom:24px}
-.hero-stats{display:flex;gap:10px;flex-wrap:wrap}
-.hstat{
-  background:var(--bg);border:1px solid var(--border);border-radius:var(--r);
-  padding:14px 20px;display:flex;flex-direction:column;gap:2px;min-width:110px;
-}
-.hstat-n{font-size:28px;font-weight:700;color:var(--c);line-height:1}
-.hstat-l{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text4);margin-top:2px}
+.hero{background:var(--white);border-bottom:1px solid var(--rule);padding:0;overflow:hidden}
+.hero-bar{height:4px;background:var(--c);width:100%}
+.hero-inner{max-width:1160px;margin:0 auto;padding:40px 40px 44px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start}
+.hero-kicker{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:2px;color:var(--c);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.hero-kicker::before{content:'';display:block;width:16px;height:2px;background:var(--c)}
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,52px);font-weight:900;line-height:1.05;letter-spacing:-.5px;color:var(--ink);margin-bottom:12px}
+.hero-h1 .h1-sub{display:block;font-family:'DM Sans',sans-serif;font-size:.4em;font-weight:300;color:var(--ink3);letter-spacing:0;margin-top:4px}
+.hero-sub{font-size:14px;font-weight:300;color:var(--ink3);max-width:480px;line-height:1.7;margin-bottom:24px}
+.hero-stats{display:flex;gap:8px;flex-wrap:wrap}
+.hstat{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:12px 18px;display:flex;flex-direction:column;gap:2px;min-width:100px}
+.hstat-n{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--c);line-height:1}
+.hstat-l{font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:1.2px;color:var(--ink4);margin-top:2px}
 
 /* icon box */
-.hero-icon-box{
-  width:120px;height:120px;border-radius:24px;
-  background:var(--c-lt);border:2px solid var(--c-bdr);
-  display:flex;align-items:center;justify-content:center;
-  font-size:56px;flex-shrink:0;
-  box-shadow:0 4px 20px rgba(0,0,0,.08);
-}
+.hero-icon{width:100px;height:100px;border-radius:20px;background:var(--c-lt);border:1.5px solid var(--c-bdr);display:flex;align-items:center;justify-content:center;font-size:46px;flex-shrink:0}
 
-/* ── SOURCE TAGS STRIP ── */
-.source-strip{
-  background:var(--white);border-bottom:1px solid var(--border);
-  padding:14px 32px;
-  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
-}
-.source-label{
-  font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px;
-  color:var(--text4);font-family:'Roboto Mono',monospace;white-space:nowrap;
-}
-.source-pills{display:flex;flex-wrap:wrap;gap:5px}
-.src-pill{
-  font-size:11px;font-family:'Roboto Mono',monospace;
-  color:var(--text3);background:var(--bg);
-  border:1px solid var(--border);border-radius:4px;padding:2px 8px;
-}
+/* ── SOURCE TAGS ── */
+.source-strip{background:var(--paper2);border-bottom:1px solid var(--rule);padding:12px 40px;display:none;align-items:center;gap:10px;flex-wrap:wrap}
+.source-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1.5px;color:var(--ink4);white-space:nowrap}
+.source-pills{display:flex;flex-wrap:wrap;gap:4px}
+.src-pill{font-size:11px;font-family:'DM Mono',monospace;color:var(--ink3);background:var(--white);border:1px solid var(--rule);border-radius:4px;padding:2px 8px}
 
 /* ── TOOLBAR ── */
-.toolbar{
-  max-width:1200px;margin:0 auto;padding:20px 32px 12px;
-  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
-}
-.search-wrap{position:relative;flex:1;min-width:200px;max-width:400px}
-.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--text4);pointer-events:none}
-.search-input{
-  width:100%;background:var(--white);border:1px solid var(--border);border-radius:24px;
-  padding:9px 16px 9px 40px;font-family:'Roboto',sans-serif;font-size:13px;color:var(--text);outline:none;
-  transition:border-color .2s,box-shadow .2s;
-}
-.search-input::placeholder{color:var(--text4)}
-.search-input:focus{border-color:var(--c);box-shadow:0 0 0 3px var(--c-md)}
-.filter-chips{display:flex;gap:6px;flex-wrap:wrap}
-.chip{
-  background:var(--white);border:1px solid var(--border);border-radius:100px;
-  padding:6px 14px;font-size:12px;font-weight:500;color:var(--text3);
-  cursor:pointer;transition:all .15s;font-family:'Roboto',sans-serif;
-}
-.chip:hover{border-color:var(--c);color:var(--c);background:var(--c-lt)}
-.chip.active{background:var(--c);border-color:var(--c);color:white}
-.rc{margin-left:auto;font-size:13px;color:var(--text4);font-family:'Roboto Mono',monospace;white-space:nowrap}
-.rc b{color:var(--c)}
+.toolbar{max-width:1160px;margin:0 auto;padding:18px 40px 0;display:none;gap:8px;align-items:center;flex-wrap:wrap}
+.search-wrap{position:relative;flex:1;min-width:180px;max-width:320px}
+.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--ink4);pointer-events:none}
+.search-input{width:100%;background:var(--white);border:1.5px solid var(--rule);border-radius:8px;padding:9px 14px 9px 38px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink);outline:none;transition:border-color .18s,box-shadow .18s}
+.search-input::placeholder{color:var(--ink4)}
+.search-input:focus{border-color:var(--c);box-shadow:0 0 0 3px var(--c-lt)}
+.filter-chips{display:flex;gap:5px;flex-wrap:wrap}
+.chip{background:transparent;border:1.5px solid var(--rule);border-radius:6px;padding:6px 12px;font-size:12px;font-weight:500;color:var(--ink3);cursor:pointer;transition:all .15s;font-family:'DM Sans',sans-serif}
+.chip:hover{border-color:var(--ink2);color:var(--ink)}
+.chip.active{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.rc{margin-left:auto;font-size:12px;color:var(--ink4);font-family:'DM Mono',monospace;white-space:nowrap}
+.rc b{color:var(--ink2)}
 
 /* ── STATUS ── */
-.status-wrap{max-width:1200px;margin:0 auto;padding:12px 32px 0}
-.status{
-  padding:10px 16px;border-radius:var(--r);font-size:13px;
-  font-family:'Roboto Mono',monospace;display:flex;align-items:center;gap:8px;
-}
-.status.loading{background:#E8F0FE;color:#1565C0;border:1px solid rgba(26,115,232,.2)}
-.status.ok{background:#E6F4EA;color:#137333;border:1px solid rgba(19,115,51,.2)}
-.status.error{background:#FCE8E6;color:#C5221F;border:1px solid rgba(197,34,31,.2)}
+.status-wrap{max-width:1160px;margin:0 auto;padding:14px 40px 0}
+.status{padding:10px 16px;border-radius:8px;font-size:12px;font-family:'DM Mono',monospace;display:flex;align-items:center;gap:8px;font-weight:500}
+.status.loading{background:#EEF4FF;color:#1D4ED8;border:1px solid rgba(29,78,216,.2)}
+.status.ok{background:#ECFDF5;color:#065F46;border:1px solid rgba(6,95,70,.2)}
+.status.error{background:#FEF2F2;color:#991B1B;border:1px solid rgba(153,27,27,.2)}
 
 /* ── ORG GRID ── */
-.grid{
-  max-width:1200px;margin:0 auto;padding:8px 32px 64px;
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;
-}
+.grid{max-width:1160px;margin:0 auto;padding:16px 40px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px}
 
 /* ── ORG CARD ── */
-.card{
-  background:var(--white);border:1px solid var(--border);
-  border-radius:var(--r);padding:0;
-  transition:box-shadow .2s,transform .2s;
-  animation:fadeUp .3s ease both;
-  display:flex;flex-direction:column;overflow:hidden;
-}
-.card:hover{box-shadow:var(--shadow-h);transform:translateY(-2px)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--white);border:1.5px solid var(--rule);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .18s,box-shadow .18s,transform .2s cubic-bezier(.2,.8,.3,1);animation:cardIn .3s ease both;position:relative}
+.card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--c)}
+.card:hover{border-color:var(--c);box-shadow:0 4px 20px rgba(0,0,0,.08),0 0 0 1px var(--c);transform:translateY(-2px)}
+@keyframes cardIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-/* colored left border */
-.card{border-left:4px solid var(--c)}
+/* card top */
+.card-top{padding:18px 20px 14px 22px;display:flex;align-items:flex-start;gap:12px}
+.card-initial{flex-shrink:0;width:38px;height:38px;border-radius:8px;background:var(--c-lt);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:var(--c);font-family:'Playfair Display',serif}
+.card-info{flex:1;min-width:0}
+.card-name{font-size:15px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:3px}
+.card-name a{color:inherit;text-decoration:none;transition:color .15s}
+.card-name a:hover{color:var(--c)}
+.card-host{font-size:11px;color:var(--ink4);font-family:'DM Mono',monospace;display:flex;align-items:center;gap:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-host a{color:inherit;text-decoration:none}
+.card-host a:hover{color:var(--c)}
 
-.card-head{
-  padding:16px 18px 12px;
-  display:flex;align-items:flex-start;gap:12px;
-  border-bottom:1px solid var(--border);
-}
-.card-avatar{
-  flex-shrink:0;width:40px;height:40px;border-radius:8px;
-  background:var(--c-lt);border:1px solid var(--c-bdr);
-  display:flex;align-items:center;justify-content:center;
-  font-size:18px;font-weight:700;color:var(--c);
-  font-family:'Roboto',sans-serif;
-}
-.card-head-right{flex:1;min-width:0}
-.card-name{
-  font-size:15px;font-weight:500;color:var(--text);
-  line-height:1.35;margin-bottom:2px;word-break:break-word;
-}
-.card-name a{color:inherit;text-decoration:none}
-.card-name a:hover{color:var(--c);text-decoration:underline}
-.card-url{
-  font-size:11px;color:var(--text4);font-family:'Roboto Mono',monospace;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  display:flex;align-items:center;gap:4px;
-}
-.card-url a{color:var(--text4);text-decoration:none}
-.card-url a:hover{color:var(--c)}
+/* tags row */
+.card-tags{padding:0 20px 12px 22px;display:flex;flex-wrap:wrap;gap:4px}
+.tag-pill{font-size:10px;font-weight:500;font-family:'DM Mono',monospace;background:var(--paper2);color:var(--ink3);border:1px solid var(--rule);border-radius:4px;padding:2px 7px;letter-spacing:.3px;white-space:nowrap}
+.tag-pill.primary{background:var(--c-lt);color:var(--c);border-color:var(--c-bdr)}
 
-.card-body{padding:12px 18px;flex:1}
-.card-ctx{
-  font-size:13px;color:var(--text2);line-height:1.6;
-}
-.ctx-label{
-  font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1px;
-  color:var(--text4);margin-bottom:5px;font-family:'Roboto Mono',monospace;
-  display:block;
-}
-.card-foot{
-  padding:10px 18px 14px;
-  display:flex;align-items:center;justify-content:space-between;
-}
-.mt-chip{
-  font-size:11px;font-weight:500;padding:3px 10px;border-radius:4px;
-  font-family:'Roboto Mono',monospace;letter-spacing:.5px;text-transform:uppercase;
-}
-.mt-tag     {background:#E8F0FE;color:#1A73E8}
-.mt-api     {background:#FEF7E0;color:#E37400}
-.mt-section {background:#EDE7F6;color:#5E35B1}
-.mt-keyword {background:#FCE8E6;color:#C5221F}
-.mt-default {background:var(--bg);color:var(--text3)}
-.visit-btn{
-  display:inline-flex;align-items:center;gap:5px;
-  font-size:13px;font-weight:500;color:var(--c);
-  background:var(--c-lt);border:1px solid var(--c-bdr);
-  border-radius:100px;padding:6px 16px;text-decoration:none;
-  transition:all .15s;
-}
-.visit-btn:hover{background:var(--c);color:white}
+/* footer */
+.card-foot{padding:10px 20px 14px 22px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--rule);margin-top:auto}
+.visit-btn{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--c);background:var(--c-lt);border:1.5px solid var(--c-bdr);border-radius:6px;padding:6px 14px;text-decoration:none;transition:all .15s;font-family:'DM Sans',sans-serif}
+.visit-btn:hover{background:var(--c);color:white;border-color:var(--c)}
+.card-num{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink4)}
 
-.empty{grid-column:1/-1;text-align:center;padding:80px 20px;display:none}
+.empty{grid-column:1/-1;text-align:center;padding:100px 20px;display:none}
 .empty.show{display:block}
-.empty-icon{font-size:3rem;margin-bottom:16px}
-.empty h3{font-size:18px;font-weight:400;color:var(--text3);margin-bottom:8px}
-.empty p{font-size:13px;color:var(--text4)}
+.empty h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--ink3);margin-bottom:10px}
+.empty p{font-size:14px;color:var(--ink4)}
 
-/* ── FOOTER ── */
-footer{background:var(--white);border-top:1px solid var(--border);padding:20px 32px;text-align:center}
-footer p{font-size:12px;color:var(--text4);line-height:2}
-footer a{color:var(--c);text-decoration:none}
-footer a:hover{text-decoration:underline}
+footer{border-top:1px solid var(--rule);padding:24px 40px;text-align:center}
+footer p{font-size:12px;color:var(--ink4);line-height:2}
+footer a{color:var(--ink3);text-decoration:none}
+footer a:hover{color:var(--ink)}
 
 @media(max-width:768px){
-  .hero-inner{grid-template-columns:1fr}.hero-icon-box{display:none}
-  .hero-inner,.toolbar,.grid,.source-strip,.status-wrap,.topbar{padding-left:20px;padding-right:20px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-icon{display:none}
+  .hero-inner,.toolbar,.grid,.source-strip,.status-wrap,.topbar,footer{padding-left:20px;padding-right:20px}
+  .topbar{padding:0 20px}
 }
 </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
 <nav class="topbar">
   <a class="back-btn" href="../index.html">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
     All Tags
   </a>
-  <div class="topbar-crumb">
-    GSoC 2026 &rsaquo; <b id="topbar-name">Loading…</b>
-  </div>
-  <div class="topbar-count" id="topbar-count" style="display:none"></div>
+  <div class="topbar-rule"></div>
+  <div class="topbar-crumb">GSoC 2026 &rsaquo; <b id="topbar-name">Loading…</b></div>
+  <div class="topbar-count" id="topbar-count"></div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-color-bar"></div>
+  <div class="hero-bar"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-tag" id="hero-tag">
-        <span class="hero-pulse"></span>
-        <span id="hero-tag-label">Loading</span>
-      </div>
-      <h1><b id="h1-name">—</b><br><span id="h1-sub" style="color:var(--text3);font-weight:300">Organizations · GSoC 2026</span></h1>
-      <p class="hero-sub" id="hero-sub">Organizations participating in Google Summer of Code 2026 tagged with this technology.</p>
+      <div class="hero-kicker" id="hero-kicker">Technology</div>
+      <h1 class="hero-h1">
+        <span id="h1-name">—</span>
+        <span class="h1-sub">Organizations · GSoC 2026</span>
+      </h1>
+      <p class="hero-sub" id="hero-sub">Organizations participating in Google Summer of Code 2026 using this technology.</p>
       <div class="hero-stats">
         <div class="hstat"><span class="hstat-n" id="stat-orgs">–</span><span class="hstat-l">Organizations</span></div>
         <div class="hstat"><span class="hstat-n" id="stat-src">–</span><span class="hstat-l">Source Tags</span></div>
       </div>
     </div>
-    <div class="hero-icon-box" id="icon-box">✦</div>
+    <div class="hero-icon" id="icon-box">✦</div>
   </div>
 </section>
 
-<!-- SOURCE TAGS -->
-<div class="source-strip" id="source-strip" style="display:none">
+<div class="source-strip" id="source-strip">
   <span class="source-label">Merged from</span>
   <div class="source-pills" id="source-pills"></div>
 </div>
 
-<!-- STATUS -->
 <div class="status-wrap">
   <div class="status loading" id="status">⏳ Loading data…</div>
 </div>
 
-<!-- TOOLBAR -->
-<div class="toolbar" id="toolbar" style="display:none">
+<div class="toolbar" id="toolbar">
   <div class="search-wrap">
     <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     <input class="search-input" id="search" type="text" placeholder="Search organizations…" autocomplete="off">
@@ -301,77 +747,71 @@ footer a:hover{text-decoration:underline}
   <div class="rc">showing <b id="showing">0</b></div>
 </div>
 
-<!-- GRID -->
 <div class="grid" id="grid">
   <div class="empty" id="empty">
-    <div class="empty-icon">🔍</div>
-    <h3>No results found</h3>
+    <h3>No results</h3>
     <p>Try adjusting your search or filter</p>
   </div>
 </div>
 
-<footer>
-  <p>
-    <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a>
-    &nbsp;·&nbsp;
-    <a href="../index.html">← Back to all tags</a>
-  </p>
-</footer>
+<footer><p>
+  <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a>
+  &nbsp;·&nbsp;
+  <a href="../index.html">← All tags</a>
+</p></footer>
 
 <script>
-/* ── TAG METADATA ────────────────────────────────────────────────────── */
 const TAG_META={
-  "python":   {tag:"Python",icon:"🐍",color:"#1565C0"},
-  "javascript":{tag:"JavaScript",icon:"⚡",color:"#F9A825"},
-  "c-c":      {tag:"C/C++",icon:"⚙️",color:"#512DA8"},
-  "web-backend-full-stack":{tag:"Web Backend & Full Stack",icon:"🌐",color:"#00897B"},
-  "developer-tools-qa":{tag:"Developer Tools & QA",icon:"🛠️",color:"#546E7A"},
-  "java-jvm": {tag:"Java & JVM",icon:"☕",color:"#E64A19"},
-  "web-frontend":{tag:"Web Frontend",icon:"🎨",color:"#0097A7"},
-  "scripting-other-languages":{tag:"Scripting & Other Languages",icon:"📜",color:"#7B1FA2"},
-  "data-science-analytics":{tag:"Data Science & Analytics",icon:"📊",color:"#0277BD"},
-  "education-humanities":{tag:"Education & Humanities",icon:"📚",color:"#C62828"},
-  "artificial-intelligence":{tag:"Artificial Intelligence",icon:"🤖",color:"#AD1457"},
-  "compilers-build-tools":{tag:"Compilers & Build Tools",icon:"🔨",color:"#F57F17"},
-  "scientific-computing-hpc":{tag:"Scientific Computing & HPC",icon:"🔬",color:"#00695C"},
-  "cloud-infrastructure":{tag:"Cloud & Infrastructure",icon:"☁️",color:"#FF6F00"},
-  "containers-kubernetes":{tag:"Containers & Kubernetes",icon:"🐳",color:"#1565C0"},
-  "databases":{tag:"Databases",icon:"🗄️",color:"#1B5E20"},
-  "linux-unix":{tag:"Linux & Unix",icon:"🐧",color:"#827717"},
-  "open-source-research":{tag:"Open Source & Research",icon:"🔓",color:"#2E7D32"},
-  "bioinformatics-health":{tag:"Bioinformatics & Health",icon:"🧬",color:"#1A6B1A"},
-  "mobile-development":{tag:"Mobile Development",icon:"📱",color:"#1565C0"},
-  "devops-ci-cd":{tag:"DevOps & CI/CD",icon:"🔄",color:"#B71C1C"},
-  "machine-learning":{tag:"Machine Learning",icon:"🧠",color:"#6A1B9A"},
-  "security":{tag:"Security",icon:"🔒",color:"#C62828"},
-  "desktop-applications":{tag:"Desktop Applications",icon:"🖥️",color:"#1565C0"},
-  "go":{tag:"Go",icon:"🐹",color:"#00838F"},
-  "typescript":{tag:"TypeScript",icon:"📘",color:"#1565C0"},
-  "graphics-3d":{tag:"Graphics & 3D",icon:"🎮",color:"#880E4F"},
-  "mathematics-algorithms":{tag:"Mathematics & Algorithms",icon:"∑",color:"#B71C1C"},
-  "operating-systems-virtualization":{tag:"Operating Systems & Virtualization",icon:"💻",color:"#0D47A1"},
-  "rust":{tag:"Rust",icon:"🦀",color:"#BF360C"},
-  "physical-earth-sciences":{tag:"Physical & Earth Sciences",icon:"🔭",color:"#0D47A1"},
-  "systems-low-level-languages":{tag:"Systems & Low-level Languages",icon:"🔧",color:"#37474F"},
-  "iot-robotics-autonomous-systems":{tag:"IoT, Robotics & Autonomous Systems",icon:"🤖",color:"#004D40"},
-  "big-data":{tag:"Big Data",icon:"🌊",color:"#BF360C"},
-  "networking":{tag:"Networking",icon:"🌐",color:"#01579B"},
-  "audio-video-media":{tag:"Audio, Video & Media",icon:"🎵",color:"#4A148C"},
-  "communications-collaboration":{tag:"Communications & Collaboration",icon:"💬",color:"#1B5E20"},
-  "generative-ai-llms":{tag:"Generative AI & LLMs",icon:"✨",color:"#880E4F"},
-  "mobile-languages":{tag:"Mobile Languages",icon:"📲",color:"#01579B"},
-  "accessibility-ux":{tag:"Accessibility & UX",icon:"♿",color:"#880E4F"},
-  "systems-programming-embedded":{tag:"Systems Programming & Embedded",icon:"🔌",color:"#37474F"},
-  "ruby-php":{tag:"Ruby & PHP",icon:"💎",color:"#B71C1C"},
-  "computer-vision-nlp":{tag:"Computer Vision & NLP",icon:"👁️",color:"#006064"},
-  "games-simulation":{tag:"Games & Simulation",icon:"🎮",color:"#1B5E20"},
-  "gis-geospatial":{tag:"GIS & Geospatial",icon:"🗺️",color:"#1B5E20"},
-  "software-composition-compliance":{tag:"Software Composition & Compliance",icon:"📋",color:"#37474F"},
-  "fintech-blockchain":{tag:"Fintech & Blockchain",icon:"💰",color:"#E65100"},
-  "electronic-design-hardware":{tag:"Electronic Design & Hardware",icon:"🔋",color:"#546E7A"},
+  "python":{tag:"Python",icon:"🐍",color:"#1D4ED8"},
+  "javascript":{tag:"JavaScript",icon:"⚡",color:"#B45309"},
+  "c-c":{tag:"C/C++",icon:"⚙️",color:"#6D28D9"},
+  "web-backend-full-stack":{tag:"Web Backend & Full Stack",icon:"🌐",color:"#0F766E"},
+  "developer-tools-qa":{tag:"Developer Tools & QA",icon:"🛠️",color:"#374151"},
+  "java-jvm":{tag:"Java & JVM",icon:"☕",color:"#C2410C"},
+  "web-frontend":{tag:"Web Frontend",icon:"🎨",color:"#0E7490"},
+  "scripting-other-languages":{tag:"Scripting & Other Languages",icon:"📜",color:"#7C3AED"},
+  "data-science-analytics":{tag:"Data Science & Analytics",icon:"📊",color:"#1D4ED8"},
+  "education-humanities":{tag:"Education & Humanities",icon:"📚",color:"#991B1B"},
+  "artificial-intelligence":{tag:"Artificial Intelligence",icon:"🤖",color:"#BE185D"},
+  "compilers-build-tools":{tag:"Compilers & Build Tools",icon:"🔨",color:"#92400E"},
+  "scientific-computing-hpc":{tag:"Scientific Computing & HPC",icon:"🔬",color:"#065F46"},
+  "cloud-infrastructure":{tag:"Cloud & Infrastructure",icon:"☁️",color:"#9A3412"},
+  "containers-kubernetes":{tag:"Containers & Kubernetes",icon:"🐳",color:"#1E40AF"},
+  "databases":{tag:"Databases",icon:"🗄️",color:"#166534"},
+  "linux-unix":{tag:"Linux & Unix",icon:"🐧",color:"#78350F"},
+  "open-source-research":{tag:"Open Source & Research",icon:"🔓",color:"#14532D"},
+  "bioinformatics-health":{tag:"Bioinformatics & Health",icon:"🧬",color:"#064E3B"},
+  "mobile-development":{tag:"Mobile Development",icon:"📱",color:"#1E3A8A"},
+  "devops-ci-cd":{tag:"DevOps & CI/CD",icon:"🔄",color:"#7F1D1D"},
+  "machine-learning":{tag:"Machine Learning",icon:"🧠",color:"#4C1D95"},
+  "security":{tag:"Security",icon:"🔒",color:"#B91C1C"},
+  "desktop-applications":{tag:"Desktop Applications",icon:"🖥️",color:"#1E40AF"},
+  "go":{tag:"Go",icon:"🐹",color:"#0C4A6E"},
+  "typescript":{tag:"TypeScript",icon:"📘",color:"#1D4ED8"},
+  "graphics-3d":{tag:"Graphics & 3D",icon:"🎮",color:"#831843"},
+  "mathematics-algorithms":{tag:"Mathematics & Algorithms",icon:"∑",color:"#78350F"},
+  "operating-systems-virtualization":{tag:"Operating Systems & Virtualization",icon:"💻",color:"#1E3A8A"},
+  "rust":{tag:"Rust",icon:"🦀",color:"#9A3412"},
+  "physical-earth-sciences":{tag:"Physical & Earth Sciences",icon:"🔭",color:"#1E3A8A"},
+  "systems-low-level-languages":{tag:"Systems & Low-level Languages",icon:"🔧",color:"#1F2937"},
+  "iot-robotics-autonomous-systems":{tag:"IoT, Robotics & Autonomous Systems",icon:"🤖",color:"#064E3B"},
+  "big-data":{tag:"Big Data",icon:"🌊",color:"#7C2D12"},
+  "networking":{tag:"Networking",icon:"🌐",color:"#1E3A8A"},
+  "audio-video-media":{tag:"Audio, Video & Media",icon:"🎵",color:"#3B0764"},
+  "communications-collaboration":{tag:"Communications & Collaboration",icon:"💬",color:"#14532D"},
+  "generative-ai-llms":{tag:"Generative AI & LLMs",icon:"✨",color:"#701A75"},
+  "mobile-languages":{tag:"Mobile Languages",icon:"📲",color:"#1E3A8A"},
+  "accessibility-ux":{tag:"Accessibility & UX",icon:"♿",color:"#701A75"},
+  "systems-programming-embedded":{tag:"Systems Programming & Embedded",icon:"🔌",color:"#1F2937"},
+  "ruby-php":{tag:"Ruby & PHP",icon:"💎",color:"#881337"},
+  "computer-vision-nlp":{tag:"Computer Vision & NLP",icon:"👁️",color:"#164E63"},
+  "games-simulation":{tag:"Games & Simulation",icon:"🕹️",color:"#14532D"},
+  "gis-geospatial":{tag:"GIS & Geospatial",icon:"🗺️",color:"#14532D"},
+  "software-composition-compliance":{tag:"Software Composition & Compliance",icon:"📋",color:"#374151"},
+  "fintech-blockchain":{tag:"Fintech & Blockchain",icon:"💰",color:"#78350F"},
+  "electronic-design-hardware":{tag:"Electronic Design & Hardware",icon:"🔋",color:"#1E293B"},
 };
 
-/* ── INIT ──────────────────────────────────────────────────────────── */
 const params=new URLSearchParams(location.search);
 const slug=params.get('slug')||'';
 const meta=TAG_META[slug];
@@ -385,25 +825,22 @@ if(!meta){
 }
 
 function applyTheme(hex){
+  const rgb=hexToRgb(hex);
   const r=document.documentElement;
   r.style.setProperty('--c',hex);
-  // derive light/border from hex
-  const rgb=hexToRgb(hex);
-  r.style.setProperty('--c-lt',`rgba(${rgb},.1)`);
-  r.style.setProperty('--c-md',`rgba(${rgb},.12)`);
-  r.style.setProperty('--c-bdr',`rgba(${rgb},.3)`);
+  r.style.setProperty('--c-lt',`rgba(${rgb},.08)`);
+  r.style.setProperty('--c-bdr',`rgba(${rgb},.25)`);
 }
 function renderHero(m,slug){
   document.title=`${m.tag} · GSoC 2026`;
   document.getElementById('topbar-name').textContent=m.tag;
-  document.getElementById('hero-tag-label').textContent=m.tag;
+  document.getElementById('hero-kicker').textContent=m.tag;
   document.getElementById('h1-name').textContent=m.tag;
   document.getElementById('icon-box').textContent=m.icon;
-  document.getElementById('hero-sub').textContent=
-    `Organizations participating in Google Summer of Code 2026 tagged with ${m.tag}. Browse, search, and explore.`;
+  document.getElementById('hero-sub').textContent=`Organizations participating in Google Summer of Code 2026 tagged with ${m.tag}. Browse and explore.`;
+  document.querySelector('.hero-bar').style.background=m.color;
 }
 
-/* ── LOAD JSON ──────────────────────────────────────────────────────── */
 let allOrgs=[];
 let activeFilter='all';
 
@@ -412,55 +849,39 @@ function loadOrgs(slug){
   fetch(`../json/${slug}.json`)
     .then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()})
     .then(data=>{
-      setStatus('ok',`✅ Loaded successfully`);
-      setTimeout(()=>document.querySelector('.status-wrap').style.display='none',2000);
-
-      // Try every possible array field name
-      allOrgs = data.organizations||data.orgs||data.data||data.results||[];
-      if(!Array.isArray(allOrgs)&&typeof allOrgs==='object'){
-        allOrgs=Object.values(allOrgs);
-      }
-
-      // Source tags from meta — try to get from data too
+      setStatus('ok','✅ Loaded');
+      setTimeout(()=>document.querySelector('.status-wrap').style.display='none',1800);
+      allOrgs=data.organizations||data.orgs||data.data||data.results||[];
+      if(!Array.isArray(allOrgs)&&typeof allOrgs==='object') allOrgs=Object.values(allOrgs);
       const srcTags=data.source_tags||[];
       if(srcTags.length){
         const pills=document.getElementById('source-pills');
         pills.innerHTML='';
-        srcTags.forEach(s=>{
-          const p=document.createElement('span');
-          p.className='src-pill';p.textContent=s;pills.appendChild(p);
-        });
+        srcTags.forEach(s=>{const p=document.createElement('span');p.className='src-pill';p.textContent=s;pills.appendChild(p);});
         document.getElementById('source-strip').style.display='flex';
         document.getElementById('stat-src').textContent=srcTags.length;
       }else{
         document.getElementById('source-strip').style.display='none';
       }
-
       document.getElementById('stat-orgs').textContent=allOrgs.length;
-      document.getElementById('topbar-count').textContent=`${allOrgs.length} orgs`;
-      document.getElementById('topbar-count').style.display='';
+      const tc=document.getElementById('topbar-count');
+      tc.textContent=`${allOrgs.length} orgs`;tc.style.display='';
       document.getElementById('toolbar').style.display='flex';
       render();
     })
-    .catch(err=>{
-      setStatus('error',`⚠️ Could not load ../json/${slug}.json — ${err.message}`);
-    });
+    .catch(err=>setStatus('error',`⚠️ Could not load ../json/${slug}.json — ${err.message}`));
 }
 
-/* ── RENDER ────────────────────────────────────────────────────────── */
 function render(){
   const q=document.getElementById('search').value.toLowerCase().trim();
   const grid=document.getElementById('grid');
   const empty=document.getElementById('empty');
-
   const filtered=allOrgs.filter(org=>{
-    const rawUrl=getField(org,'url','website','link','gsoc_url','homepage_url')||'';
-    const name=slugToName(rawUrl)||getField(org,'name','org_name','organization','title','project_name')||'Unknown Organization';
+    const url=getField(org,'url','website','link','gsoc_url','homepage_url')||'';
+    const name=slugToName(url)||getField(org,'name','org_name','organization','title','project_name')||'Unknown';
     const ctx=getContext(org);
-    const nameMatch=!q||name.toLowerCase().includes(q);
-    const ctxMatch=!q||ctx.toLowerCase().includes(q);
-    if(!nameMatch&&!ctxMatch)return false;
-    if(activeFilter==='all')return true;
+    if(q&&!name.toLowerCase().includes(q)&&!ctx.toLowerCase().includes(q)) return false;
+    if(activeFilter==='all') return true;
     const mt=(org.match_type||'').toLowerCase();
     if(activeFilter==='tag')    return mt.includes('tag');
     if(activeFilter==='api')    return mt.includes('api');
@@ -468,93 +889,67 @@ function render(){
     if(activeFilter==='keyword')return mt.includes('keyword')||mt.includes('language')||mt.includes('match');
     return true;
   });
-
   document.getElementById('showing').textContent=filtered.length;
   [...grid.querySelectorAll('.card')].forEach(c=>c.remove());
-  if(!filtered.length){empty.classList.add('show');return}
+  if(!filtered.length){empty.classList.add('show');return;}
   empty.classList.remove('show');
 
   filtered.forEach((org,i)=>{
     const url=getField(org,'url','website','link','gsoc_url','homepage_url')||'#';
     const name=slugToName(url)||getField(org,'name','org_name','organization','title','project_name')||'Unknown Organization';
-    const ctx=getContext(org);
-    const mt=(org.match_type||'').toLowerCase();
+    const tags=(org.tags||[]).slice(0,6);
+    let host='';
+    try{host=new URL(url).hostname.replace('www.','')}catch(e){}
     const initial=name.trim()[0]?.toUpperCase()||'?';
-
-    // Match type chip styling
-    let chipCls='mt-default';
-    let chipLbl=org.match_type||'match';
-    if(mt.includes('tag'))   {chipCls='mt-tag';   chipLbl='Tag match'}
-    else if(mt.includes('api')){chipCls='mt-api';  chipLbl='API match'}
-    else if(mt.includes('sec')){chipCls='mt-section';chipLbl='Section match'}
-    else if(mt.length)        {chipCls='mt-keyword';chipLbl=org.match_type}
-
-    // Clean URL for display
-    let displayUrl='';
-    try{displayUrl=new URL(url).hostname.replace('www.','')}catch(e){displayUrl=url}
 
     const card=document.createElement('div');
     card.className='card';
-    card.style.animationDelay=`${Math.min(i*25,500)}ms`;
+    card.style.animationDelay=`${Math.min(i*20,500)}ms`;
+
+    const tagsHtml=tags.map((t,ti)=>`<span class="tag-pill${ti===0?' primary':''}">${esc(t)}</span>`).join('');
+
     card.innerHTML=`
-      <div class="card-head">
-        <div class="card-avatar">${esc(initial)}</div>
-        <div class="card-head-right">
+      <div class="card-top">
+        <div class="card-initial">${esc(initial)}</div>
+        <div class="card-info">
           <div class="card-name"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a></div>
-          ${url&&url!=='#'?`<div class="card-url">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            <a href="${esc(url)}" target="_blank" rel="noopener">${esc(displayUrl)}</a>
+          ${host?`<div class="card-host">
+            <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <a href="${esc(url)}" target="_blank" rel="noopener">${esc(host)}</a>
           </div>`:''}
         </div>
       </div>
-      ${ctx?`<div class="card-body">
-        <span class="ctx-label">Tech Context</span>
-        <div class="card-ctx">${esc(ctx.slice(0,240))}${ctx.length>240?'…':''}</div>
-      </div>`:''}
+      ${tagsHtml?`<div class="card-tags">${tagsHtml}</div>`:''}
       <div class="card-foot">
-        <span class="mt-chip ${chipCls}">${esc(chipLbl)}</span>
+        <span class="card-num">#${i+1}</span>
         <a class="visit-btn" href="${esc(url)}" target="_blank" rel="noopener">
           Visit org
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
         </a>
       </div>`;
     grid.appendChild(card);
   });
 }
 
-/* ── HELPERS ───────────────────────────────────────────────────────── */
 function slugToName(url){
   try{
     const parts=new URL(url).pathname.replace(/\/+$/,'').split('/');
-    const slug=parts[parts.length-1];
-    if(!slug)return null;
-    // Convert "pecan-project" → "Pecan Project"
-    return slug.split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
+    const s=parts[parts.length-1];
+    if(!s) return null;
+    return s.split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
   }catch(e){return null}
 }
-function getField(obj,...keys){
-  for(const k of keys){if(obj[k]!=null&&obj[k]!=='')return obj[k]}
-  return null;
-}
+function getField(obj,...keys){for(const k of keys){if(obj[k]!=null&&obj[k]!=='')return obj[k]}return null}
 function getContext(org){
-  // Try all possible field names
   let ctx=getField(org,'tech_context','context','description','technologies','matched_text','tech','summary');
-  if(!ctx)return '';
-  // Strip literal "" or '' artifacts from JSON.stringify fallbacks
+  if(!ctx) return '';
   ctx=String(ctx).trim();
-  if(ctx==='"\"'||ctx==='""'||ctx==="''"||ctx==='{}'||ctx==='[]'||ctx==='null')return '';
+  if(['""',"''",'{}','[]','null'].includes(ctx)) return '';
   return ctx;
 }
-function setStatus(type,msg){
-  const el=document.getElementById('status');
-  el.className='status '+type;el.textContent=msg;
-}
+function setStatus(type,msg){const el=document.getElementById('status');el.className='status '+type;el.textContent=msg}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
-function hexToRgb(hex){
-  const r=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return r?`${parseInt(r[1],16)},${parseInt(r[2],16)},${parseInt(r[3],16)}`:'26,115,232';
-}
-
+function hexToRgb(hex){const r=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);return r?`${parseInt(r[1],16)},${parseInt(r[2],16)},${parseInt(r[3],16)}`:'26,86,219'}
 document.getElementById('search').addEventListener('input',render);
 document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
