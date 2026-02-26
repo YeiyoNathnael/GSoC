@@ -313,6 +313,18 @@ const TAGS=[
 ];
 
 const grid=document.getElementById('grid');
+const tagImages = {
+  'python': 'python-logo.png',
+  'javascript': 'javascript.webp',
+  'c-c': 'C,C++.jpg',
+  'linux-unix': 'Linux.png',
+  'java-jvm': 'java.webp',
+  'rust': 'rust.png',
+  'containers-kubernetes': 'kubernetes.png',
+  'databases': 'database.png',
+  'artificial-intelligence': 'AI.png',
+  // Add more mappings as images are added
+};
 TAGS.forEach((t,i)=>{
   const a=document.createElement('a');
   a.className='tag-card';
@@ -320,8 +332,14 @@ TAGS.forEach((t,i)=>{
   a.dataset.cat=t.cat;
   a.dataset.name=t.tag.toLowerCase();
   a.style.cssText=`--card-color:${t.color};--c-rgb:${t.rgb};animation-delay:${Math.min(i*18,400)}ms`;
+  let emojiHtml = '';
+  if(tagImages[t.slug]) {
+    emojiHtml = `<img src="images/${tagImages[t.slug]}" alt="${t.tag} logo" style="height:36px;width:auto;max-width:48px;display:block;margin:0 auto 14px;object-fit:contain;">`;
+  } else {
+    emojiHtml = `<div class=\"card-emoji\">${t.icon}</div>`;
+  }
   a.innerHTML=`
-    <div class="card-emoji">${t.icon}</div>
+    ${emojiHtml}
     <div class="card-count">${t.count}</div>
     <div class="card-count-sub">organizations</div>
     <div class="card-name">${esc(t.tag)}</div>
