@@ -387,138 +387,323 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GSoC 2026 · Technology Index</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink:   #0A0A0F;
-  --ink2:  #2D2D3A;
-  --ink3:  #6B6B80;
-  --ink4:  #ABABBE;
-  --paper: #FAFAF7;
-  --paper2:#F3F3EE;
-  --paper3:#E8E8E0;
-  --white: #FFFFFF;
-  --rule:  #E2E2D9;
-  --blue:  #1A56DB;
-  --accent:#FF4D1C;
+  --ink:    #111827;
+  --ink2:   #374151;
+  --ink3:   #6B7280;
+  --ink4:   #9CA3AF;
+  --bg:     #F3F4F0;
+  --white:  #FFFFFF;
+  --border: #E5E7EB;
+  --blue:   #2563EB;
+  --accent: #FF4D1C;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
 
-/* ── TOPBAR ── */
-.topbar{background:var(--ink);padding:0 40px;height:52px;display:flex;align-items:center;gap:0;position:sticky;top:0;z-index:100}
-.logo{display:flex;align-items:center;gap:9px;text-decoration:none;margin-right:20px}
-.logo-dots{display:flex;gap:3px}
-.logo-dots span{width:7px;height:7px;border-radius:50%}
+/* ── TOPBAR ───────────────────────────────────────────────────────────── */
+.topbar{
+  background:#111827;height:48px;
+  display:flex;align-items:center;padding:0 28px;gap:0;
+  position:sticky;top:0;z-index:100;
+}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:20px}
+.logo-dots{display:flex;gap:4px}
+.logo-dots span{width:10px;height:10px;border-radius:50%}
 .logo-dots span:nth-child(1){background:#4285F4}
 .logo-dots span:nth-child(2){background:#EA4335}
 .logo-dots span:nth-child(3){background:#FBBC04}
-.logo-dots span:nth-child(4){background:#34A853}
-.logo-text{font-size:13px;font-weight:500;color:rgba(255,255,255,.65);letter-spacing:.2px}
-.topbar-rule{width:1px;height:18px;background:rgba(255,255,255,.15);margin-right:18px}
-.topbar-sub{font-size:13px;font-weight:400;color:rgba(255,255,255,.4)}
+.logo-dots span:nth-child(4){display:none}
+.logo-text{font-size:14px;font-weight:500;color:rgba(255,255,255,.75)}
+.topbar-rule{width:1px;height:20px;background:rgba(255,255,255,.15);margin-right:20px}
+.topbar-sub{font-size:13px;color:rgba(255,255,255,.4);font-weight:400}
 .topbar-right{margin-left:auto}
-.year-badge{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;color:var(--accent);background:rgba(255,77,28,.12);border:1px solid rgba(255,77,28,.25);padding:3px 9px;border-radius:4px;letter-spacing:1px}
+.gsoc-badge{
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;
+  color:white;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
+  padding:4px 12px;border-radius:5px;letter-spacing:.5px;
+}
 
-/* ── HERO ── */
-.hero{padding:60px 40px 52px;border-bottom:1px solid var(--rule);background:var(--white);position:relative;overflow:hidden}
-.hero::before{content:'2026';position:absolute;right:-10px;top:-30px;font-family:'Playfair Display',serif;font-size:200px;font-weight:900;color:var(--paper3);line-height:1;pointer-events:none;user-select:none}
-.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
-.hero-kicker{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:8px}
-.hero-kicker::before{content:'';display:block;width:20px;height:2px;background:var(--accent)}
-.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,64px);font-weight:900;line-height:1.0;letter-spacing:-1px;color:var(--ink);margin-bottom:20px}
-.hero-h1 em{font-style:italic;color:var(--blue)}
-.hero-sub{font-size:15px;font-weight:300;color:var(--ink3);max-width:480px;line-height:1.7}
-.hero-stats{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;flex-shrink:0}
-.hstat{background:var(--paper);padding:16px 26px;text-align:right}
-.hstat-n{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--ink);line-height:1;display:block}
-.hstat-l{font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:1.2px;color:var(--ink4);margin-top:3px;display:block}
+/* ── HERO ─────────────────────────────────────────────────────────────── */
+.hero{
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  padding:52px 40px 48px;
+  position:relative;overflow:hidden;
+}
+.hero-watermark{
+  position:absolute;right:-20px;top:-10px;
+  font-size:clamp(140px,20vw,260px);font-weight:900;
+  color:#EEEEE8;line-height:1;pointer-events:none;user-select:none;
+  font-family:'Inter',sans-serif;letter-spacing:-8px;
+}
+.hero-inner{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:1fr auto;
+  gap:48px;align-items:center;position:relative;z-index:1;
+}
+/* illustration on the left — we pull from unsplash */
+.hero-illus{
+  position:absolute;left:-10px;top:50%;transform:translateY(-50%);
+  width:160px;height:160px;opacity:.18;pointer-events:none;
+  display:none; /* shown on wide screens */
+}
+.hero-left{}
+.hero-kicker{
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;
+  text-transform:uppercase;letter-spacing:2px;color:var(--ink3);
+  margin-bottom:18px;display:flex;align-items:center;gap:8px;
+}
+.hero-kicker::before{content:'—';color:var(--ink4)}
+.hero-h1{
+  font-size:clamp(36px,5vw,58px);font-weight:900;
+  letter-spacing:-2px;line-height:1.05;
+  color:var(--ink);margin-bottom:16px;
+}
+.hero-h1 em{display:block;font-style:italic;color:var(--blue);font-weight:900}
+.hero-sub{
+  font-size:14px;font-weight:400;color:var(--ink3);
+  max-width:380px;line-height:1.65;
+}
 
-/* ── TOOLBAR ── */
-.toolbar{max-width:1160px;margin:0 auto;padding:22px 40px 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.search-wrap{position:relative;flex:1;min-width:190px;max-width:320px}
-.search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--ink4);pointer-events:none}
-.search-input{width:100%;background:var(--white);border:1.5px solid var(--rule);border-radius:8px;padding:9px 14px 9px 38px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);outline:none;transition:border-color .18s,box-shadow .18s}
+/* stats block */
+.hero-stats{
+  display:flex;flex-direction:column;gap:10px;flex-shrink:0;
+  position:relative;
+}
+.stats-superscript{
+  position:absolute;right:0;top:-28px;
+  font-size:11px;font-weight:600;text-transform:uppercase;
+  letter-spacing:1.5px;color:var(--ink4);text-align:right;
+  font-family:'JetBrains Mono',monospace;
+}
+.stats-superscript sup{font-size:18px;font-weight:900;color:var(--ink);vertical-align:super;line-height:0;letter-spacing:0;font-family:'Inter',sans-serif}
+.stat-card{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:14px;padding:18px 22px;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  min-width:120px;
+  box-shadow:0 2px 8px rgba(0,0,0,.04);
+  transition:box-shadow .2s,border-color .2s;
+}
+.stat-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);border-color:var(--blue)}
+.stat-icon{
+  width:36px;height:36px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--ink3);
+}
+.stat-n{
+  font-size:28px;font-weight:900;color:var(--ink);
+  line-height:1;letter-spacing:-1px;font-variant-numeric:tabular-nums;
+}
+.stat-l{
+  font-size:9px;font-weight:700;text-transform:uppercase;
+  letter-spacing:1.5px;color:var(--ink4);
+}
+
+/* ── TOOLBAR ──────────────────────────────────────────────────────────── */
+.toolbar{
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  padding:0 40px;
+  height:52px;
+  display:flex;align-items:center;gap:10px;
+  position:sticky;top:48px;z-index:90;
+}
+.search-wrap{position:relative;min-width:200px}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--ink4);pointer-events:none}
+.search-input{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:7px;padding:7px 14px 7px 34px;
+  font-family:'Inter',sans-serif;font-size:13px;color:var(--ink);
+  outline:none;width:220px;transition:border-color .18s,box-shadow .18s;
+}
 .search-input::placeholder{color:var(--ink4)}
-.search-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,86,219,.08)}
-.filter-pills{display:flex;gap:5px;flex-wrap:wrap}
-.pill{background:transparent;border:1.5px solid var(--rule);border-radius:6px;padding:6px 13px;font-size:12px;font-weight:500;color:var(--ink3);cursor:pointer;transition:all .15s;font-family:'DM Sans',sans-serif}
-.pill:hover{border-color:var(--ink2);color:var(--ink)}
-.pill.active{background:var(--ink);border-color:var(--ink);color:var(--white)}
-.result-info{margin-left:auto;font-size:12px;color:var(--ink4);font-family:'DM Mono',monospace;white-space:nowrap}
+.search-input:focus{border-color:var(--blue);box-shadow:0 0 0 2px rgba(37,99,235,.1);background:var(--white)}
+.filter-pills{display:flex;gap:4px}
+.pill{
+  background:transparent;border:none;
+  border-radius:6px;padding:5px 12px;
+  font-size:12px;font-weight:600;color:var(--ink3);
+  cursor:pointer;transition:all .15s;font-family:'Inter',sans-serif;
+}
+.pill:hover{background:var(--bg);color:var(--ink)}
+.pill.active{background:var(--blue);color:white}
+.result-info{
+  margin-left:auto;font-size:12px;color:var(--ink4);
+  font-family:'JetBrains Mono',monospace;white-space:nowrap;
+}
 .result-info b{color:var(--ink2)}
 
-/* ── GRID ── */
-.grid{max-width:1160px;margin:18px auto 0;padding:0 40px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:8px}
+/* ── GRID ─────────────────────────────────────────────────────────────── */
+.grid{
+  max-width:1160px;margin:28px auto;
+  padding:0 40px 80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:14px;
+}
 
-/* ── TAG CARD ── */
-.tag-card{background:var(--white);border:1.5px solid var(--rule);border-radius:10px;padding:16px 18px;cursor:pointer;text-decoration:none;color:inherit;display:flex;align-items:center;gap:13px;transition:border-color .18s,box-shadow .18s,transform .2s cubic-bezier(.2,.8,.3,1);animation:cardIn .32s ease both;position:relative}
-.tag-card:hover{border-color:var(--card-color);box-shadow:0 2px 20px rgba(0,0,0,.07),0 0 0 1px var(--card-color);transform:translateY(-2px);text-decoration:none}
-@keyframes cardIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+/* ── TAG CARD ─────────────────────────────────────────────────────────── */
+.tag-card{
+  background:var(--white);
+  border:1.5px solid var(--border);
+  border-radius:14px;
+  padding:0;
+  cursor:pointer;text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;
+  transition:border-color .2s,box-shadow .2s,transform .2s cubic-bezier(.2,.8,.3,1);
+  animation:cardIn .35s ease both;
+  overflow:hidden;
+}
+.tag-card:hover{
+  border-color:var(--card-color);
+  box-shadow:0 4px 20px rgba(0,0,0,.08),0 0 0 1px var(--card-color);
+  transform:translateY(-3px);
+  text-decoration:none;
+}
+@keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
-.tc-icon{flex-shrink:0;width:44px;height:44px;border-radius:10px;background:var(--card-color-lt,var(--paper2));display:flex;align-items:center;justify-content:center;font-size:21px}
-.tc-icon img{width:26px;height:26px;object-fit:contain}
-.tc-body{flex:1;min-width:0}
-.tc-name{font-size:14px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tc-meta{display:flex;align-items:center;gap:5px}
-.tc-count{font-family:'DM Mono',monospace;font-size:12px;font-weight:500;color:var(--card-color)}
-.tc-sep{color:var(--ink4);font-size:11px}
-.tc-cat{font-size:11px;font-weight:500;color:var(--ink4);text-transform:uppercase;letter-spacing:.5px}
-.tc-arrow{flex-shrink:0;color:var(--ink4);transition:color .15s,transform .18s}
-.tag-card:hover .tc-arrow{color:var(--card-color);transform:translateX(3px)}
+/* card header */
+.tc-head{padding:18px 18px 12px;display:flex;align-items:center;gap:12px}
+.tc-logo{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--card-color-lt,#F3F4F6);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;overflow:hidden;
+  border:1px solid rgba(0,0,0,.05);
+}
+.tc-logo img{width:28px;height:28px;object-fit:contain}
+.tc-logo-emoji{font-size:22px;line-height:1}
+.tc-name{
+  font-size:15px;font-weight:800;color:var(--ink);
+  line-height:1.2;letter-spacing:-.3px;
+}
+
+/* card body */
+.tc-body{padding:0 18px 14px;flex:1;display:flex;flex-direction:column;gap:8px}
+.tc-count{
+  font-size:15px;font-weight:800;color:var(--card-color);
+  display:flex;align-items:baseline;gap:6px;
+}
+.tc-count-num{letter-spacing:-.5px}
+.tc-cat{
+  font-size:10px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.8px;color:var(--ink4);
+}
+.tc-desc{
+  font-size:12px;color:var(--ink3);line-height:1.55;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+
+/* explore button */
+.tc-foot{
+  border-top:1px solid var(--border);
+  padding:10px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.explore-btn{
+  font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.8px;color:var(--ink2);
+  display:flex;align-items:center;gap:6px;
+  transition:color .15s;
+}
+.tag-card:hover .explore-btn{color:var(--card-color)}
+.explore-arrow{
+  width:22px;height:22px;border-radius:5px;
+  background:var(--bg);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .15s;
+}
+.tag-card:hover .explore-arrow{background:var(--card-color);border-color:var(--card-color);color:white}
 
 .hidden{display:none!important}
-.empty{grid-column:1/-1;text-align:center;padding:100px 20px;display:none}
+.empty{grid-column:1/-1;text-align:center;padding:80px 20px;display:none}
 .empty.show{display:block}
-.empty h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--ink3);margin-bottom:10px}
-.empty p{font-size:14px;color:var(--ink4)}
+.empty h3{font-size:18px;font-weight:600;color:var(--ink3);margin-bottom:8px}
+.empty p{font-size:13px;color:var(--ink4)}
 
-footer{border-top:1px solid var(--rule);padding:24px 40px;text-align:center}
-footer p{font-size:12px;color:var(--ink4);line-height:2}
+/* ── FOOTER ───────────────────────────────────────────────────────────── */
+footer{
+  background:var(--white);border-top:1px solid var(--border);
+  padding:18px 40px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+footer p{font-size:12px;color:var(--ink4)}
 footer a{color:var(--ink3);text-decoration:none}
 footer a:hover{color:var(--ink)}
 
-@media(max-width:700px){
+@media(max-width:768px){
   .hero{padding:36px 20px}
-  .hero::before{display:none}
   .hero-inner{grid-template-columns:1fr}
-  .hero-stats{flex-direction:row}
-  .toolbar,.grid,footer{padding-left:20px;padding-right:20px}
-  .topbar{padding:0 20px}
+  .hero-stats{flex-direction:row;flex-wrap:wrap}
+  .hero-watermark{display:none}
+  .toolbar{padding:0 16px;height:auto;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;position:static}
+  .grid{padding:16px 16px 60px}
+  footer{padding:16px 20px;flex-direction:column;gap:8px;text-align:center}
 }
 </style>
 </head>
 <body>
 
+<!-- TOPBAR -->
 <header class="topbar">
   <a class="logo" href="index.html">
-    <div class="logo-dots"><span></span><span></span><span></span><span></span></div>
+    <div class="logo-dots"><span></span><span></span><span></span></div>
     <span class="logo-text">Summer of Code</span>
   </a>
   <div class="topbar-rule"></div>
   <span class="topbar-sub">Technology Index</span>
-  <div class="topbar-right"><span class="year-badge">GSoC 2026</span></div>
+  <div class="topbar-right"><span class="gsoc-badge">GSoC 2026</span></div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
+  <div class="hero-watermark">2026</div>
   <div class="hero-inner">
-    <div>
+    <div class="hero-left">
       <div class="hero-kicker">Technology Index</div>
-      <h1 class="hero-h1">Find orgs by<br><em>tech stack</em></h1>
+      <h1 class="hero-h1">
+        Find orgs by
+        <em>tech stack</em>
+      </h1>
       <p class="hero-sub">Browse all 185 participating organizations by the technologies they use. Every language, framework, and tool — indexed.</p>
     </div>
     <div class="hero-stats">
-      <div class="hstat"><span class="hstat-n">48</span><span class="hstat-l">Categories</span></div>
-      <div class="hstat"><span class="hstat-n">185</span><span class="hstat-l">Orgs</span></div>
-      <div class="hstat"><span class="hstat-n">2026</span><span class="hstat-l">Edition</span></div>
+      <div class="stats-superscript"><sup>4</sup><sup style="font-size:11px;font-weight:600;color:var(--ink4)">32</sup><br>CATEGORIES</div>
+      <div class="stat-card">
+        <div class="stat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><line x1="6" y1="8" x2="18" y2="8"/><line x1="6" y1="12" x2="14" y2="12"/></svg>
+        </div>
+        <span class="stat-n">48</span>
+        <span class="stat-l">Categories</span>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <span class="stat-n">185</span>
+        <span class="stat-l">Orgs</span>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <span class="stat-n">2026</span>
+        <span class="stat-l">Edition</span>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- TOOLBAR -->
 <div class="toolbar">
   <div class="search-wrap">
-    <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <svg class="search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     <input class="search-input" id="search" type="text" placeholder="Search technologies…" autocomplete="off">
   </div>
   <div class="filter-pills" id="pills">
@@ -534,6 +719,7 @@ footer a:hover{color:var(--ink)}
   <div class="result-info">Showing <b id="showing">48</b> of 48</div>
 </div>
 
+<!-- GRID -->
 <div class="grid" id="grid">
   <div class="empty" id="empty">
     <h3>Nothing found</h3>
@@ -541,10 +727,121 @@ footer a:hover{color:var(--ink)}
   </div>
 </div>
 
-<footer><p><a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a> &nbsp;·&nbsp; 185 organizations &nbsp;·&nbsp; 48 technology categories</p></footer>
+<footer>
+  <p><a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a> &nbsp;·&nbsp; 185 organizations &nbsp;·&nbsp; 48 technology categories</p>
+  <p>© GSoC Homes.</p>
+</footer>
 
 <script>
 const CAT_LABELS={languages:"Language",web:"Web",ai:"AI & Data",systems:"Systems",devops:"DevOps",science:"Science",other:"Other"};
+
+// Map slug → simple-icons name for logo fetching
+// Uses https://cdn.simpleicons.org/{name} — free, no API key
+const ICONS={
+  'python':             'python',
+  'javascript':         'javascript',
+  'c-c':                'cplusplus',
+  'java-jvm':           'openjdk',
+  'rust':               'rust',
+  'go':                 'go',
+  'typescript':         'typescript',
+  'web-backend-full-stack': 'nodedotjs',
+  'web-frontend':       'html5',
+  'react':              'react',
+  'containers-kubernetes':'kubernetes',
+  'databases':          'postgresql',
+  'artificial-intelligence':'openai',
+  'machine-learning':   'tensorflow',
+  'generative-ai-llms': 'openai',
+  'devops-ci-cd':       'githubactions',
+  'cloud-infrastructure':'amazonaws',
+  'linux-unix':         'linux',
+  'security':           'owasp',
+  'docker':             'docker',
+  'mobile-development': 'android',
+  'mobile-languages':   'flutter',
+  'ruby-php':           'ruby',
+  'desktop-applications':'electron',
+  'graphics-3d':        'blender',
+  'networking':         'cloudflare',
+  'big-data':           'apachespark',
+  'audio-video-media':  'ffmpeg',
+  'compilers-build-tools':'llvm',
+  'operating-systems-virtualization':'linux',
+  'scientific-computing-hpc':'numpy',
+  'bioinformatics-health':'github',
+  'data-science-analytics':'jupyter',
+  'computer-vision-nlp':'opencv',
+  'iot-robotics-autonomous-systems':'ros',
+  'games-simulation':   'unity',
+  'gis-geospatial':     'openstreetmap',
+  'communications-collaboration':'slack',
+  'accessibility-ux':   'figma',
+  'systems-low-level-languages':'assemblyscript',
+  'systems-programming-embedded':'raspberrypi',
+  'mathematics-algorithms':'wolfram',
+  'physical-earth-sciences':'nasa',
+  'education-humanities':'wikipedia',
+  'open-source-research':'github',
+  'developer-tools-qa': 'sonarqube',
+  'fintech-blockchain':  'bitcoin',
+  'software-composition-compliance':'github',
+  'electronic-design-hardware':'arduino',
+  'scripting-other-languages':'lua',
+};
+
+// Descriptions per tag (short, like in the screenshot)
+const DESCS={
+  'python':             'A versatile, powerful language for data analysis, backend development, and AI.',
+  'javascript':         'The language of the web — powering everything from UI to servers.',
+  'c-c':                'High-performance systems programming for embedded, games, and OS work.',
+  'web-backend-full-stack':'Build scalable server-side apps and end-to-end web solutions.',
+  'developer-tools-qa': 'Tooling, testing frameworks, and quality automation for developers.',
+  'java-jvm':           'Enterprise-grade JVM ecosystem used across cloud and Android.',
+  'web-frontend':       'Frameworks, CSS tools, and browser technologies for the modern web.',
+  'scripting-other-languages':'Perl, Lua, Shell, and other scripting languages in open source.',
+  'data-science-analytics':'Pandas, Jupyter, and the broader data science ecosystem.',
+  'education-humanities':'EdTech, digital humanities, and knowledge-sharing platforms.',
+  'artificial-intelligence':'Neural networks, AI research, and intelligent systems.',
+  'compilers-build-tools':'LLVM, GCC, language parsers, and build system development.',
+  'scientific-computing-hpc':'NumPy, SciPy, parallel computing, and HPC infrastructure.',
+  'cloud-infrastructure':'Cloud-native platforms, infrastructure-as-code, and SaaS backends.',
+  'containers-kubernetes':'Container runtimes, Kubernetes, and cloud orchestration platforms.',
+  'databases':           'Relational and NoSQL databases, query engines, and storage systems.',
+  'linux-unix':          'Linux kernel, system utilities, and POSIX-compliant environments.',
+  'open-source-research':'Research software, academic tools, and open-access platforms.',
+  'bioinformatics-health':'Genomics, medical informatics, and life-science software.',
+  'mobile-development':  'Android, iOS, and cross-platform mobile application frameworks.',
+  'devops-ci-cd':        'Continuous integration, delivery pipelines, and DevOps tooling.',
+  'machine-learning':    'Simulate complex systems and push boundaries in physics and math.',
+  'security':            'Cryptography, pen testing, malware analysis, and SAST tooling.',
+  'desktop-applications':'Cross-platform desktop GUIs built with Qt, GTK, and Electron.',
+  'go':                  'Cloud-native Go development for distributed systems and CLI tools.',
+  'typescript':          'Type-safe JavaScript powering large-scale web applications.',
+  'graphics-3d':         'Rendering engines, 3D geometry, ray tracing, and GPU compute.',
+  'mathematics-algorithms':'Computational math, symbolic solvers, and algorithm research.',
+  'operating-systems-virtualization':'Kernels, hypervisors, emulators, and OS-level tooling.',
+  'rust':                'Memory-safe systems programming for the modern era.',
+  'physical-earth-sciences':'Climate, astronomy, oceanography, and earth observation tools.',
+  'systems-low-level-languages':'Assembly, C, and tools for low-level systems and compilers.',
+  'iot-robotics-autonomous-systems':'ROS, embedded sensors, drones, and autonomous systems.',
+  'big-data':            'Spark, Hadoop, and distributed data processing at scale.',
+  'networking':          'Network stacks, protocols, SDN, and Internet measurement.',
+  'audio-video-media':   'FFmpeg, audio DSP, video codecs, and multimedia streaming.',
+  'communications-collaboration':'Messaging, chat platforms, and team collaboration tools.',
+  'generative-ai-llms':  'LLMs, foundation models, and generative AI applications.',
+  'mobile-languages':    'Kotlin, Swift, Dart, and Flutter for native mobile development.',
+  'accessibility-ux':    'Accessibility tooling, UX research, and inclusive design.',
+  'systems-programming-embedded':'Firmware, RTOS, IoT, and bare-metal programming.',
+  'ruby-php':            'Ruby on Rails, PHP frameworks, and server-side web scripting.',
+  'computer-vision-nlp': 'Image processing, NLP pipelines, and perception models.',
+  'games-simulation':    'Game engines, physics simulators, and interactive media.',
+  'gis-geospatial':      'Geospatial analysis, map rendering, and location services.',
+  'software-composition-compliance':'SBOM, license compliance, and supply-chain security.',
+  'fintech-blockchain':  'Blockchain protocols, DeFi tooling, and financial tech.',
+  'electronic-design-hardware':'EDA tools, HDL, RISC-V, and hardware description.',
+};
+
 const TAGS=[
   {tag:"Python",slug:"python",count:106,cat:"languages",icon:"🐍",color:"#1D4ED8",rgb:"29,78,216"},
   {tag:"JavaScript",slug:"javascript",count:62,cat:"languages",icon:"⚡",color:"#B45309",rgb:"180,83,9"},
@@ -595,46 +892,66 @@ const TAGS=[
   {tag:"Fintech & Blockchain",slug:"fintech-blockchain",count:3,cat:"other",icon:"💰",color:"#78350F",rgb:"120,53,15"},
   {tag:"Electronic Design & Hardware",slug:"electronic-design-hardware",count:2,cat:"systems",icon:"🔋",color:"#1E293B",rgb:"30,41,59"},
 ];
-const tagImages={'python':'images/python-logo.png','javascript':'images/javascript.webp','c-c':'images/C,C++.jpg','linux-unix':'images/Linux.png','java-jvm':'images/java.webp','rust':'images/rust.png','containers-kubernetes':'images/kubernetes.png','databases':'images/database.png','artificial-intelligence':'images/AI.png'};
-const grid=document.getElementById('grid');
-TAGS.forEach((t,i)=>{
-  const a=document.createElement('a');
-  a.className='tag-card';
-  a.href=`tags/tag.html?slug=${t.slug}`;
-  a.dataset.cat=t.cat;
-  a.dataset.name=t.tag.toLowerCase();
-  a.style.cssText=`--card-color:${t.color};--card-color-lt:rgba(${t.rgb},.08);animation-delay:${Math.min(i*12,400)}ms`;
-  const icon=tagImages[t.slug]?`<img src="${tagImages[t.slug]}" alt="${t.tag}">`:`${t.icon}`;
-  a.innerHTML=`
-    <div class="tc-icon">${icon}</div>
-    <div class="tc-body">
+
+const grid = document.getElementById('grid');
+
+TAGS.forEach((t, i) => {
+  const a = document.createElement('a');
+  a.className = 'tag-card';
+  a.href = `tags/tag.html?slug=${t.slug}`;
+  a.dataset.cat = t.cat;
+  a.dataset.name = t.tag.toLowerCase();
+  a.style.cssText = `--card-color:${t.color};--card-color-lt:rgba(${t.rgb},.08);animation-delay:${Math.min(i*12,500)}ms`;
+
+  const iconName = ICONS[t.slug];
+  const logoHtml = iconName
+    ? `<img src="https://cdn.simpleicons.org/${iconName}" alt="${t.tag}"
+         onerror="this.parentElement.innerHTML='<span class=tc-logo-emoji>${t.icon}</span>'">`
+    : `<span class="tc-logo-emoji">${t.icon}</span>`;
+
+  const desc = DESCS[t.slug] || `Organizations working with ${t.tag} in open source.`;
+
+  a.innerHTML = `
+    <div class="tc-head">
+      <div class="tc-logo">${logoHtml}</div>
       <div class="tc-name">${esc(t.tag)}</div>
-      <div class="tc-meta">
-        <span class="tc-count">${t.count} orgs</span>
-        <span class="tc-sep">·</span>
-        <span class="tc-cat">${CAT_LABELS[t.cat]||t.cat}</span>
-      </div>
     </div>
-    <div class="tc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>`;
+    <div class="tc-body">
+      <div class="tc-count">
+        <span class="tc-count-num">${t.count} orgs</span>
+        <span class="tc-cat">— ${CAT_LABELS[t.cat]||t.cat}</span>
+      </div>
+      <div class="tc-desc">${esc(desc)}</div>
+    </div>
+    <div class="tc-foot">
+      <span class="explore-btn">
+        Explore Stack
+        <span class="explore-arrow">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </span>
+    </div>`;
   grid.appendChild(a);
 });
-let activeCat='all';
-function render(){
-  const q=document.getElementById('search').value.toLowerCase().trim();
-  let n=0;
-  document.querySelectorAll('.tag-card').forEach(c=>{
-    const ok=(!q||c.dataset.name.includes(q))&&(activeCat==='all'||c.dataset.cat===activeCat);
-    c.classList.toggle('hidden',!ok);if(ok)n++;
+
+let activeCat = 'all';
+function render() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  let n = 0;
+  document.querySelectorAll('.tag-card').forEach(c => {
+    const ok = (!q || c.dataset.name.includes(q)) && (activeCat === 'all' || c.dataset.cat === activeCat);
+    c.classList.toggle('hidden', !ok);
+    if (ok) n++;
   });
-  document.getElementById('showing').textContent=n;
-  document.getElementById('empty').classList.toggle('show',n===0);
+  document.getElementById('showing').textContent = n;
+  document.getElementById('empty').classList.toggle('show', n === 0);
 }
-document.getElementById('search').addEventListener('input',render);
-document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{
-  document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));
-  p.classList.add('active');activeCat=p.dataset.cat;render();
+document.getElementById('search').addEventListener('input', render);
+document.querySelectorAll('.pill').forEach(p => p.addEventListener('click', () => {
+  document.querySelectorAll('.pill').forEach(x => x.classList.remove('active'));
+  p.classList.add('active'); activeCat = p.dataset.cat; render();
 }));
-function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 </script>
 </body>
 </html>
