@@ -143,7 +143,17 @@ body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
 .card-emoji{
-  font-size:36px;line-height:1;margin-bottom:14px;margin-top:4px;
+  font-size:80px;line-height:1;margin-bottom:18px;margin-top:0;text-align:center;display:block;
+}
+.card-img-main {
+  display: block;
+  margin: 0 auto 18px auto;
+  height: 80px;
+  max-width: 120px;
+  width: auto;
+  object-fit: contain;
+  box-shadow: 0 2px 8px rgba(60,64,67,.10);
+}
 }
 .card-count{
   font-size:42px;font-weight:900;line-height:1;
@@ -334,18 +344,18 @@ TAGS.forEach((t,i)=>{
   a.style.cssText=`--card-color:${t.color};--c-rgb:${t.rgb};animation-delay:${Math.min(i*18,400)}ms`;
   let emojiHtml = '';
   if(tagImages[t.slug]) {
-    emojiHtml = `<img src="images/${tagImages[t.slug]}" alt="${t.tag} logo" style="height:36px;width:auto;max-width:48px;display:block;margin:0 auto 14px;object-fit:contain;">`;
+    emojiHtml = `<img class=\"card-img-main\" src=\"images/${tagImages[t.slug]}\" alt=\"${t.tag} logo\">`;
   } else {
-    emojiHtml = `<div class=\"card-emoji\">${t.icon}</div>`;
+    emojiHtml = `<div class=\\\"card-emoji card-img-main\\\">${t.icon}</div>`;
   }
   a.innerHTML=`
     ${emojiHtml}
-    <div class="card-count">${t.count}</div>
-    <div class="card-count-sub">organizations</div>
-    <div class="card-name">${esc(t.tag)}</div>
-    <div class="card-footer">
-      <span class="card-cat">${CAT_LABELS[t.cat]||t.cat}</span>
-      <span class="browse-link">Browse →</span>
+    <div class=\"card-name\">${esc(t.tag)}</div>
+    <div class=\"card-count\">${t.count}</div>
+    <div class=\"card-count-sub\">organizations</div>
+    <div class=\"card-footer\">
+      <span class=\"card-cat\">${CAT_LABELS[t.cat]||t.cat}</span>
+      <span class=\"browse-link\">Browse →</span>
     </div>`;
   grid.appendChild(a);
 });
