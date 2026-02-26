@@ -4,312 +4,225 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GSoC 2026 · Technology Tags</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:        #07090E;
-  --bg2:       #0D1017;
-  --surface:   #111520;
-  --surface2:  #181D2C;
-  --border:    rgba(255,255,255,0.07);
-  --border2:   rgba(255,255,255,0.12);
-  --text:      #E4E8F2;
-  --text-muted: #5A6380;
-  --text-dim:  #3A4060;
-  --white:     #ffffff;
-  --accent:    #5B6CF6;
-  --accent2:   #8B5CF6;
-  --r-sm: 8px; --r-md: 14px; --r-lg: 20px;
+  --blue:   #1A73E8;
+  --blue2:  #1557B0;
+  --blue-lt:#E8F0FE;
+  --blue-m: #4285F4;
+  --red:    #EA4335;
+  --yellow: #FBBC04;
+  --green:  #34A853;
+  --bg:     #F8F9FA;
+  --white:  #FFFFFF;
+  --card-shadow: 0 1px 3px rgba(60,64,67,.15), 0 2px 8px rgba(60,64,67,.10);
+  --card-hover:  0 4px 12px rgba(60,64,67,.20), 0 8px 24px rgba(60,64,67,.12);
+  --text:   #202124;
+  --text2:  #3C4043;
+  --text3:  #5F6368;
+  --text4:  #80868B;
+  --border: #DADCE0;
+  --r: 12px;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-  overflow-x: hidden;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Roboto',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+/* ── TOP BAR ── */
+.topbar{
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  padding:0 32px;
+  display:flex;align-items:center;gap:16px;height:64px;
+  position:sticky;top:0;z-index:100;
+}
+.topbar-logo{
+  display:flex;align-items:center;gap:10px;
+  font-size:20px;font-weight:500;color:var(--text);
+  text-decoration:none;
+}
+.google-g{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,#4285F4 25%,#34A853 25%,#34A853 50%,#FBBC04 50%,#FBBC04 75%,#EA4335 75%);
+  font-size:0;
+}
+.topbar-sep{color:var(--border);font-weight:300;font-size:22px}
+.topbar-title{font-size:18px;font-weight:400;color:var(--text3)}
+.topbar-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.year-chip{
+  background:var(--blue-lt);color:var(--blue);
+  font-size:12px;font-weight:500;font-family:'Roboto Mono',monospace;
+  padding:4px 12px;border-radius:100px;letter-spacing:.5px;
 }
 
-/* ── HERO ─────────────────────────────────────────────────────────────── */
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 72px 48px 80px;
-  background: var(--bg2);
-  border-bottom: 1px solid var(--border);
+/* ── HERO ── */
+.hero{
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  padding:48px 32px 52px;
 }
-.hero-noise {
-  position: absolute; inset: 0; pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  opacity: 0.5;
+.hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+.hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.hero-title{font-size:40px;font-weight:400;color:var(--text);letter-spacing:-0.5px;line-height:1.2}
+.hero-title b{font-weight:700}
+.hero-title .g{color:#4285F4}
+.hero-title .o1{color:#EA4335}
+.hero-title .o2{color:#FBBC04}
+.hero-title .g2{color:#34A853}
+.hero-title .l{color:#4285F4}
+.hero-title .e{color:#EA4335}
+.hero-sub{font-size:16px;color:var(--text3);font-weight:400;max-width:580px;line-height:1.6;margin-top:4px}
+.hero-stats{display:flex;gap:8px;flex-wrap:wrap}
+.hstat{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--r);padding:16px 24px;
+  display:flex;flex-direction:column;gap:2px;min-width:120px;
 }
-.hero-glow {
-  position: absolute; top: -40%; left: 10%; width: 60%; height: 100%;
-  background: radial-gradient(ellipse, rgba(91,108,246,0.12) 0%, transparent 65%);
-  pointer-events: none;
-}
-.hero-glow2 {
-  position: absolute; top: -20%; right: 5%; width: 40%; height: 80%;
-  background: radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 65%);
-  pointer-events: none;
-}
-.hero-inner {
-  position: relative; z-index: 1;
-  max-width: 1200px; margin: 0 auto;
-  display: flex; flex-direction: column; gap: 28px;
-}
-.hero-eyebrow {
-  display: flex; align-items: center; gap: 12px;
-}
-.eyebrow-badge {
-  display: inline-flex; align-items: center; gap: 6px;
-  background: rgba(91,108,246,0.15);
-  border: 1px solid rgba(91,108,246,0.3);
-  border-radius: 100px;
-  padding: 5px 14px;
-  font-size: 11px; font-weight: 600;
-  color: #8B9CF8;
-  font-family: 'DM Mono', monospace;
-  letter-spacing: 1.5px; text-transform: uppercase;
-}
-.eyebrow-pulse {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: #5B6CF6;
-  box-shadow: 0 0 8px #5B6CF6;
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-.hero-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(4.5rem, 9vw, 9rem);
-  line-height: 0.92; letter-spacing: 2px;
-  color: var(--white);
-}
-.hero-title .accent-word { color: #5B6CF6; }
-.hero-title .accent-word2 { color: #8B5CF6; }
-.hero-sub {
-  font-size: 16px; font-weight: 300;
-  color: var(--text-muted); max-width: 540px;
-  line-height: 1.7;
-}
-.hero-stats {
-  display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px;
-}
-.hstat {
-  background: var(--surface); border: 1px solid var(--border2);
-  border-radius: var(--r-md); padding: 16px 24px;
-  display: flex; flex-direction: column; gap: 4px;
-  min-width: 120px;
-}
-.hstat-n {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.8rem; line-height: 1;
-  color: var(--white);
-}
-.hstat-l {
-  font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
-  text-transform: uppercase; font-family: 'DM Mono', monospace;
-  color: var(--text-muted);
-}
-.gsoc-wordmark {
-  display: flex; align-items: center; gap: 6px;
-  font-family: 'DM Mono', monospace; font-size: 11px;
-  color: var(--text-dim); letter-spacing: 0.5px;
-  margin-top: 8px;
-}
-.gsoc-wordmark span { color: var(--text-muted); }
+.hstat-n{font-size:32px;font-weight:700;color:var(--blue);line-height:1}
+.hstat-l{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px;color:var(--text4);margin-top:2px}
 
-/* ── TOOLBAR ──────────────────────────────────────────────────────────── */
-.toolbar {
-  max-width: 1200px; margin: 0 auto;
-  padding: 28px 48px 16px;
-  display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+/* ── TOOLBAR ── */
+.toolbar{
+  max-width:1200px;margin:24px auto 0;padding:0 32px;
+  display:flex;gap:10px;align-items:center;flex-wrap:wrap;
 }
-.search-wrap { position: relative; flex: 1; min-width: 220px; }
-.search-icon {
-  position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
-  color: var(--text-muted); pointer-events: none;
+.search-wrap{position:relative;flex:1;min-width:220px;max-width:480px}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text4);pointer-events:none}
+.search-input{
+  width:100%;background:var(--white);
+  border:1px solid var(--border);border-radius:24px;
+  padding:10px 18px 10px 44px;
+  font-family:'Roboto',sans-serif;font-size:14px;color:var(--text);
+  outline:none;transition:border-color .2s,box-shadow .2s;
 }
-.search-input {
-  width: 100%; background: var(--surface);
-  border: 1.5px solid var(--border2); border-radius: var(--r-sm);
-  padding: 10px 16px 10px 42px;
-  font-family: 'DM Sans', sans-serif; font-size: 14px;
-  color: var(--text); outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+.search-input::placeholder{color:var(--text4)}
+.search-input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,115,232,.12)}
+.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{
+  background:var(--white);border:1px solid var(--border);border-radius:100px;
+  padding:7px 16px;font-size:13px;font-weight:500;color:var(--text3);
+  cursor:pointer;transition:all .15s;font-family:'Roboto',sans-serif;
 }
-.search-input::placeholder { color: var(--text-dim); }
-.search-input:focus {
-  border-color: #5B6CF6;
-  box-shadow: 0 0 0 3px rgba(91,108,246,0.12);
+.pill:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-lt)}
+.pill.active{background:var(--blue);border-color:var(--blue);color:white}
+.result-info{
+  margin-left:auto;font-size:13px;color:var(--text4);
+  font-family:'Roboto Mono',monospace;white-space:nowrap;
 }
-.cat-filters {
-  display: flex; gap: 6px; flex-wrap: wrap;
-}
-.cat-btn {
-  background: var(--surface); border: 1.5px solid var(--border2);
-  border-radius: 100px; padding: 7px 14px;
-  font-size: 12px; font-weight: 600; font-family: 'DM Sans', sans-serif;
-  color: var(--text-muted); cursor: pointer;
-  transition: all 0.15s; white-space: nowrap;
-}
-.cat-btn:hover { border-color: var(--border2); color: var(--text); background: var(--surface2); }
-.cat-btn.active { background: #5B6CF6; border-color: #5B6CF6; color: white; }
-.result-info {
-  font-size: 12px; font-family: 'DM Mono', monospace;
-  color: var(--text-muted); white-space: nowrap;
-  background: var(--surface); border: 1px solid var(--border);
-  padding: 7px 14px; border-radius: 100px;
-  margin-left: auto;
-}
-.result-info b { color: var(--accent); }
+.result-info b{color:var(--blue)}
 
-/* ── GRID ─────────────────────────────────────────────────────────────── */
-.grid {
-  max-width: 1200px; margin: 0 auto;
-  padding: 8px 48px 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 12px;
+/* ── GRID ── */
+.grid{
+  max-width:1200px;margin:20px auto 0;padding:0 32px 64px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;
 }
 
-/* ── TAG CARD ─────────────────────────────────────────────────────────── */
-.tag-card {
-  background: var(--surface);
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: 22px;
-  cursor: pointer;
-  transition: transform 0.2s cubic-bezier(.2,.8,.3,1),
-              box-shadow 0.2s, border-color 0.2s, background 0.2s;
-  animation: cardIn 0.4s ease both;
-  text-decoration: none; color: inherit;
-  display: flex; flex-direction: column; gap: 14px;
-  position: relative; overflow: hidden;
+/* ── TAG CARD ── */
+.tag-card{
+  background:var(--white);
+  border:1px solid var(--border);border-radius:var(--r);
+  padding:20px;cursor:pointer;text-decoration:none;color:inherit;
+  transition:box-shadow .2s,transform .2s,border-color .2s;
+  animation:fadeUp .35s ease both;
+  display:flex;flex-direction:column;gap:0;
+  overflow:hidden;position:relative;
 }
-@keyframes cardIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
+.tag-card:hover{
+  box-shadow:var(--card-hover);
+  transform:translateY(-3px);
+  border-color:rgba(var(--c-rgb),.4);
+  text-decoration:none;
 }
-.tag-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: var(--card-color, #5B6CF6);
-  border-radius: var(--r-lg) var(--r-lg) 0 0;
+/* top color strip */
+.tag-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:var(--card-color,var(--blue));
 }
-.tag-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(255,255,255,0.15);
-  background: var(--surface2);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.05);
-}
-.card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
-.card-icon {
-  width: 38px; height: 38px; border-radius: 10px;
-  background: var(--card-color-bg, rgba(91,108,246,0.12));
-  display: flex; align-items: center; justify-content: center;
-  font-size: 18px; flex-shrink: 0;
-}
-.card-count {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.4rem; line-height: 1;
-  color: var(--card-color, #5B6CF6);
-  text-align: right;
-}
-.card-count-label {
-  font-size: 9px; font-weight: 600; letter-spacing: 1px;
-  text-transform: uppercase; font-family: 'DM Mono', monospace;
-  color: var(--text-dim); text-align: right;
-}
-.card-name {
-  font-size: 15px; font-weight: 700;
-  color: var(--text); line-height: 1.3;
-}
-.card-sources {
-  display: flex; gap: 4px; flex-wrap: wrap;
-}
-.source-tag {
-  font-size: 10px; font-family: 'DM Mono', monospace;
-  color: var(--text-muted);
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border);
-  border-radius: 4px; padding: 2px 7px;
-}
-.source-more {
-  font-size: 10px; font-family: 'DM Mono', monospace;
-  color: var(--text-dim); padding: 2px 4px;
-  align-self: center;
-}
-.card-footer { display: flex; align-items: center; justify-content: flex-end; margin-top: auto; }
-.browse-btn {
-  display: inline-flex; align-items: center; gap: 5px;
-  font-size: 12px; font-weight: 600;
-  color: var(--card-color, #5B6CF6);
-  background: var(--card-color-bg, rgba(91,108,246,0.08));
-  border: 1px solid var(--card-color-border, rgba(91,108,246,0.2));
-  border-radius: 100px; padding: 5px 12px;
-  transition: all 0.15s; text-decoration: none;
-}
-.browse-btn:hover {
-  background: var(--card-color, #5B6CF6);
-  color: white;
-}
-.hidden { display: none !important; }
-.empty-state {
-  grid-column: 1/-1; text-align: center;
-  padding: 80px 20px; display: none;
-}
-.empty-state.show { display: block; }
-.empty-state h3 { font-size: 18px; color: var(--text-muted); margin-bottom: 8px; }
-.empty-state p { font-size: 13px; color: var(--text-dim); font-family: 'DM Mono', monospace; }
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
-/* ── FOOTER ───────────────────────────────────────────────────────────── */
-footer {
-  background: var(--bg2); border-top: 1px solid var(--border);
-  padding: 24px 48px; text-align: center;
+.card-emoji{
+  font-size:36px;line-height:1;margin-bottom:14px;margin-top:4px;
 }
-footer p {
-  font-size: 12px; color: var(--text-dim);
-  font-family: 'DM Mono', monospace; line-height: 2;
+.card-count{
+  font-size:42px;font-weight:900;line-height:1;
+  color:var(--card-color,var(--blue));
+  font-family:'Roboto',sans-serif;
 }
-footer a { color: var(--text-muted); text-decoration: none; }
-footer a:hover { color: var(--text); }
+.card-count-sub{
+  font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:1px;
+  color:var(--text4);margin-bottom:10px;font-family:'Roboto Mono',monospace;
+}
+.card-name{
+  font-size:15px;font-weight:500;color:var(--text);
+  line-height:1.35;margin-bottom:12px;flex:1;
+}
+.card-cat{
+  display:inline-flex;align-items:center;
+  font-size:11px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;
+  padding:3px 10px;border-radius:100px;
+  background:rgba(var(--c-rgb),.1);color:var(--card-color,var(--blue));
+}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+.browse-link{
+  font-size:13px;font-weight:500;color:var(--blue);
+  display:flex;align-items:center;gap:3px;
+}
+.hidden{display:none!important}
+.empty{grid-column:1/-1;text-align:center;padding:80px 20px;display:none}
+.empty.show{display:block}
+.empty h3{font-size:18px;color:var(--text3);margin-bottom:8px;font-weight:400}
+.empty p{font-size:14px;color:var(--text4)}
 
-@media (max-width: 640px) {
-  .hero { padding: 48px 24px 56px; }
-  .toolbar { padding: 20px 24px 12px; }
-  .grid { padding: 8px 24px 60px; }
-  footer { padding: 20px 24px; }
-  .hero-title { font-size: 4rem; }
+/* ── FOOTER ── */
+footer{
+  background:var(--white);border-top:1px solid var(--border);
+  padding:24px 32px;text-align:center;
+}
+footer p{font-size:13px;color:var(--text4);line-height:2}
+footer a{color:var(--blue);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+@media(max-width:640px){
+  .hero{padding:32px 20px 36px}
+  .toolbar,.grid{padding-left:20px;padding-right:20px}
+  .topbar{padding:0 20px}
+  .hero-title{font-size:28px}
 }
 </style>
 </head>
 <body>
 
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-logo">
+    <div class="google-g"></div>
+    <span>Summer of Code</span>
+  </div>
+  <span class="topbar-sep">/</span>
+  <span class="topbar-title">Technology Tags</span>
+  <div class="topbar-right">
+    <span class="year-chip">2026</span>
+  </div>
+</header>
+
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-noise"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
   <div class="hero-inner">
-    <div class="hero-eyebrow">
-      <div class="eyebrow-badge"><span class="eyebrow-pulse"></span>Live · 2026</div>
+    <div class="hero-row">
+      <div>
+        <h1 class="hero-title">
+          <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+          &nbsp;<b>Summer of Code 2026</b>
+        </h1>
+        <p class="hero-sub">Browse all participating organizations by technology. Find communities working with your favorite stack.</p>
+      </div>
     </div>
-    <h1 class="hero-title">
-      GSOC<br>
-      <span class="accent-word">2026</span><br>
-      <span class="accent-word2">TAGS</span>
-    </h1>
-    <p class="hero-sub">Browse all participating organizations by technology tag. Find the communities working with your stack.</p>
     <div class="hero-stats">
-      <div class="hstat"><span class="hstat-n" id="stat-tags">48</span><span class="hstat-l">Tech Tags</span></div>
-      <div class="hstat"><span class="hstat-n" id="stat-orgs">–</span><span class="hstat-l">Total Orgs</span></div>
-      <div class="hstat"><span class="hstat-n" id="stat-year">2026</span><span class="hstat-l">Edition</span></div>
-    </div>
-    <div class="gsoc-wordmark">
-      <span>Google</span>&nbsp;Summer of Code&nbsp;<span>·</span>&nbsp;gsoc.withgoogle.com
+      <div class="hstat"><span class="hstat-n">48</span><span class="hstat-l">Tag Categories</span></div>
+      <div class="hstat"><span class="hstat-n">185</span><span class="hstat-l">Unique Orgs</span></div>
+      <div class="hstat"><span class="hstat-n">2026</span><span class="hstat-l">Edition</span></div>
     </div>
   </div>
 </section>
@@ -317,159 +230,126 @@ footer a:hover { color: var(--text); }
 <!-- TOOLBAR -->
 <div class="toolbar">
   <div class="search-wrap">
-    <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input class="search-input" id="search" type="text" placeholder="Search tags…" autocomplete="off">
+    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input class="search-input" id="search" type="text" placeholder="Search tag categories…" autocomplete="off">
   </div>
-  <div class="cat-filters" id="cat-filters">
-    <button class="cat-btn active" data-cat="all">All</button>
-    <button class="cat-btn" data-cat="languages">Languages</button>
-    <button class="cat-btn" data-cat="web">Web</button>
-    <button class="cat-btn" data-cat="ai">AI / Data</button>
-    <button class="cat-btn" data-cat="systems">Systems</button>
-    <button class="cat-btn" data-cat="devops">DevOps</button>
-    <button class="cat-btn" data-cat="science">Science</button>
-    <button class="cat-btn" data-cat="other">Other</button>
+  <div class="filter-pills" id="pills">
+    <button class="pill active" data-cat="all">All</button>
+    <button class="pill" data-cat="languages">Languages</button>
+    <button class="pill" data-cat="web">Web</button>
+    <button class="pill" data-cat="ai">AI / Data</button>
+    <button class="pill" data-cat="systems">Systems</button>
+    <button class="pill" data-cat="devops">DevOps</button>
+    <button class="pill" data-cat="science">Science</button>
+    <button class="pill" data-cat="other">Other</button>
   </div>
-  <div class="result-info">showing <b id="showing">48</b> tags</div>
+  <div class="result-info">Showing <b id="showing">48</b> of 48</div>
 </div>
 
 <!-- GRID -->
 <div class="grid" id="grid">
-  <div class="empty-state" id="empty"><h3>No tags found</h3><p>Try a different search term</p></div>
+  <div class="empty" id="empty"><h3>No tags found</h3><p>Try a different search term</p></div>
 </div>
 
 <footer>
   <p>
-    <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code 2026</a>
-    &nbsp;·&nbsp;
-    Open source contributions welcomed
-    &nbsp;·&nbsp;
-    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://summerofcode.withgoogle.com" target="_blank">Google Summer of Code</a>
+    &nbsp;·&nbsp; 185 organizations &nbsp;·&nbsp; 48 technology categories
   </p>
 </footer>
 
 <script>
-// ── FULL TAG DATA ────────────────────────────────────────────────────────
-const TAGS = [
-  { tag:"Python",           slug:"python",              count:106, cat:"languages", icon:"🐍", color:"#3B82F6" },
-  { tag:"JavaScript",       slug:"javascript",          count:62,  cat:"languages", icon:"⚡", color:"#EAB308" },
-  { tag:"C/C++",            slug:"c-c",                 count:53,  cat:"languages", icon:"⚙️", color:"#6366F1" },
-  { tag:"Web Backend & Full Stack", slug:"web-backend-full-stack", count:49, cat:"web", icon:"🌐", color:"#10B981" },
-  { tag:"Developer Tools & QA", slug:"developer-tools-qa", count:43, cat:"systems", icon:"🛠️", color:"#64748B" },
-  { tag:"Java & JVM",       slug:"java-jvm",            count:37,  cat:"languages", icon:"☕", color:"#F97316" },
-  { tag:"Web Frontend",     slug:"web-frontend",        count:35,  cat:"web",       icon:"🎨", color:"#06B6D4" },
-  { tag:"Scripting & Other Languages", slug:"scripting-other-languages", count:35, cat:"languages", icon:"📜", color:"#8B5CF6" },
-  { tag:"Data Science & Analytics", slug:"data-science-analytics", count:32, cat:"ai", icon:"📊", color:"#0EA5E9" },
-  { tag:"Education & Humanities", slug:"education-humanities", count:27, cat:"other", icon:"📚", color:"#F43F5E" },
-  { tag:"Artificial Intelligence", slug:"artificial-intelligence", count:26, cat:"ai", icon:"🤖", color:"#EC4899" },
-  { tag:"Compilers & Build Tools", slug:"compilers-build-tools", count:25, cat:"systems", icon:"🔨", color:"#F59E0B" },
-  { tag:"Scientific Computing & HPC", slug:"scientific-computing-hpc", count:25, cat:"science", icon:"⚡", color:"#14B8A6" },
-  { tag:"Cloud & Infrastructure", slug:"cloud-infrastructure", count:23, cat:"devops", icon:"☁️", color:"#FF9900" },
-  { tag:"Containers & Kubernetes", slug:"containers-kubernetes", count:23, cat:"devops", icon:"🐳", color:"#326CE5" },
-  { tag:"Databases",        slug:"databases",           count:23,  cat:"ai",      icon:"🗄️", color:"#336791" },
-  { tag:"Linux & Unix",     slug:"linux-unix",          count:22,  cat:"systems", icon:"🐧", color:"#FCC624" },
-  { tag:"Open Source & Research", slug:"open-source-research", count:22, cat:"other", icon:"🔓", color:"#22C55E" },
-  { tag:"Bioinformatics & Health", slug:"bioinformatics-health", count:21, cat:"science", icon:"🧬", color:"#2ECC71" },
-  { tag:"Mobile Development", slug:"mobile-development", count:21, cat:"other", icon:"📱", color:"#3B82F6" },
-  { tag:"DevOps & CI/CD",   slug:"devops-ci-cd",        count:19,  cat:"devops",  icon:"🔄", color:"#EE4444" },
-  { tag:"Machine Learning", slug:"machine-learning",    count:19,  cat:"ai",      icon:"🧠", color:"#A855F7" },
-  { tag:"Security",         slug:"security",            count:18,  cat:"systems", icon:"🔒", color:"#EF4444" },
-  { tag:"Desktop Applications", slug:"desktop-applications", count:18, cat:"other", icon:"🖥️", color:"#0078D4" },
-  { tag:"Go",               slug:"go",                  count:17,  cat:"languages", icon:"🐹", color:"#00ACD7" },
-  { tag:"TypeScript",       slug:"typescript",          count:17,  cat:"languages", icon:"📘", color:"#3178C6" },
-  { tag:"Graphics & 3D",    slug:"graphics-3d",         count:16,  cat:"other",   icon:"🎮", color:"#FF6B9D" },
-  { tag:"Mathematics & Algorithms", slug:"mathematics-algorithms", count:16, cat:"science", icon:"∑", color:"#E74C3C" },
-  { tag:"Operating Systems & Virtualization", slug:"operating-systems-virtualization", count:16, cat:"systems", icon:"💻", color:"#1793D1" },
-  { tag:"Rust",             slug:"rust",                count:16,  cat:"languages", icon:"🦀", color:"#CE422B" },
-  { tag:"Physical & Earth Sciences", slug:"physical-earth-sciences", count:15, cat:"science", icon:"🔭", color:"#3B82F6" },
-  { tag:"Systems & Low-level Languages", slug:"systems-low-level-languages", count:14, cat:"languages", icon:"🔧", color:"#94A3B8" },
-  { tag:"IoT, Robotics & Autonomous Systems", slug:"iot-robotics-autonomous-systems", count:14, cat:"other", icon:"🤖", color:"#00C49A" },
-  { tag:"Big Data",         slug:"big-data",            count:13,  cat:"ai",      icon:"🌊", color:"#E25A1C" },
-  { tag:"Networking",       slug:"networking",          count:12,  cat:"systems", icon:"🌐", color:"#00BFFF" },
-  { tag:"Audio, Video & Media", slug:"audio-video-media", count:12, cat:"other", icon:"🎵", color:"#9B59B6" },
-  { tag:"Communications & Collaboration", slug:"communications-collaboration", count:12, cat:"other", icon:"💬", color:"#4CAF50" },
-  { tag:"Generative AI & LLMs", slug:"generative-ai-llms", count:11, cat:"ai", icon:"✨", color:"#C77DFF" },
-  { tag:"Mobile Languages", slug:"mobile-languages",    count:11,  cat:"languages", icon:"📲", color:"#0075C2" },
-  { tag:"Accessibility & UX", slug:"accessibility-ux", count:10,  cat:"other",   icon:"♿", color:"#FF69B4" },
-  { tag:"Systems Programming & Embedded", slug:"systems-programming-embedded", count:10, cat:"systems", icon:"🔌", color:"#A8DADC" },
-  { tag:"Ruby & PHP",       slug:"ruby-php",            count:10,  cat:"languages", icon:"💎", color:"#CC342D" },
-  { tag:"Computer Vision & NLP", slug:"computer-vision-nlp", count:8, cat:"ai", icon:"👁️", color:"#4ECDC4" },
-  { tag:"Games & Simulation", slug:"games-simulation",  count:8,   cat:"other",   icon:"🎮", color:"#27AE60" },
-  { tag:"GIS & Geospatial", slug:"gis-geospatial",      count:6,   cat:"science", icon:"🗺️", color:"#27AE60" },
-  { tag:"Software Composition & Compliance", slug:"software-composition-compliance", count:4, cat:"other", icon:"📋", color:"#607D8B" },
-  { tag:"Fintech & Blockchain", slug:"fintech-blockchain", count:3, cat:"other", icon:"💰", color:"#F0B90B" },
-  { tag:"Electronic Design & Hardware", slug:"electronic-design-hardware", count:2, cat:"systems", icon:"🔋", color:"#95A5A6" },
+const CAT_LABELS={languages:"Language",web:"Web",ai:"AI & Data",systems:"Systems",devops:"DevOps",science:"Science",other:"Other"};
+
+const TAGS=[
+  {tag:"Python",slug:"python",count:106,cat:"languages",icon:"🐍",color:"#1565C0",rgb:"21,101,192"},
+  {tag:"JavaScript",slug:"javascript",count:62,cat:"languages",icon:"⚡",color:"#F9A825",rgb:"249,168,37"},
+  {tag:"C/C++",slug:"c-c",count:53,cat:"languages",icon:"⚙️",color:"#512DA8",rgb:"81,45,168"},
+  {tag:"Web Backend & Full Stack",slug:"web-backend-full-stack",count:49,cat:"web",icon:"🌐",color:"#00897B",rgb:"0,137,123"},
+  {tag:"Developer Tools & QA",slug:"developer-tools-qa",count:43,cat:"systems",icon:"🛠️",color:"#546E7A",rgb:"84,110,122"},
+  {tag:"Java & JVM",slug:"java-jvm",count:37,cat:"languages",icon:"☕",color:"#E64A19",rgb:"230,74,25"},
+  {tag:"Web Frontend",slug:"web-frontend",count:35,cat:"web",icon:"🎨",color:"#0097A7",rgb:"0,151,167"},
+  {tag:"Scripting & Other Languages",slug:"scripting-other-languages",count:35,cat:"languages",icon:"📜",color:"#7B1FA2",rgb:"123,31,162"},
+  {tag:"Data Science & Analytics",slug:"data-science-analytics",count:32,cat:"ai",icon:"📊",color:"#0277BD",rgb:"2,119,189"},
+  {tag:"Education & Humanities",slug:"education-humanities",count:27,cat:"other",icon:"📚",color:"#C62828",rgb:"198,40,40"},
+  {tag:"Artificial Intelligence",slug:"artificial-intelligence",count:26,cat:"ai",icon:"🤖",color:"#AD1457",rgb:"173,20,87"},
+  {tag:"Compilers & Build Tools",slug:"compilers-build-tools",count:25,cat:"systems",icon:"🔨",color:"#F57F17",rgb:"245,127,23"},
+  {tag:"Scientific Computing & HPC",slug:"scientific-computing-hpc",count:25,cat:"science",icon:"🔬",color:"#00695C",rgb:"0,105,92"},
+  {tag:"Cloud & Infrastructure",slug:"cloud-infrastructure",count:23,cat:"devops",icon:"☁️",color:"#FF6F00",rgb:"255,111,0"},
+  {tag:"Containers & Kubernetes",slug:"containers-kubernetes",count:23,cat:"devops",icon:"🐳",color:"#1565C0",rgb:"21,101,192"},
+  {tag:"Databases",slug:"databases",count:23,cat:"ai",icon:"🗄️",color:"#1B5E20",rgb:"27,94,32"},
+  {tag:"Linux & Unix",slug:"linux-unix",count:22,cat:"systems",icon:"🐧",color:"#827717",rgb:"130,119,23"},
+  {tag:"Open Source & Research",slug:"open-source-research",count:22,cat:"other",icon:"🔓",color:"#2E7D32",rgb:"46,125,50"},
+  {tag:"Bioinformatics & Health",slug:"bioinformatics-health",count:21,cat:"science",icon:"🧬",color:"#1A6B1A",rgb:"26,107,26"},
+  {tag:"Mobile Development",slug:"mobile-development",count:21,cat:"other",icon:"📱",color:"#1565C0",rgb:"21,101,192"},
+  {tag:"DevOps & CI/CD",slug:"devops-ci-cd",count:19,cat:"devops",icon:"🔄",color:"#B71C1C",rgb:"183,28,28"},
+  {tag:"Machine Learning",slug:"machine-learning",count:19,cat:"ai",icon:"🧠",color:"#6A1B9A",rgb:"106,27,154"},
+  {tag:"Security",slug:"security",count:18,cat:"systems",icon:"🔒",color:"#C62828",rgb:"198,40,40"},
+  {tag:"Desktop Applications",slug:"desktop-applications",count:18,cat:"other",icon:"🖥️",color:"#1565C0",rgb:"21,101,192"},
+  {tag:"Go",slug:"go",count:17,cat:"languages",icon:"🐹",color:"#00838F",rgb:"0,131,143"},
+  {tag:"TypeScript",slug:"typescript",count:17,cat:"languages",icon:"📘",color:"#1565C0",rgb:"21,101,192"},
+  {tag:"Graphics & 3D",slug:"graphics-3d",count:16,cat:"other",icon:"🎮",color:"#880E4F",rgb:"136,14,79"},
+  {tag:"Mathematics & Algorithms",slug:"mathematics-algorithms",count:16,cat:"science",icon:"∑",color:"#B71C1C",rgb:"183,28,28"},
+  {tag:"Operating Systems & Virtualization",slug:"operating-systems-virtualization",count:16,cat:"systems",icon:"💻",color:"#0D47A1",rgb:"13,71,161"},
+  {tag:"Rust",slug:"rust",count:16,cat:"languages",icon:"🦀",color:"#BF360C",rgb:"191,54,12"},
+  {tag:"Physical & Earth Sciences",slug:"physical-earth-sciences",count:15,cat:"science",icon:"🔭",color:"#0D47A1",rgb:"13,71,161"},
+  {tag:"Systems & Low-level Languages",slug:"systems-low-level-languages",count:14,cat:"languages",icon:"🔧",color:"#37474F",rgb:"55,71,79"},
+  {tag:"IoT, Robotics & Autonomous Systems",slug:"iot-robotics-autonomous-systems",count:14,cat:"other",icon:"🤖",color:"#004D40",rgb:"0,77,64"},
+  {tag:"Big Data",slug:"big-data",count:13,cat:"ai",icon:"🌊",color:"#BF360C",rgb:"191,54,12"},
+  {tag:"Networking",slug:"networking",count:12,cat:"systems",icon:"🌐",color:"#01579B",rgb:"1,87,155"},
+  {tag:"Audio, Video & Media",slug:"audio-video-media",count:12,cat:"other",icon:"🎵",color:"#4A148C",rgb:"74,20,140"},
+  {tag:"Communications & Collaboration",slug:"communications-collaboration",count:12,cat:"other",icon:"💬",color:"#1B5E20",rgb:"27,94,32"},
+  {tag:"Generative AI & LLMs",slug:"generative-ai-llms",count:11,cat:"ai",icon:"✨",color:"#880E4F",rgb:"136,14,79"},
+  {tag:"Mobile Languages",slug:"mobile-languages",count:11,cat:"languages",icon:"📲",color:"#01579B",rgb:"1,87,155"},
+  {tag:"Accessibility & UX",slug:"accessibility-ux",count:10,cat:"other",icon:"♿",color:"#880E4F",rgb:"136,14,79"},
+  {tag:"Systems Programming & Embedded",slug:"systems-programming-embedded",count:10,cat:"systems",icon:"🔌",color:"#37474F",rgb:"55,71,79"},
+  {tag:"Ruby & PHP",slug:"ruby-php",count:10,cat:"languages",icon:"💎",color:"#B71C1C",rgb:"183,28,28"},
+  {tag:"Computer Vision & NLP",slug:"computer-vision-nlp",count:8,cat:"ai",icon:"👁️",color:"#006064",rgb:"0,96,100"},
+  {tag:"Games & Simulation",slug:"games-simulation",count:8,cat:"other",icon:"🎮",color:"#1B5E20",rgb:"27,94,32"},
+  {tag:"GIS & Geospatial",slug:"gis-geospatial",count:6,cat:"science",icon:"🗺️",color:"#1B5E20",rgb:"27,94,32"},
+  {tag:"Software Composition & Compliance",slug:"software-composition-compliance",count:4,cat:"other",icon:"📋",color:"#37474F",rgb:"55,71,79"},
+  {tag:"Fintech & Blockchain",slug:"fintech-blockchain",count:3,cat:"other",icon:"💰",color:"#E65100",rgb:"230,81,0"},
+  {tag:"Electronic Design & Hardware",slug:"electronic-design-hardware",count:2,cat:"systems",icon:"🔋",color:"#546E7A",rgb:"84,110,122"},
 ];
 
-// ── COMPUTE TOTAL ────────────────────────────────────────────────────────
-const totalOrgs = TAGS.reduce((s, t) => s + t.count, 0);
-document.getElementById('stat-orgs').textContent = totalOrgs;
-
-// ── BUILD CARDS ──────────────────────────────────────────────────────────
-const grid = document.getElementById('grid');
-TAGS.forEach((t, i) => {
-  const hex = t.color;
-  const hexRgb = hexToRgb(hex);
-  const bgAlpha = hexRgb ? `rgba(${hexRgb},0.10)` : 'rgba(91,108,246,0.10)';
-  const borderAlpha = hexRgb ? `rgba(${hexRgb},0.25)` : 'rgba(91,108,246,0.25)';
-
-  const a = document.createElement('a');
-  a.className = 'tag-card';
-  a.href = `tags/tag.html?slug=${t.slug}`;
-  a.dataset.cat = t.cat;
-  a.dataset.name = t.tag.toLowerCase();
-  a.style.cssText = `--card-color:${hex};--card-color-bg:${bgAlpha};--card-color-border:${borderAlpha};animation-delay:${Math.min(i*20,400)}ms`;
-
-  a.innerHTML = `
-    <div class="card-top">
-      <div class="card-icon">${t.icon}</div>
-      <div>
-        <div class="card-count">${t.count}</div>
-        <div class="card-count-label">orgs</div>
-      </div>
-    </div>
+const grid=document.getElementById('grid');
+TAGS.forEach((t,i)=>{
+  const a=document.createElement('a');
+  a.className='tag-card';
+  a.href=`tags/tag.html?slug=${t.slug}`;
+  a.dataset.cat=t.cat;
+  a.dataset.name=t.tag.toLowerCase();
+  a.style.cssText=`--card-color:${t.color};--c-rgb:${t.rgb};animation-delay:${Math.min(i*18,400)}ms`;
+  a.innerHTML=`
+    <div class="card-emoji">${t.icon}</div>
+    <div class="card-count">${t.count}</div>
+    <div class="card-count-sub">organizations</div>
     <div class="card-name">${esc(t.tag)}</div>
     <div class="card-footer">
-      <span class="browse-btn">Browse →</span>
+      <span class="card-cat">${CAT_LABELS[t.cat]||t.cat}</span>
+      <span class="browse-link">Browse →</span>
     </div>`;
   grid.appendChild(a);
 });
 
-// ── FILTER / SEARCH ──────────────────────────────────────────────────────
-let activeCat = 'all';
-const cards = () => document.querySelectorAll('.tag-card');
-
-function render() {
-  const q = document.getElementById('search').value.toLowerCase().trim();
-  let shown = 0;
-  cards().forEach(c => {
-    const name = c.dataset.name;
-    const cat  = c.dataset.cat;
-    const matchQ   = !q || name.includes(q);
-    const matchCat = activeCat === 'all' || cat === activeCat;
-    const show = matchQ && matchCat;
-    c.classList.toggle('hidden', !show);
-    if (show) shown++;
+let activeCat='all';
+function render(){
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  let shown=0;
+  document.querySelectorAll('.tag-card').forEach(c=>{
+    const show=(!q||c.dataset.name.includes(q))&&(activeCat==='all'||c.dataset.cat===activeCat);
+    c.classList.toggle('hidden',!show);
+    if(show)shown++;
   });
-  document.getElementById('showing').textContent = shown;
-  document.getElementById('empty').classList.toggle('show', shown === 0);
+  document.getElementById('showing').textContent=shown;
+  document.getElementById('empty').classList.toggle('show',shown===0);
 }
-
-document.getElementById('search').addEventListener('input', render);
-document.querySelectorAll('.cat-btn').forEach(b => {
-  b.addEventListener('click', () => {
-    document.querySelectorAll('.cat-btn').forEach(x => x.classList.remove('active'));
-    b.classList.add('active');
-    activeCat = b.dataset.cat;
-    render();
-  });
-});
-
-function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-function hexToRgb(hex) {
-  const r = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return r ? `${parseInt(r[1],16)},${parseInt(r[2],16)},${parseInt(r[3],16)}` : null;
-}
+document.getElementById('search').addEventListener('input',render);
+document.querySelectorAll('.pill').forEach(p=>p.addEventListener('click',()=>{
+  document.querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));
+  p.classList.add('active');activeCat=p.dataset.cat;render();
+}));
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 </script>
 </body>
 </html>
